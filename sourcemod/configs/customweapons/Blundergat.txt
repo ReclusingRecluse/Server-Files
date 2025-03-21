@@ -1,0 +1,57 @@
+"Blundergat"
+{
+	"classes"
+	{
+		"scout"		"0"
+	}
+	"baseclass"		"scattergun"
+	"baseindex"		"45"
+	"nobots"		"0"
+	"logname"		"blundergat"
+	"quality"		"14"
+	"mag"			"2"
+	"description"	"A Heavy Frame Scattergun, shoots a high amount of pellets\n \nShot Package\nShoots 2 rounds at once, decreases accuracy, increases pellets per shot\n \nConcussive Force\nHigh knockback"
+	"cw3_attributes"
+	{
+		"cw3 weapon"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}		
+		"wall break"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}		
+		"spread penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.20"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"referenced item id low"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1300"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"reload time increased hidden"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.20"
+		}
+	}
+}

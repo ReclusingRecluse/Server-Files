@@ -1,0 +1,76 @@
+"Afterburner"
+{
+	"classes"
+	{
+		"pyro"		"0"
+	}
+	"baseclass"		"flamethrower"
+	"baseindex"		"21"
+	"nobots"		"0"
+	"quality"		"6"
+	"logname"		"afterburner"
+	"description"	"50% bonus afterburn damage\n25% longer afterburn duration\n \n50% less direct flame damage\nExtinguishing teammates restores 10 health, instead of 20\n \n \nCredit:\nGeneral Stat Sugguestion\n-Crafting"
+	"attributes"
+		{
+		"weapon burn dmg increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.5"
+		}	
+		"weapon burn time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.25"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".5"
+		}
+		"extinguish restores health"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"10"
+		}
+		"weapon_allow_inspect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2000"
+		}
+		"flame_lifetime"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_up_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7"
+		}
+		"flame_ignore_player_velocity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_gravity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"10"
+		}
+		"flame_drag"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

@@ -1,0 +1,122 @@
+"Cerberus"
+{
+	"classes"
+	{
+		"heavy"		"0"
+	}
+	"baseclass"		"minigun"
+	"baseindex"		"15"
+	"nobots"		"0"
+	"ammo" 			"200"
+	"logname"		"cerberus"
+	"killicon"		"minigun"
+	"description"	"An Aggressive Frame minigun\n \n3-headed Dog\nShoots erratice bullets in a high degree of spread, does a high amount of damage to armored targets\n \nFocused Aggression\nWhile attacking a single target, fire rate decreases as damage per shot increases\n \nVorpal Weapon\nDeals more damage to Engineers, Snipers, Spies, and buildings"
+	"cw3_attributes"
+	{
+		"flat damage increase"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1300"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}	
+        	"no primary ammo from dispensers while active"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"refund attribute"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"309"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.00"
+		}
+		"spread penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"mod ammo per shot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"10"
+		}
+		"fervor"
+		{
+			"plugin"	"dota2"
+			"value"		"-0.05 8 1.70"
+		}
+		"fury swipe"
+		{
+			"plugin"	"dota2"
+			"value"		"7 35 1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"dmg class"
+		{
+			"plugin"	"orion"
+			"value"		"1 1 1 1 1 1.20 1 1.20 1.20"
+		}
+		"dmg bonus vs buildings"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"3.60"
+		}
+		"referenced item id low"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1700"
+		}
+		"minigun spinup time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"damage penalty vs player"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.10"
+		}
+		"dynamic fire rate minigun"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"accuracy scales damage"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"kill will gib"
+		{
+			"plugin"	"orion"
+			"value"		"1"
+		}
+	}
+}

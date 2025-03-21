@@ -1,0 +1,57 @@
+"Smoker(Demoman)"
+{
+	"classes"
+	{
+		"demoman"		"0"
+	}
+	"baseclass"		"grenadelauncher"
+	"baseindex"		"1151"
+	"nobots"		"1"
+	"logname"		"smoker"
+	"quality"		"8"
+	"mag"			"2"
+	"description"	"Fire slow grenades that cause large explosions."
+	"cw3_attributes"
+	{
+		"projectile speed decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.55"
+		}
+		"Blast radius increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"Reload time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.75"
+		}
+		"use large smoke explosion"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"clip size penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}	

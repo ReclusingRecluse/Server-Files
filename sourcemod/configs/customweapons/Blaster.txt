@@ -1,0 +1,86 @@
+"Blaster"
+{
+	"classes"
+	{
+		"soldier"	"1"
+	}
+	"baseclass"		"shotgun_soldier"
+	"baseindex"		"442"
+	"nobots"		"0"
+	"mag"			"15"
+	"quality"		"14"
+	"description"	"Shoots a projectile that travels instantly.\nHas a fast fire rate.\nIncreased blast damage push force."
+	"attributes"
+	{
+		"cw3 weapon"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.25"
+		}
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.50"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"override projectile type"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"Reload time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.35"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"Projectile speed increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"50.00"
+		}
+		"damage blast push"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

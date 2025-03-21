@@ -1,0 +1,107 @@
+"Dragon's Breath"
+{
+	"classes"
+	{
+		"heavy"		"0"
+	}
+	"baseclass"		"minigun"
+	"baseindex"		"811"
+	"nobots"		"0"
+	"quality"		"14"
+	"ammo"			"800"
+	"logname"		"dragon's_breath"
+	"description"	"A Solar Heavy Frame minigun.\n \nDragonic Fire\nFires high velocity flares\nApplies 50 Scorch to victims on hit\n \nIllegal Modification\nThis weapon has an abnormally high fire rate\n \nIncandescent\nVictims explode when killed with this weapon, damaging and applying 80 Scorch to those nearby"
+	"cw3_attributes"
+	{
+		"override projectile type"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"6"
+		}
+		"weapon burn dmg increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"projectile spread angle penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.35"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"Projectile speed increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"50.00"
+		}
+		"maxammo primary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.00"
+		}
+		"minigun spinup time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.85"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"mod ammo per shot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"1.00"
+		}
+		"crit vs burning players"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"incandescent"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"350"
+		}
+		"scorch"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"50"
+		}
+		"ragdolls become ash"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"aiming movespeed decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.55"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

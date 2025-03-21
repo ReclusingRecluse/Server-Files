@@ -1,0 +1,29 @@
+"No Backup Plans"
+{
+	"classes"
+	{
+		"heavy"		"2"
+	}
+	"baseclass"		"fists"
+	"baseindex"		"331"
+	"nobots"		"1"
+	"description"	"."
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"move speed bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.20"
+		}
+		"has pipboy build interface"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+	}
+}

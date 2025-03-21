@@ -1,0 +1,162 @@
+"Fully Charged"
+{
+	"classes"
+	{
+		"engineer"	"0"
+	}
+	"baseclass"		"shotgun_primary"
+	"baseindex"		"141"
+	"mag"			"2"
+	"quality"		"8"
+	"nobots"		"0"
+	"logname"		"fully_charged"
+	"description"	"A Frame Solar shotgun.\nDoes superbly high damage and is highly accurate, applies 90 Scorch on hit.\nHas an abysmal Holster, Deploy, Fire, and Reload speed\nDamage done causes an explosion and sets targets on fire\n \nBuilding Buster\nDoes an excessive amount of damage to Buildings\n \nHigh Powered Ammunition\nIncreased damage to Overshields and Barrier Shields\n \nCombo\nEvery Second hit is a crit, does not need to be on the same target\n \n \nCredit goes to Cascade for the idea."
+	"cw3_attributes"
+	{
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"6.00"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"soldier model index"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.10"
+		}
+		"reload time increased hidden"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.70"
+		}
+		"override projectile type"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"clip size penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.60"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.10"
+		}
+		"scorch"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"90"
+		}
+		"flat damage increase"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"50"
+		}
+		"reduce armor on hit"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"10"
+		}
+		"projectile penetration heavy"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"15"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 300 2.50 1"
+		}
+		"dmg bonus vs buildings"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.00"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.15"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"Set DamageType Ignite"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"single wep holster time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"combo"
+		{
+			"plugin"	"orion"
+			"value"		"15 2 1"
+		}
+		"is_festivized"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"referenced item id low"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"6100"
+		}
+		"accuracy scales damage"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"crit kill will gib"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"dmg taken increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"2"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

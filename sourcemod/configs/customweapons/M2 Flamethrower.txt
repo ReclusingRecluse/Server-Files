@@ -1,0 +1,101 @@
+"M2 Flamethrower"
+{
+	"classes"
+	{
+		"pyro"		"0"
+	}
+	"baseclass"		"flamethrower"
+	"baseindex"		"215"
+	"nobots"		"0"
+	"logname"		"m2_flamethrower"
+	"quality"		"13"
+	"description"	"An Aggressive Frame flamethrower.\nSpews flames at a longer range, cannot airblast\n \nNapalm Flames\nAfterburn cannot be put out by any source, afterburn damage increases from consectutive hits.\n \nVorpal Weapon\nDeals more damage to Soldiers, Engineers, Heavies, and buildings."
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.25"
+		}
+		"airblast disabled"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"ragdolls become ash"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4000"
+		}
+		"flame_lifetime"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.20"
+		}
+		"flame_up_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"flame_ignore_player_velocity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_gravity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"10"
+		}
+		"flame_drag"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"flame_spread_degree"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"combo"
+		{
+			"plugin"	"orion"
+			"value"		"30 5 0"
+		}
+		"infinite afterburn"
+		{
+			"plugin"	"orion"
+			"value"		"10 0"
+		}
+		"scoreboard minigame"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"dmg class"
+		{
+			"plugin"	"orion"
+			"value"		"1 1.20 1 1 1.20 1.20 1 1 1"
+		}
+		"dmg bonus vs buildings"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"burning spear"
+		{
+			"plugin"	"dota2"
+			"value"		"10 10"
+		}
+	}
+}		

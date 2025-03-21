@@ -1,0 +1,93 @@
+"Icebreaker"
+{
+	"classes"
+	{
+		"sniper"		"0"
+	}
+	"baseclass"		"sniperrifle"
+	"baseindex"		"526"
+	"nobots"		"0"
+	"logname"		"icebreaker"
+	"flags"			"z"
+	"mag"			"0"
+	"quality"		"5"
+	"description"	"A Heavy Frame Solar sniper rifle\n \nNo Backpack\nRifle holds no reserve ammo, generates 1 round into the clip every 5 seconds\n \nIncandescent\nVictims explode when killed with this weapon, damaging and applying 80 Scorch to those nearby."
+	"attributes"
+	{
+		"fire rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"SRifle Charge rate decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.00"
+		}
+		"Set DamageType Ignite"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"item in slot 6"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"350"
+		}
+		"item in slot 4"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"50"
+		}
+		"mod no reload DISPLAY ONLY"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"sniper aiming movespeed decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"shot penatrate all players"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"explosive sniper shot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"ragdolls become ash"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"turn to gold"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

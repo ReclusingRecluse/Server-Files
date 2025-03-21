@@ -1,0 +1,46 @@
+"Enveloper"
+{
+	"classes"
+	{
+		"medic"		"1"
+	}
+	"baseclass"		"medigun"
+	"baseindex"		"411"
+	"nobots"		"1"
+	"quality"		"14"
+	"logname"		"enveloper"
+	"description"		"Heal Target gains bonuses for their abilities\n \nBonuses\nImproved Max Charge recharge\n50% increased Ability Power\nDoubled Max Charge\n \nOn Uber\nInstantly refill your Healing Target's charge, make use of their Abilities cost nothing, and further increase their Ability power by 50%."
+	"cw3_attributes"
+	{
+		"heal rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.30"
+		}
+		"ubercharge rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"overheal decay bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"25.00"
+		}
+		"custom texture lo"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"medigun charge is megaheal"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"move speed bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.25"
+		}
+	}
+}

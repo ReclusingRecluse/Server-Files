@@ -1,0 +1,127 @@
+"Sniper's Matchbook"
+{
+	"classes"
+	{
+		"sniper"	"1"
+	}
+	"baseclass"		"smg"
+	"baseindex"		"16"
+	"nobots"		"0"
+	"logname"		"snipers_matchbook"
+	"quality"		"13"
+	"mag"			"100"
+	"description"	"An Aggressive frame SMG\nDeals self inflicted damage to user while attacking\nHas a larger magazine size\nFire rate and damage increases as health decreases\nDeals more damage to burning\nHas a 50% chance to ignite enemies for 2 seconds\nAdds 200 health\nHealth from packs is decreased, restores health on kill\n \nOverpower\nAltfire: Gain an increase in fire rate for 5 seconds or 30 hits, has a 30 second cool down"
+	"cw3_attributes"
+	{
+		"damage self"
+		{
+			"plugin"	"orion"
+			"value"		"7"
+		}
+		"lifesteal"
+		{
+			"plugin"	"dota2"
+			"value"		"0.30 0"
+		}
+		"fire rate bonus with reduced health"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.00"
+		}
+		"chance to ignite"
+		{
+			"plugin"	"orion"
+			"value"		"0.50 2"
+		}
+		"dmg bonus while half dead"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7.00"
+		}
+		"damage bonus vs burning"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"restore health on kill"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"20"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.00"
+		}
+		"Reload time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"max health additive bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"200"
+		}
+		"overpower"
+		{
+			"plugin"	"dota2"
+			"value"		"0.80 5 30 30 1"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.60"
+		}
+		"weapon burn dmg reduced"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"health from packs decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"revolver use hit locations"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"crits_become_minicrits"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

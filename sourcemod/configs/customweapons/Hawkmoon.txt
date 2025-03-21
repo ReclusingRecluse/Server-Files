@@ -1,0 +1,77 @@
+"Hawkmoon"
+{
+	"classes"
+	{
+		"spy"		"0"
+	}
+	"baseclass"		"revolver"
+	"baseindex"		"525"
+	"nobots"		"0"
+	"logname"		"hawkmoon"
+	"quality"		"13"
+	"mag"			"13"
+	"description"	"An Aggressive Frame revolver, has a larger cylinder size and is more accurate\n \nHolding Aces\nRandom shots will do either -50% damage or up to +160% more damage\nsteals 15% of your victim's damage, increasing yours and decreasing theirs\n \nHigh Caliber Rounds\nRounds stagger targets\n \nFinal Round\nLast shot in the cylinder is a crit, increased overall critical damage multiplier\n \nVorpal Weapon\nDeals more damage to Scouts, Pyros, Heavies, and buildings"
+	"cw3_attributes"
+	{
+		"random dmg"
+		{
+			"plugin"	"orion"
+			"value"		"0.50 2.60"
+		}
+		"steal dmg"
+		{
+			"plugin"	"orion"
+			"value"		"0.15 2 0"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.20"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.70"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"3.20"
+		}
+		"last shot crits"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.10"
+		}
+		"dmg class"
+		{
+			"plugin"	"orion"
+			"value"		"1.20 1 1.20 1 1.20 1 1 1 1"
+		}
+		"dmg bonus vs buildings"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"damage penalty on bodyshot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.80"
+		}
+		"slow enemy on hit major"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+	}
+}				

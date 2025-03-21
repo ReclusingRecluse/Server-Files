@@ -1,0 +1,61 @@
+"Caber MK2"
+{
+	"classes"
+	{
+		"demoman"	"2"
+	}
+	"baseclass"		"stickbomb"
+	"baseindex"		"307"
+	"quality"		"8"
+	"nobots"		"0"
+	"logname"		"caber_mk2"
+	"description"	"Improved Caber.\nAn aggressive melee that boosts movement speed when held.\nHas more damage and blast radius at the cost of swing speed.\nKilled targets with a crit also explode."
+	"cw3_attributes"
+	{
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.55"
+		}
+		"Blast radius increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.95"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"move speed bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.35"
+		}
+		"damage blast push"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.20"
+		}
+		"crit dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"15 300 0.25 1"
+		}
+		"blast dmg to self increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+	}
+}

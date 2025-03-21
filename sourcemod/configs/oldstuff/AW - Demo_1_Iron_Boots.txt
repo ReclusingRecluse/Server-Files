@@ -1,0 +1,59 @@
+"AW - Iron Boots"
+{
+	"classes"
+	{
+		"demoman"	"0"
+	}
+	"baseclass"		"wearable"
+	"baseindex"		"405"
+	"nobots"		"0"
+	"quality"		"6"
+	"logname"		"iron_boots"
+	"description"	"Performs a small earthquake after landing an explosive jump to knock back enemies\nDeals 3x falling damage to the player you land on\n75% reduction in push force taken from damage and airblasts\n50% less blast damage from sticky jumps\n \n15% less movement speed on wearer\n \n \nCredit:\nGeneral Stat Sugguestion\n-Advanced Weaponiser"
+	"cw3_attributes"
+	{
+		"earthquake on rocket jump land"
+		{
+			"plugin"	"aw2attrib"
+			"value"		"250.0"
+		}
+	}
+	"attributes"
+	{
+		"boots falling stomp"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"damage force reduction"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".25"
+		}
+		"airblast vulnerability multiplier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".25"
+		}
+		"airblast vertical vulnerability multiplier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".25"
+		}
+		"rocket jump damage reduction"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".5"
+		}
+		"move speed penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".85"
+		}
+		"weapon_allow_inspect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+	}
+}

@@ -1,0 +1,107 @@
+"Wardcliff Coil"
+{
+	"classes"
+	{
+		"soldier"	"0"
+	}
+	"baseclass"		"rocketlauncher"
+	"baseindex"		"441"
+	"nobots"		"0"
+	"logname"		"wardcliff_coil"
+	"quality"		"14"
+	"mag"			"20"
+	"description"	"Destiny 2 comes to TF2 with this one.\nFire 20 tracking rockets at a 7 degree spread.\nHeavily increased fire rate, slighty increased reload speed.\nDecreased damage, slightly decreased blast radius.\nDamage slows and rockets have a higher speed.\n \n \nThanks Bungie."
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.15"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"homproj"
+		{
+			"plugin"	"orion"
+			"value"		"295 0 0"
+		}
+		"projectile speed increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.35"
+		}
+		"fire rate bonus HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.04"
+		}
+		"throwable particle trail only"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.15"
+		}
+		"Blast radius increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.70"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"Reload time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.29"
+		}
+		"projectile spread angle penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7"
+		}
+		"scattergun no reload single"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"fly while shooting"
+		{
+			"plugin"	"moreaw2"
+			"value"		"1"
+		}
+		"combo"
+		{
+			"plugin"	"orion"
+			"value"		"30 3 0"
+		}
+		"dmg falloff increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

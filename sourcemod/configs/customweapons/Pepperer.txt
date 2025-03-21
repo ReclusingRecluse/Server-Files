@@ -1,0 +1,52 @@
+"Pepperer"
+{
+	"classes"
+	{
+		"scout"		"0"
+	}
+	"baseclass"		"handgun_scout_primary"
+	"baseindex"		"220"
+	"nobots"		"0"
+	"logname"		"pepper_gun"
+	"quality"		"5"
+	"mag"			"12"
+	"description"	"A lightweight fast firing peppergun.\n \n \nHealth Threshold\n Deals 300% more damage when target's health is below 50%"
+	"cw3_attributes"
+	{
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.30"
+		}
+		"Clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.00"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.30"
+		}
+		"dmg bonus if enemy health lower than threshold"
+		{
+			"plugin"	"orion"
+			"value"		"4.00 0.7"
+		}
+		"maxammo primary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.00"
+		}
+		"move speed bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

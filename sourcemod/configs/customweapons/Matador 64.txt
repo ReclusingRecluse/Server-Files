@@ -1,0 +1,116 @@
+"Matador 64"
+{
+	"classes"
+	{
+		"heavy"		"1"
+	}
+	"baseclass"		"shotgun_hwg"
+	"baseindex"		"425"
+	"nobots"		"1"
+	"mag"			"4"
+	"logname"		"matador_64"
+	"description" "A Heavy Frame Solar shotgun\n \nFull Choke\nIncreased accuracy and has a fixed pellet spread\n \nOpening Shot\nInitial shot deals critical damage\nKills increase fire rate by 35%"
+	"cw3_attributes"
+	{
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.55"
+		}
+		"enemy hp to dmg"
+		{
+			"plugin"	"orion"
+			"value"		"0.15"
+		}
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.20"
+		}
+		"damage bonus vs burning"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.15"
+		}
+		"fire rate bonus on kill"
+		{
+			"plugin"	"orion"
+			"value"		"0.35 2 0.0 1.55"
+		}
+		"jinada attr"
+		{
+			"plugin"	"dota2"
+			"value"		"0.55 20"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"1.95"
+		}
+		"clip size penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.60"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.40"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.35"
+		}
+		"burning spear"
+		{
+			"plugin"	"dota2"
+			"value"		"10 8"
+		}
+		"chance to ignite"
+		{
+			"plugin"	"orion"
+			"value"		"0.15 5"
+		}
+		"fixed_shot_pattern"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"is_festivized"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2005"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

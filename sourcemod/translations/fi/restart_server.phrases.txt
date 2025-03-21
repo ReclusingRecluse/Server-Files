@@ -1,0 +1,15 @@
+"Phrases"
+{
+	"admin_warning"
+	{
+		"fi"			"{1} sinä uudelleen käynnistät serverin, ja sinun tietosi kirjataan lokiin."
+	}
+	"countdown_timer"
+	{
+		"fi" "Uudelleen käynnistetään serveri {1} sekunnin päästä."
+	}
+	"warning_restart"
+	{
+		"fi" "Serveri sammutetaan."
+	}
+}

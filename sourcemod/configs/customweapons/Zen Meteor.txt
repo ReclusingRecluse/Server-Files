@@ -1,0 +1,79 @@
+"Zen Meteor"
+{
+	"classes"
+	{
+		"sniper"	"0"
+	}
+	"baseclass"		"sniperrifle"
+	"baseindex"		"526"
+	"nobots"		"0"
+	"quality"		"13"
+	"mag"			"3"
+	"logname"		"zen_meteor"
+	"description"	"A Heavy Frame Solar Sniper Rifle. Uses a 3 round magazine. Damage causes an explosion\n \nDynamite With A Laser Beam\nHitting 3 shots in a row without reloading refills the clip with a powerful explosive projectile\nProjectile ignites and applies 130 Scorch\nGain the Building Buster perk while active\nStrong Against Unstoppable Champions\n \nUnderdog\nAt 50% or below health, gain 30% increased reload, deploy, and stow speed."
+	"cw3_attributes"
+	{
+		"fire rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.20"
+		}
+		"damage penalty on bodyshot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"6.00"
+		}
+		"homproj"
+		{
+			"plugin"	"orion"
+			"value"		"190 0 1"
+		}
+		"mod demo buff type"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"weapon burn dmg reduced"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 250 2.00 1"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"uses custom clip"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"single wep deploy time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}
+
+	

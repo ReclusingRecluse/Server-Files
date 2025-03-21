@@ -1,0 +1,151 @@
+"Rapture"
+{
+	"classes"
+	{
+		"demoman"	"2"
+	}
+	"baseclass"		"katana"
+	"baseindex"		"132"
+	"quality"		"13"
+	"nobots"		"0"
+	"logname"		"rapture"
+	"description"	"An Aggressive frame sword. Grants a faster movement speed and has more range at tbe cost of damage and deploy speed.\n \nWithering Blade\nHas a 55% chance to light enemies on fire\nHas a 85% chance to bleed\nAfterburn deals more damage take more damage from melee sources.\n \nHellish Forgery\nWeapon levels up from taking and dealing damage\nGrants mini crits and a damage reduction when below 35% health\nFire rate increases per kill"
+	"cw3_attributes"
+	{
+		"move speed bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.60"
+		}
+		"chance to ignite"
+		{
+			"plugin"	"orion"
+			"value"		"0.55 3"
+		}
+		"chance to bleed"
+		{
+			"plugin"	"orion"
+			"value"		"0.85 5"
+		}
+		"dmg from melee increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.45"
+		}
+		"melee range multiplier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.75"
+		}
+		"true strike"
+		{
+			"plugin"	"dota2"
+			"value"		"1"
+		}
+		"weapon lvlup 2"
+		{
+			"plugin"	"moreaw2"
+			"value"		"45 0.1 0.55 1 5 0 0.7"
+		}
+		"last will"
+		{
+			"plugin"	"dota2"
+			"value"		"30"
+		}
+		"fire rate bonus on kill"
+		{
+			"plugin"	"orion"
+			"value"		"0.04 12 0.00 1"
+		}
+		"burning spear"
+		{
+			"plugin"	"dota2"
+			"value"		"5 25"
+		}
+		"fervor"
+		{
+			"plugin"	"dota2"
+			"value"		"0.7 1 1"
+		}
+		"low berserker near death"
+		{
+			"plugin"	"orion"
+			"value"		"0.35 5 0"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"1.5"
+		}
+		"weapon burn dmg increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.50"
+		}
+		"weapon lvlup"
+		{
+			"plugin"	"moreaw2"
+			"value"		"35 0 1.50 0.25 0"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2002"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"turn to gold"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"health from packs decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"mod weapon blocks healing"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"weapon burn time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"kill refills meter"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+	}
+}

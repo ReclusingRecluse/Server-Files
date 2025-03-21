@@ -1,0 +1,50 @@
+"Comrade Rampage"
+{
+	"classes"
+	{
+		"heavy"		"2"
+	}
+	"baseclass"		"fists"
+	"baseindex"		"310"
+	"nobots"		"0"
+	"logname"		"rampage_fist"
+	"description"	"Grants a faster movement speed and increased damage.\nKills heal nearby teammates, grants an increased crit chance and lifesteal.\nIncreased damage taken from bullet and melee sources.\nTaunt after each kill.\n \n \nLifesteal:\n50% of damage done is returned as health.\nCannot overheal."
+	"cw3_attributes"
+	{
+		"fists have radial buff"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.45"
+		}
+		"fire rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.35"
+		}
+		"dmg from melee increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.25"
+		}
+		"dmg taken from bullets increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.25"
+		}
+		"move speed penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"aura lifesteal"
+		{
+			"plugin"	"dota2"
+			"value"		"0.50 0 750"
+		}
+	}
+}

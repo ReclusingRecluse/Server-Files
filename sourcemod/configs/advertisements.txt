@@ -1,0 +1,52 @@
+// Advertisements 2.1
+// by Tsunami
+//
+// Types
+// -----
+// center: Center message
+// chat: Chat message
+// hint: Hint message
+// menu: Menu message
+// top: Top message
+//
+// Flags (optional)
+// -----
+// Accepts flags of admins that will not see the advertisement.
+// When omitted everyone will see the advertisement.
+// When left empty only admins will see the advertisement.
+
+"Advertisements"
+{
+    "1"
+    {
+        "chat"		"{haunted}Reminder: While Custom Weapons can be upgraded, they will loose their upgrades when you die or touch a resupply locker. Unless you are using the same weapon(s) they use."
+    }
+    "2"
+    {
+	"chat"		"{green}To access Custom Weapons, type /c in chat. More Weapons will be periodically added."
+    }
+    "3"
+    {
+	"chat"		"{lightgreen}To access the Uberupgrades menu, press TAB or type /buy in chat."
+    }
+    "4"
+    {
+	"chat"		"{skyblue}Join Our Steam Group: {royalblue}https://steamcommunity.com/groups/jacksepticeyetf"
+    }
+    "5"
+    {
+	"chat"		"{honeydew}Our Discord:	https://discord.gg/TpVEMmpCNG"
+    }
+    "6"
+    {
+	"chat"		"{haunted}Bots upgrade over time. Type {ivory}/votemenu {haunted}to increase bot difficulty."
+    }
+    "7"
+    {
+	"chat"		"{common}To activate/deactivate bought abilities, type /abilities in chat"
+    }
+    "8"
+    {
+	"chat"		"{common}Server is active development; Report issues to https://discord.gg/TpVEMmpCNG"
+    }
+}

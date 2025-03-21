@@ -1,0 +1,66 @@
+"Tranquilizer"
+{
+	"classes"
+	{
+		"sniper"	"0"
+	}
+	"baseclass"		"sniperrifle"
+	"baseindex"		"752"
+	"quality"		"14"
+	"nobots"		"0"
+	"logname"		"Tranquilizer"
+	"description"		"A lightweight sniper\n \nMark For Destruction\nDamage highlights and slows victims\nMarked victims take 55% increased damage from teammates"
+	"cw3_attributes"
+	{
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.65"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"slow enemy on hit major"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3"
+		}
+		"maxammo primary reduced"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"mark victim"
+		{
+			"plugin"	"moreaw2"
+			"value"		"5 5"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.35"
+		}
+		"desolator attr"
+		{
+			"plugin"	"dota2"
+			"value"		"1.55 2"
+		}
+		"sniper no charge"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"Reload time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

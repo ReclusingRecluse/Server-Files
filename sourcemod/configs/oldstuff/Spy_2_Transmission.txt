@@ -1,0 +1,36 @@
+"Transmission"
+{
+	"classes"
+	{
+		"spy"		"1"
+	}
+	"baseclass"		"builder"
+	"baseindex"		"735"
+	"nobots"		"0"
+	"quality"		"6"
+	"logname"		"transmission"
+	"description"	"4 health regenerated per second for each active sapper\n50% bonus sapper health\n \nYou can overheal yourself\n \n25% less sapper damage\n \n \nCredit:\nGeneral Stat Sugguestion\n-Crafting"
+	"attributes"
+	{
+		"sapper damage leaches health"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4"
+		}
+		"sapper health bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.5"
+		}
+		"sapper damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".75"
+		}
+		"weapon_allow_inspect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+	}
+}

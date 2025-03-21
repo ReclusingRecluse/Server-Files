@@ -1,0 +1,78 @@
+"Breach and Clear"
+{
+	"classes"
+	{
+		"demoman"	"0"
+	}
+	"baseclass"		"grenadelauncher"
+	"baseindex"		"1151"
+	"nobots"		"1"
+	"quality"		"14"
+	"flags"			"z"
+	"mag"			"16"
+	"logname"		"breach_and_clear"
+	"description"		"An agressive frame grenade laucher that fires a volley of grenades that do pitiful damage but disorientate enemies.\nProjectiles are faster and have less blast radius\n \nChain Reaction\nEnemies hit also cause a small explosion and damage others nearby\n \nBuilding Buster\nDoes an absurd amount of damage to buildings\n \nCredit goes to Cascade for the idea"
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.10"
+		}
+		"auto fires full clip all at once"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.00"
+		}
+		"Projectile speed increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.50"
+		}
+		"Blast radius decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"projectile spread angle penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 200 10 2"
+		}
+		"dmg bonus vs buildings"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"grenade no bounce"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

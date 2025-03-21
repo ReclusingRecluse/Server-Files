@@ -1,0 +1,93 @@
+"Scavenger"
+{
+	"classes"
+	{
+		"sniper"	"0"
+	}
+	"baseclass"		"sniperrifle"
+	"baseindex"		"526"
+	"nobots"		"0"
+	"quality"		"13"
+	"logname"		"explosive_sniper"
+	"description"	"Damage causes a small explosion.\nHas a slower deploy and fire speed\nCritical hits cause a larger more devastating explosion.\nUses more ammo per shot.\nRegens ammo over time.\nIncreased headshot damage."
+	"cw3_attributes"
+	{
+		"damage penalty on bodyshot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"mod ammo per shot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"no crit boost"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"sniper no headshot without full charge"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"cannot delete"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"fire rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"ammo regen"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.10"
+		}
+		"firefly"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"670"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 250 15 2"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"single wep deploy time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}
+
+	

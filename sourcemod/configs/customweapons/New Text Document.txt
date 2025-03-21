@@ -1,0 +1,36 @@
+"Knockback.PNG"
+{
+	"classes"
+	{
+		"pyro"		"2"
+	}
+	"baseclass"		"fireaxe"
+	"baseindex"		"1181"
+	"nobots"		"0"
+	"logname"		"why_did_I_add_this?"
+	"quality"		"8"
+	"description"	"This does absolutely nothing.\nDon't bother using it"
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.01"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"10 100 1 1"
+		}
+		"damage causes airblast"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"airblast pushback scale"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"500.00"
+		}
+	}
+}

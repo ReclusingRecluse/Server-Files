@@ -1,0 +1,121 @@
+"Xenophage"
+{
+	"classes"
+	{
+		"heavy"		"0"
+	}
+	"baseclass"		"minigun"
+	"baseindex"		"41"
+	"nobots"		"0"
+	"quality"		"14"
+	"logname"		"xenophage"
+	"description"	"A Heavy Frame Solar minigun.\nHas a slower fire rate, increased accuracy and damage, Applies 50 Scorch from afterburn.\n \nHigh Powered Ammunition\nPierces through resists, stagers and pierces through enemies, increased knockback. Strong Against Barrier Champions\n \nExplosive Rounds\nRounds explode when they hit enemies.\nGrants a 30% damage bonus to nearby teammates."
+	"cw3_attributes"
+	{
+		"minigun spinup time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"single wep deploy time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.35"
+		}
+		"revive"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"aiming movespeed decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.65"
+		}
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.10"
+		}
+		"spread penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 390 2.00 1"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.70"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"3.10"
+		}
+		"referenced item id low"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4000"
+		}
+		"projectile penetration heavy"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"15"
+		}
+		"flat damage increase"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"30"
+		}
+		"penetration damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.70"
+		}
+		"mod ammo per shot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"damage penalty on bodyshot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.00"
+		}
+		"reduce armor on hit"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"10"
+		}
+		"Set DamageType Ignite"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"damage bonus vs burning"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.40"
+		}
+		"scorch"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"50"
+		}
+		"fury swipe"
+		{
+			"plugin"	"dota2"
+			"value"		"10 10 1"
+		}
+	}
+}

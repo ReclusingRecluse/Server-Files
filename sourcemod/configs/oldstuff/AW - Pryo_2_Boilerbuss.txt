@@ -1,0 +1,47 @@
+"AW - Boilerbuss"
+{
+	"classes"
+	{
+		"pyro"		"1"
+	}
+	"baseclass"		"shotgun_pyro"
+	"baseindex"		"12"
+	"mag"			"4"
+	"nobots"		"0"
+	"quality"		"6"
+	"logname"		"boilerbuss"
+	"description"	"On hit: reset enemy afterburn duration\n100% mini-crits vs burning players\n \nNo random critical hits\n34% less clip size\n25% less damage\n \n \nCredit:\nGeneral Stat Sugguestion\n-Advanced Weaponiser\nCustom Attribute\n-Theray"
+"cw3_attributes"
+	{
+		"reset afterburn"
+		{
+			"plugin"	"aw2attrib"
+			"value"		"1"
+		}
+		"minicrit vs burning player"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"crit mod disabled"
+		{
+			"plugin"	"tf2attributes"
+			"value" 	"0"
+		}
+		"clip size penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.6666666666666667"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"weapon_allow_inspect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+	}
+}

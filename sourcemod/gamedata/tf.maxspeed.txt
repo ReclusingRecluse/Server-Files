@@ -1,0 +1,34 @@
+"Games"
+{
+	"tf"
+	{
+		"Signatures"
+		{
+			"CTFGameMovement::ProcessMovement"
+			{
+				"library"	"server"
+				"linux"		"@_ZN15CTFGameMovement15ProcessMovementEP11CBasePlayerP9CMoveData"
+				"windows"	"\x55\x8B\xEC\x56\x57\x8B\x7D\x08\x8B\xF1\x85\xFF\x74\x2A\x53"
+			}
+		}
+		"Addresses"
+		{
+			"CTFGameMovement::ProcessMovement_limit"
+			{
+				"signature"	"CTFGameMovement::ProcessMovement"
+				"windows"
+				{
+					"offset"	"73"	//0x49
+				}
+				"linux"
+				{
+					"offset"	"87"	//0x57
+				}
+				"mac"
+				{
+					"offset"	"81"	//0x51
+				}
+			}
+		}
+	}
+}

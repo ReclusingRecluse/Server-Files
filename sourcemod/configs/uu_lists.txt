@@ -1,0 +1,4141 @@
+"uu_lists"
+{
+	"body_spy"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced(L)"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr8"		"increased air control"
+			"Attr7"		"gesture speed increase"
+		}
+		"Ammo upgrades"
+		{
+			"Attr1"		"maxammo secondary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Spy upgrades"
+		{
+			"Attr1"		"cloak consume rate"
+			"Attr2"		"cloak rate"
+			"Attr4"		"decloak rate"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			"Attr11"	"Fireball"
+			"Attr12"	"Meteor Shower"
+			"Attr13"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_scout"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced(L)"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"Supermega Op Jump"
+			"Attr3"		"deploy time decreased"
+			"Attr4"		"damage force reduction"
+			"Attr5"		"airblast vulnerability multiplier"
+			"Attr6"		"airblast vertical vulnerability multiplier"
+			"Attr7"		"cancel falling damage"
+			"Attr8"		"increased air control"
+			"Attr8"		"gesture speed increase"
+		}
+		"Ammo upgrades"
+		{
+			"Attr0"		"maxammo primary increased"
+			"Attr1"		"maxammo secondary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			"Attr11"	"Fireball"
+			"Attr12"	"Meteor Shower"
+			"Attr13"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_sniper"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced(L)"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr8"		"increased air control"
+			"Attr7"		"gesture speed increase"
+		}
+		"Ammo upgrades"
+		{
+			"Attr0"		"maxammo primary increased"
+			"Attr1"		"maxammo secondary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			"Attr11"	"Fireball"
+			"Attr12"	"Meteor Shower"
+			"Attr13"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_soldier"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr7"		"gesture speed increase"
+			"Attr8"		"increased air control"
+		}
+		"Ammo upgrades"
+		{
+			"Attr0"		"maxammo primary increased"
+			"Attr1"		"maxammo secondary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			"Attr11"	"Fireball"
+			"Attr12"	"Meteor Shower"
+			"Attr13"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_pyro"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr7"		"gesture speed increase"
+			"Attr8"		"increased air control"
+		}
+		"Ammo upgrades"
+		{
+			"Attr0"		"maxammo primary increased"
+			"Attr1"		"maxammo secondary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			"Attr11"	"Fireball"
+			"Attr12"	"Meteor Shower"
+			"Attr13"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_heavy"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus (H)"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced(H)"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed (heavy)"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr8"		"increased air control"
+			"Attr7"		"gesture speed increase"
+		}
+		"Ammo upgrades"
+		{
+			"Attr0"		"maxammo primary increased"
+			"Attr1"		"maxammo secondary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			//"Attr15"	"Immortal"
+			//"Attr11"	"Yagorath"
+			"Attr12"	"Fireball"
+			"Attr13"	"Meteor Shower"
+			"Attr14"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_demoman"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr7"		"gesture speed increase"
+			"Attr8"		"increased air control"
+		}
+		"Ammo upgrades"
+		{
+			"Attr0"		"maxammo primary increased"
+			"Attr1"		"maxammo secondary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			"Attr11"	"Fireball"
+			"Attr12"	"Meteor Shower"
+			"Attr13"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_medic"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr8"		"increased air control"
+			"Attr7"		"gesture speed increase"
+		}
+		"Ammo upgrades"
+		{
+			"Attr0"		"maxammo primary increased"
+			"Attr2"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Bloodmoon"
+			"Attr4"		"Supernova"
+			"Attr5"		"Knockout"
+			//"Attr6"		"Agility"
+			"Attr7"		"Plague"
+			"Attr8"		"King"
+			"Attr9"		"Reflect"
+			"Attr10"	"Resistance"
+			"Attr11"	"Precision"
+			"Attr12"	"Fireball"
+			"Attr13"	"Meteor Shower"
+			"Attr14"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"body_engie"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr0"		"max health additive bonus"
+			"Attr1"		"health regen"
+			"Attr13"	"Armor Supply"
+			"Attr14"	"Armor Supply Regen"
+			"Attr15"	"Damage Reduction"
+			//"Attr7"		"dmg from sentry reduced(L)"
+			"Attr11"	"cannot be backstabbed"
+			"Attr12"	"health from packs increased"
+		}
+		"Physical upgrades"
+		{
+			"Attr0"		"move speed"
+			"Attr1"		"jump height"
+			"Attr2"		"deploy time decreased"
+			"Attr3"		"damage force reduction"
+			"Attr4"		"airblast vulnerability multiplier"
+			"Attr5"		"airblast vertical vulnerability multiplier"
+			"Attr6"		"cancel falling damage"
+			"Attr8"		"increased air control"
+			"Attr7"		"gesture speed increase"
+		}
+		"Ammo & metal upgrades"
+		{
+			"Attr0"		"maxammo metal increased"
+			"Attr1"		"metal regen"
+			"Attr3"		"maxammo primary increased"
+			"Attr4"		"maxammo secondary increased"
+			"Attr5"		"ammo regen"
+		}
+		"Overshield Upgrades"
+		{
+			"Attr0"		"Overshield"
+			"Attr1"		"Overshield Gained Per Kill"
+			"Attr2"		"Overshield Damage Reduction"
+		}
+		"Abilities"
+		{
+			"Attr0"		"Ability Max Charge"
+			"Attr1"		"Ability Power"
+			"Attr2"		"Empowerment"
+			"Attr3"		"Supernova"
+			"Attr4"		"Knockout"
+			//"Attr5"		"Agility"
+			"Attr6"		"Plague"
+			"Attr7"		"King"
+			"Attr8"		"Reflect"
+			"Attr9"		"Resistance"
+			"Attr10"	"Precision"
+			"Attr11"	"Fireball"
+			"Attr12"	"Meteor Shower"
+			"Attr13"	"Bats"
+		}
+		//"Spells [Test Feature]"
+		//{
+		//	"Attr1"		"Fireball"
+		//	"Attr2"		"Lightning Spell"
+		//}	
+	}
+	"cow_m"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr1"		"Damage Bonus*"
+			"Attr2"		"Damage Multiplier [E]"
+			"Attr13"	"Afterburn Damage Multiplier"
+			"Attr3"		"Blast radius increased"
+			"Attr4"		"dmg falloff decreased"
+			//"Attr5"		"Rage damage boost"
+			"Attr6"		"Lifesteal"
+			"Attr8"		"self dmg push force increased"
+			//"Attr9"		"minicrits become crits"
+			"Attr10"		"reveal cloaked victim on hit"
+			"Attr11"		"reveal disguised victim on hit"
+			//"Attr12"		"crit vs disguised players"
+		}
+		"Mangler specific upgrades"
+		{
+			"Attr0"		"faster reload rate (U)"
+			"Attr1"		"fire rate bonus"
+			"Attr2"		"clip size bonus (E)"
+			"Attr4"		"Projectile speed increased"
+			"Attr6"		"projectile spread angle penalty"
+			"Attr3"		"rocket jump damage reduction"
+			"Attr5"		"charge movespeed increased"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive(mangler)"
+			"sp4"				"Methanol Injected Fuel"
+			"sp2"				"Fast Laser Shot"
+			"sp3"				"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//	"Attr5"		"Bonus Rage on Hit"
+		//	"Attr6"		"Rocket Specialist"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"expweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus*"
+			"Attr3"			"Damage Multiplier [E]"
+			"Attr12"		"Afterburn Damage Multiplier"
+			"Attr1"			"Blast radius increased"
+			"Attr9"			"dmg falloff decreased"
+			//"Attr2"			"Rage damage boost"
+			"Attr6"			"Lifesteal"
+			//"Attr11"		"minicrits become crits"
+			"Attr13"		"reveal cloaked victim on hit"
+			"Attr14"		"reveal disguised victim on hit"
+			//"Attr15"		"crit vs disguised players"
+		}
+		"Launcher specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			//"Attr7"		"Fire More Rockets"
+			"Attr3"		"Projectile speed increased"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr6"		"no self blast dmg"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			//"SpecialTweak1"		"Army of not Many"
+			"SpecialTweak2"		"Some Beggar Tweak"
+			"SpecialTweak3"		"Some Other Beggar Tweak"
+			"SpecialTweak4"		"Australium"
+			"SpecialTweak5"		"Napalm Rockets"
+			"SpecialTweak6"		"Methanol Injected Fuel"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//	"Attr5"		"Bonus Rage on Hit"
+		//	"Attr6"		"Rocket Specialist"
+		//	"Attr7"		"Mini Rockets"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"cannweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus*"
+			"Attr3"		"Damage Multiplier [E]"
+			"Attr14"	"Afterburn Damage Multiplier"
+			"Attr1"		"Blast radius increased"
+			"Attr2"		"dmg falloff decreased"
+			"Attr6"		"Lifesteal"
+			//"Attr9"		"minicrits become crits"
+			"Attr11"		"reveal cloaked victim on hit"
+			"Attr12"		"reveal disguised victim on hit"
+			//"Attr13"		"crit vs disguised players"
+		}
+		"Cannon specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"Clip Size Bonus [Demo]"
+			"Attr2"		"faster reload rate"
+			"Attr3"		"fuse time multiplier"
+			"Attr8"		"Projectile speed increased"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr7"		"no self blast dmg"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			//"SpecialTweak1"		"Army of not Many"
+			"SpecialTweak2"		"Some Other Beggar Tweak"
+			"SpecialTweak3"		"Medic Beggar Tweak"
+			"SpceialTweak4"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//	"Attr5"		"Grenade No Bounce"
+		//	"Attr6"		"Grenade No Spin"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"melweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus++"
+			"Attr5"		"Damage Multiplier [M]"
+			//"Attr8"		"Exponential Melee Damage"
+			"Attr11"	"Afterburn Damage Multiplier"
+			"Attr6"		"Lifesteal"
+			//"Attr9"		"damage all connected"
+			//"Attr10"		"minicrits become crits"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr0"			"melee attack rate bonus"
+			//"Attr1"			"minicritboost on kill"
+			"Attr2"			"melee bounds multiplier"
+			"Attr3"			"melee range multiplier"
+			"Attr5"			"crit from behind"
+			"Attr6"			"speed buff ally"
+			"Attr8"			"ammo becomes health"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"scomelweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus++"
+			"Attr5"			"Damage Multiplier [M]"
+			//"Attr8"			"Exponential Melee Damage"
+			"Attr11"		"Afterburn Damage Multiplier"
+			"Attr6"			"Lifesteal"
+			//"Attr9"			"damage all connected"
+			//"Attr10"		"minicrits become crits"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr0"			"melee attack rate bonus (slow)"
+			//"Attr1"			"minicritboost on kill"
+			"Attr2"			"melee bounds multiplier"
+			"Attr3"			"melee range multiplier"
+			"Attr5"			"crit from behind"
+			"Attr6"			"speed buff ally"
+			"Attr8"			"ammo becomes health"
+			"Attr10"		"increase player capture value"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"scomelweap_"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus++"
+			"Attr5"			"Damage Multiplier [M]"
+			//"Attr8"			"Exponential Melee Damage"
+			"Attr11"		"Afterburn Damage Multiplier"
+			"Attr6"			"Lifesteal"
+			//"Attr9"			"damage all connected"
+			//"Attr10"		"minicrits become crits"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr0"			"melee attack rate bonus (slow)"
+			//"Attr1"			"minicritboost on kill"
+			"Attr2"			"melee bounds multiplier"
+			"Attr3"			"melee range multiplier"
+			"Attr5"			"effect bar recharge rate increased"
+			"Attr6"			"max ammo"
+			"Attr8"			"crit from behind"
+			"Attr9"			"speed buff ally"
+			"Attr11"		"ammo becomes health"
+			"Attr13"		"increase player capture value"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"medmelweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus++"
+			"Attr5"			"Damage Multiplier [M]"
+			//"Attr8"			"Exponential Melee Damage"
+			"Attr11"		"Afterburn Damage Multiplier"
+			//"Attr1"			"damage all connected"
+			"Attr3"			"Lifesteal"
+			//"Attr6"			"minicrits become crits"
+			"Attr8"			"reveal cloaked victim on hit"
+			"Attr9"			"reveal disguised victim on hit"
+			//"Attr10"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr0"		"melee attack rate bonus"
+			//"Attr1"		"minicritboost on kill"
+			"Attr3"		"melee bounds multiplier"
+			"Attr4"		"melee range multiplier"
+			"Attr5"		"see enemy health"
+			"Attr6"		"enables aoe heal"
+			"Attr8"		"crit from behind"
+			"Attr9"		"speed buff ally"
+			"Attr11"		"ammo becomes health"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"engweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr4"		"Damage Multiplier [B]"
+			//"Attr1"		"accuracy scales damage"
+			"Attr10"	"Afterburn Damage Multiplier"
+			"Attr2"		"Lifesteal"
+			//"Attr5"		"minicrits become crits"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			//"Attr9"		"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			"Attr6"		"bullets per shot bonus"
+			"Attr4"		"weapon spread bonus"
+			"Attr5"		"projectile penetration heavy"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Sentry Bigger Caliber"
+			//"SpecialTweak1"		"Sentry Heavy Motor"
+			//"SpecialTweak2"		"Assault Weapon"
+			"SpecialTweak3"		"Fast Shot"
+			//"SpecialTweak4"		"Bigger Caliber"
+			"SpecialTweak5"		"Australium"
+			"SpecialTweak6"		"Dragon's Breath Rounds"
+			"SpecialTweak7"		"Double-Ought Buckshot"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"Sentry Target Damage bonus"
+		//	"Attr5"		"clipsize increase on kill"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"rayengweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr6"		"Damage Multiplier [B]"
+			"Attr13"	"Extra Damage"
+			"Attr2"		"Set DamageType Ignite"
+			"Attr12"	"Afterburn Damage Multiplier"
+			"Attr6"		"afterburn time increased"
+			"Attr4"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr8"		"mod mini-crit airborne"
+			"Attr9"		"reveal cloaked victim on hit"
+			"Attr10"	"reveal disguised victim on hit"
+			//"Attr11"	"crit vs disguised players"
+		}
+		"Laser weapon specific upgrades"
+		{
+			"Attr0"		"fire rate bonus (B)"
+			"Attr1"		"faster reload rate (U)"
+			"Attr2"		"clip size bonus (E)"
+			"Attr3"		"Projectile speed increased"
+		}
+		"Special tweaks"
+		{
+			//"SpecialTweak0"		"Sentry Bigger Caliber"
+			//"SpecialTweak1"		"Sentry Heavy Motor"
+			"SpecialTweak2"		"Some Other Beggar Tweak"	
+			//"SpecialTweak3"		"Condensed Laser"
+			//"SpecialTweak4"		"Heavy Laser Shot"
+			"SpecialTweak5"		"Australium"
+			//"SpecialTweak6"		"Mad Scientist"
+		}
+		//"Lightning Spell Upgrades"
+		//{
+		//	"Attr0"		"Lightning Spell Damage"
+		//	"Attr2"		"Lightning Spell Extra Damage"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"sprweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr4"		"Damage Multiplier [B]"
+			//"Attr1"		"accuracy scales damage"
+			"Attr10"	"Afterburn Damage Multiplier"
+			"Attr2"		"Lifesteal"
+			//"Attr5"		"minicrits become crits"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			//"Attr9"		"crit vs disguised players"
+		}
+		"Gun specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			"Attr6"		"bullets per shot bonus"
+			"Attr4"		"weapon spread bonus"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			//"SpecialTweak2"		"Bigger Little Caliber."
+			"SpecialTweak3"		"Australium"
+			"SpecialTweak4"		"Dragon's Breath Rounds"
+			"SpecialTweak5"		"Double-Ought Buckshot"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"sprweap2"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr4"		"Damage Multiplier [B]"
+			//"Attr1"		"accuracy scales damage"
+			"Attr10"	"Afterburn Damage Multiplier"
+			"Attr2"		"Lifesteal"
+			//"Attr5"		"minicrits become crits"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			//"Attr9"		"crit vs disguised players"
+		}
+		"Gun specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			"Attr6"		"bullets per shot bonus"
+			"Attr4"		"weapon spread bonus"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			//"SpecialTweak2"		"Bigger Little Caliber."
+			"SpecialTweak3"		"Australium"
+			"SpecialTweak4"		"Dragon's Breath Rounds"
+			"SpecialTweak5"		"Double-Ought Buckshot"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"smgweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr2"		"Damage Multiplier [B]"
+			//"Attr1"		"accuracy scales damage"
+			"Attr3"		"Lifesteal"
+			//"Attr6"		"minicrits become crits"
+			"Attr8"		"reveal cloaked victim on hit"
+			"Attr9"		"reveal disguised victim on hit"
+			//"Attr10"		"crit vs disguised players"
+		}
+		"Smg Specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			"Attr6"		"Bullets Per Shot Bonus [S]"
+			"Attr4"		"weapon spread bonus"
+			"Attr5"		"projectile penetration heavy"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			//"SpecialTweak2"		"Bigger Little Caliber."
+			"SpecialTweak3"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"rayweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr6"		"Damage Multiplier [B]"
+			"Attr13"	"Extra Damage Bonus"
+			"Attr2"		"Set DamageType Ignite"
+			"Attr12"	"Afterburn Damage Multiplier"
+			"Attr6"		"afterburn time increased"
+			"Attr1"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr8"		"mod mini-crit airborne"
+			"Attr9"		"reveal cloaked victim on hit"
+			"Attr10"	"reveal disguised victim on hit"
+			//"Attr11"	"crit vs disguised players"
+		}
+		"Laser specific upgrades"
+		{
+			"Attr0"		"fire rate bonus (B)"
+			"Attr1"		"faster reload rate (U)"
+			"Attr2"		"clip size bonus (E)"
+			"Attr3"		"Projectile speed increased"
+		}
+		"Special tweaks"
+		{
+			"Attr0"		"Some Other Beggar Tweak"
+			//"Attr1"		"Condensed Laser"
+			//"Attr2"		"Heavy Laser Shot"
+			"Attr3"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"clipsize increase on kill"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	
+	"engiecircuit"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"	"Damage Bonus vs Player [Short Circuit]"
+			"Attr1"		"Damage Multiplier [C]"
+			"Attr2"		"Extra Damage Bonus"
+			"Attr6"		"Lifesteal"
+			//"Attr8"		"minicrits become crits"
+			"Attr9"		"mod mini-crit airborne"
+			"Attr10"		"reveal cloaked victim on hit"
+			"Attr11"		"reveal disguised victim on hit"
+			//"Attr12"		"crit vs disguised players"
+		}
+		"Short circuit specific upgrades"
+		{
+			"Attr1"		"Damage Bonus Against Buildings"
+		}	
+		"Special Tweaks"
+		{
+			//"Sp0"		"Higher Voltage"
+			"Sp2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Sentry Target Damage bonus"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"engmelweap"
+	{
+		"special_tweaks_listid"		"3"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus++"
+			"Attr5"		"Damage Multiplier [M]"
+			//"Attr8"		"Exponential Melee Damage"
+			"Attr9"		"Afterburn Damage Multiplier"
+			"Attr1"		"Lifesteal"
+			//"Attr4"		"minicrits become crits"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+			//"Attr8"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr0"		"melee attack rate bonus"
+			//"Attr1"		"minicritboost on kill"
+			"Attr2"		"melee bounds multiplier"
+			"Attr3"		"melee range multiplier"
+			"Attr5"		"damage all connected"
+			"Attr6"		"crit from behind"
+			"Attr8"		"speed buff ally"
+			//"Attr10"		"ammo becomes health"
+		}
+		"Building tech upgrades"
+		{
+			"Attr8"		"building cost reduction"
+			"Attr12"	"Sentry Ammo Regeneration"
+			"Attr2"		"engy sentry fire rate increased"
+			"Attr3"		"engy sentry damage bonus"
+			"Attr9"		"Sentry Damage Multiplier"
+			"Attr1"		"Sentry Exponential Damage Bonus"
+			"Attr15"	"Sentry Homing Rockets"
+			"Attr5"		"engy building health bonus"
+			"Attr16"	"Building Health Regen"
+			"Attr6"		"engy dispenser radius increased"
+			"Attr7"		"engy sentry radius increased"
+			"Attr10"	"Construction rate increased"
+			"Attr14"	"upgrade rate increase"
+			"Attr13"	"Build rate bonus"
+			"Attr11"	"bidirectional teleport"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//	"Attr3"		"Sentry Target Damage bonus"
+		//	"Attr4"		"Repair Rate Increased"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"minigunweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr6"		"Damage Multiplier [BH]"
+			//"Attr1"		"accuracy scales damage(S)"
+			"Attr3"		"Afterburn Damage Multiplier"
+			"Attr4"		"afterburn time increased"
+			"Attr5"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr9"		"reveal cloaked victim on hit"
+			"Attr10"		"reveal disguised victim on hit"
+			//"Attr11"		"crit vs disguised players"
+		}
+		"Minigun specific upgrades"
+		{
+			"Attr1"		"fire rate bonus(H)"
+			"Attr2"		"bullets per shot bonus (heavy)"
+			"Attr3"		"weapon spread bonus"
+			"Attr4"		"projectile penetration heavy"
+			"Attr5"		"attack projectiles"
+			"Attr6"		"minigun spinup time decreased"
+			//"Attr7"		"mod medic killed revenge"
+			"Attr8"		"minigun no spin sounds"
+			"Attr9"		"aiming movespeed increased"
+			//"Attr10"		"generate rage on damage"
+			//"Attr11"		"ring of fire while aiming"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Heavy Heavy Heavy Weapon"
+			//"SpecialTweak1"		"Heavy Electric Motor"
+			"SpecialTweak2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"medweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr4"		"Damage Multiplier [B]"
+			"Attr11"	"damage hidden multiplier"
+			"Attr2"		"Lifesteal"
+			"Attr5"		"projectile penetration heavy"
+			//"Attr6"		"minicrits become crits"
+			"Attr8"		"reveal cloaked victim on hit"
+			"Attr9"		"reveal disguised victim on hit"
+			//"Attr10"	"crit vs disguised players"
+		}
+		"Syringegun specific upgrades"
+		{
+			"Attr2"		"Add uber on hit"
+			"Attr1"		"fire rate bonus(nice)"
+			"Attr5"		"clip size bonus"
+			"Attr7"		"faster reload rate"
+			"Attr6"		"Change Projectile to Bullets"
+		}
+		"Special Tweaks"
+		{
+			//"Sp1"		"Bigger Caliber"
+			"Sp2" 	    "Some Other Beggar Tweak"
+			"Sp3"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//	"Attr5"		"Mad Milk Syringes"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"medweap_c"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus Special"
+			"Attr4"		"Damage Multiplier [Cbow]"
+			//"Attr11"	"damage hidden multiplier"
+			"Attr2"		"Lifesteal"
+			//"Attr5"		"projectile penetration heavy"
+			//"Attr6"		"minicrits become crits"
+			//"Attr7"		"mod mini-crit airborne"
+			"Attr8"		"reveal cloaked victim on hit"
+			"Attr9"		"reveal disguised victim on hit"
+			//"Attr10"	"crit vs disguised players"
+		}
+		"Syringegun specific upgrades"
+		{
+			"Attr1"		"Add uber on hit(crossbow)"
+			"Attr2"		"fire rate bonus"
+			"Attr3"		"clip size bonus (B)"
+			"Attr4"		"faster reload rate (U)"
+			"Attr5"		"Projectile speed increased(bolts)"
+			"Attr6"		"Homing Projectiles"
+		}
+		"Special Tweaks"
+		{
+			//"Sp3"   "Assault Weapon(CB)"
+			//"Sp1" 	"Medic Beggar Tweak"
+			"Sp2" 	"Some Other Beggar Tweak"
+			"Sp4"	"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"medig"
+	{
+		"special_tweaks_listid"		"1"
+		"Medigun Specific upgrades"
+		{
+			"Attr0"		"medigun charge is crit boost"
+			"Attr1"		"preserve ubercharge"
+			"Attr2"		"heal rate bonus"
+			"Attr3"		"ubercharge rate bonus"
+			"Attr4"		"overheal bonus"
+			"Attr6"		"overheal decay bonus"
+			"Attr7"		"ubercharge rate bonus for healer"
+			"Attr8"		"uber duration bonus"
+		}
+		//"Medic Shield Upgrades" //They're a bit too good.
+		//{
+		//	"Attr0"		"generate rage on heal"
+		//	"Attr1"		"increase buff duration(shield)"
+		//	"Attr2"		"Shield damage bonus"
+		//}
+		"Special Tweaks"
+		{
+			"Sp1" 	"Doooctoor!"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"pyroweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus%"
+			"Attr5"		"Damage Multiplier [F]"
+			//"Attr2"		"all damage multiplier"
+			"Attr1"		"Afterburn Damage Multiplier"
+			"Attr3"		"afterburn time increased"
+			"Attr1"		"Lifesteal"
+			"Attr7"		"mod mini-crit airborne"
+			//"Attr6"		"minicrits become crits"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+		}
+		"Flamethrower specific upgrades"
+		{
+			"Attr2"		"flame speed bonus"
+			"Attr14"	"Flame Life Bonus"
+			"Attr13"	"Flame Spread Degree"
+			"Attr4"		"mult airblast refire time"
+			"Attr5"		"airblast pushback scale"
+			"Attr6"		"deflection size multiplier"
+			//"Attr7"		"flame ammopersec decreased"
+			"Attr8"		"airblast cost decreased"
+			//"Attr9"		"crit from behind"
+			//"Attr10"		"charged airblast"
+			//"Attr11"		"extinguish earns revenge crits"
+			//"Attr12"		"burn damage earns rage"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Higher Pressure"
+			//"SpecialTweak1"		"Temperature rise"
+			"SpecialTweak2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"phlog"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus%"
+			"Attr5"		"Damage Multiplier [F]"
+			//"Attr2"		"all damage multiplier"
+			"Attr1"		"Afterburn Damage Multiplier"
+			"Attr3"		"afterburn time increased"
+			"Attr1"		"Lifesteal"
+			"Attr7"		"mod mini-crit airborne"
+			//"Attr6"		"minicrits become crits"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+		}
+		"Flamethrower specific upgrades"
+		{
+			"Attr2"		"flame speed bonus"
+			"Attr14"	"Flame Life Bonus"
+			"Attr13"	"Flame Spread Degree"
+			"Attr5"		"slow enemy on hit major"
+			//"Attr9"		"crit from behind"
+			//"Attr12"	"burn damage earns rage"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Higher Pressure"
+			//"SpecialTweak1"		"Temperature rise"
+			"SpecialTweak2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//	"Attr3"		"Flame Life Bonus"
+		//	"Attr4"		"Flame Spread Degree"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"pyroflareg"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus%%"
+			"Attr6"		"Damage Multiplier [FG]"
+			//"Attr1"		"Rage damage boost"
+			"Attr2"		"Afterburn Damage Multiplier"
+			"Attr3"		"afterburn time increased"
+			"Attr4"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr10"		"reveal cloaked victim on hit"
+			"Attr11"		"reveal disguised victim on hit"
+			//"Attr12"		"crit vs disguised players"
+		}
+		"Flaregun specific upgrades"
+		{
+			"Attr0"		"faster reload rate"
+			"Attr1"		"fire rate bonus"
+			"Attr2"		"Blast radius increased"
+			"Attr3"		"Projectile speed increased"
+		}
+		"Special Tweaks"
+		{
+			"SpecialTweak1"		"Some Other Beggar Tweak"
+			//"SpecialTweak2"		"Concentrated Fire"
+			"SpecialTweak3"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"pyroflareg2"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus%%"
+			"Attr5"		"Damage Multiplier [FG]"
+			//"Attr2"		"Rage damage boost"
+			"Attr2"		"Afterburn Damage Multiplier"
+			"Attr3"		"afterburn time increased"
+			"Attr1"		"Lifesteal"
+			"Attr4"		"crit vs burning players"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+		}
+		"Flaregun specific upgrades"
+		{
+			"Attr1"		"fire rate bonus"
+			"Attr2"		"reload rate bonus"
+			"Attr3"		"Projectile speed increased"
+		}		
+		"Special Tweaks"
+		{
+			"SpecialTweak1"		"Some Other Beggar Tweak"
+			//"SpecialTweak2"		"Assault Weapon(CB)"
+			"SpecialTweak3"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"shtgpyr"
+	{
+		"special_tweaks_listid"		"-1"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr5"		"Damage Multiplier [B]"
+			//"Attr1"		"accuracy scales damage"
+			"Attr1"		"damage hidden multiplier (S)"
+			//"Attr2"		"Rage damage boost"
+			"Attr6"		"Lifesteal"
+			//"Attr9"		"minicrits become crits"
+			"Attr11"		"reveal cloaked victim on hit"
+			"Attr12"		"reveal disguised victim on hit"
+			//"Attr13"		"crit vs disguised players"
+		}
+		"Shotgun specific upgrades"
+		{
+			"Attr1"		"fire rate bonus"
+			"Attr2"		"faster reload rate"
+			"Attr3"		"bullets per shot bonus"
+			"Attr4"		"clip size bonus"
+			"Attr5"		"weapon spread bonus"
+			"Attr6"		"crit vs burning players"
+			"Attr7"		"projectile penetration heavy"
+		}
+	}
+	"melpyr"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus++"
+			"Attr1"			"Damage Multiplier [M]"
+			//"Attr13"		"Exponential Melee Damage"
+			"Attr2"			"Set DamageType Ignite"
+			"Attr9"			"Afterburn Damage Multiplier"
+			"Attr4"			"afterburn time increased"
+			"Attr6"			"Lifesteal"
+			//"Attr8"			"minicrits become crits"
+			"Attr10"		"reveal cloaked victim on hit"
+			"Attr11"		"reveal disguised victim on hit"
+			//"Attr12"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr4"		"melee attack rate bonus"
+			//"Attr5"		"minicritboost on kill"
+			"Attr6"		"melee bounds multiplier"
+			"Attr7"		"melee range multiplier"
+			"Attr9"		"damage all connected"
+			"Attr10"		"crit from behind"
+			"Attr12"		"speed buff ally"
+			"Attr14"		"ammo becomes health"
+			"Attr14"		"damage applies to sappers"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"scoweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr5"		"Damage Multiplier [B]"
+			//"Attr9"		"accuracy scales damage"
+			"Attr10"	"Afterburn Damage Multiplier"
+			"Attr1"		"Lifesteal"
+			//"Attr4"		"minicrits become crits"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+			//"Attr8"		"crit vs disguised players"
+		}
+		"Scattergun specific upgrades"
+		{
+			"Attr5"		"scattergun no reload single"
+			"Attr7"		"fire rate bonus"
+			"Attr14"	"faster reload rate"
+			"Attr13"	"Bullets Per Shot Bonus [Scout]"
+			"Attr9"		"weapon spread bonus"
+			"Attr12"	"clip size bonus"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			//"SpecialTweak2"		"Bigger Caliber"
+			"SpecialTweak3"		"Australium"
+			"SpecialTweak4"		"Dragon's Breath Rounds"
+			"SpecialTweak5"		"Double-Ought Buckshot"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Healing Reload Time Multiplier"
+		//	"Attr2"		"Kills Grant Speed Boost"
+		//	"Attr3"		"Damage Bonus Against Buildings"
+		//	"Attr4"		"clipsize increase on kill"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"scoweap2"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr5"		"Damage Multiplier [B]"
+			//"Attr9"		"accuracy scales damage"
+			"Attr10"	"Afterburn Damage Multiplier"
+			"Attr1"		"Lifesteal"
+			//"Attr4"		"minicrits become crits"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+			//"Attr8"		"crit vs disguised players"
+		}
+		"Scattergun specific upgrades"
+		{
+			"Attr5"		"scattergun no reload single"
+			"Attr7"		"fire rate bonus"
+			"Attr14"	"faster reload rate"
+			"Attr12"	"clip size bonus"
+			"Attr13"	"Bullets Per Shot Bonus [Scout]"
+			"Attr9"		"weapon spread bonus"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			//"SpecialTweak2"		"Bigger Caliber"
+			"SpecialTweak3"		"Australium"
+			"SpecialTweak4"		"Dragon's Breath Rounds"
+			"SpecialTweaks5"	"Double-Ought Buckshot"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"misce_"
+	{
+		"special_tweaks_listid"		"-1"
+		"Specific upgrades"
+		{
+			"Attr0"		"charge recharge rate increased"
+		}
+	}
+	"snipe"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr1"		"Damage Bonus"
+			"Attr8"		"Damage Multiplier [B]"
+			"Attr2"		"sniper full charge damage bonus"
+			"Attr4"		"headshot damage increase"
+			"Attr5"		"sniper penetrate players when charged"
+			"Attr6"		"Lifesteal"
+			//"Attr10"		"minicrits become crits"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"		"crit vs disguised players"
+		}
+		"Sniper specific upgrades"
+		{
+			"Attr0"		"Fire Rate Bonus [Sniper]"
+			"Attr1"		"bullets per shot bonus (single)"
+			"Attr2"		"sniper charge per sec"
+			"Attr3"		"mult sniper charge after headshot"
+			"Attr4"		"aiming movespeed increased"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Bigger Caliber(sniper)"
+			"SpecialTweak1"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"c_bow"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus Special"
+			"Attr1"		"Damage Multiplier [Cbow]"
+			//"Attr2"		"bleeding duration"
+			"Attr21"	"Set DamageType Ignite"
+			"Attr20"	"afterburn time increased"
+			"Attr15"	"Afterburn Damage Multiplier"
+			//"Attr19"	"afterburn dmg increased"
+			"Attr6"		"Lifesteal"
+			//"Attr9"		"projectile penetration"
+			//"Attr10"		"minicrits become crits"
+			"Attr11"		"mod mini-crit airborne"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"	"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"faster reload rate (U)"
+			"Attr4"		"maxammo primary increased (S)"
+			"Attr2"		"aiming movespeed increased"
+			"Attr5"		"Projectile speed increased(arrows)"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon(CB)"
+			"SpecialTweak1"		"Australium"
+
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"spyweap"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr1"		"Damage Multiplier [B]"
+			//"Attr10"	"accuracy scales damage"
+			"Attr2"		"add cloak on hit"
+			"Attr6"		"Lifesteal"
+			"Attr4"		"sapper kills collect crits"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			"Attr9"		"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr2"		"fire rate bonus"
+			"Attr6"		"faster reload rate"
+			"Attr0"		"clip size bonus"
+			"Attr13"	"Bullets Per Shot Bonus [S]"
+			"Attr4"		"weapon spread bonus"
+			"Attr5"		"projectile penetration heavy"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			//"SpecialTweak2"		"Bigger Little Caliber."
+			"SpecialTweak3"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"spysap"
+	{
+		"special_tweaks_listid"		"-1"
+		"Sapper upgrades"
+		{
+			"Attr1"		"robo sapper"
+			"Attr2"		"sapper damage bonus"
+			"Attr3"		"sapper health bonus"
+			"Attr4"		"sapper damage leaches health"
+		}
+	}
+	"spymel"
+	{
+		"special_tweaks_listid"		"3"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus++"
+			"Attr5"		"Damage Multiplier [M]"
+			"Attr9"		"Afterburn Damage Multiplier"
+			"Attr10"	"Lifesteal"
+			//"Attr4"		"minicrits become crits"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+			//"Attr8"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr0"		"Melee Attack Rate Bonus [Spy]"
+			//"Attr1"		"minicritboost on kill"
+			"Attr2"		"melee bounds multiplier"
+			"Attr3"		"melee range multiplier"
+			"Attr4"		"damage all connected"
+			"Attr5"		"crit from behind"
+			"Attr6"		"speed buff ally"
+			"Attr8"		"ammo becomes health"
+			"Attr9"		"damage applies to sappers"
+		}
+		"Spy upgrades"
+		{
+			"Attr4"		"silent killer"
+			"Attr6"		"quiet unstealth"
+			"Attr7"		"add cloak on hit"
+			"Attr8"		"add cloak on kill"
+			"Attr9"		"sanguisuge"
+			"Attr10"		"disguise no burn"
+			"Attr11"		"disguise on backstab"
+			"Attr12"		"set cloak is feign death"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"democharge"
+	{
+		"special_tweaks_listid"		"2"
+		"Protection upgrades"
+		{
+			"Attr1"		"dmg taken reduced(lunchbox)"
+		}
+		"Charge upgrades"
+		{
+			"Attr0"		"charge time increased"
+			"Attr2"		"no charge impact range"
+			"Attr3"		"charge impact damage increased"
+			"Attr4"		"charge recharge rate increased"
+		}
+		"Special tweaks"
+		{
+			"Sp1"		"Short charge"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"ali_shoes"
+	{
+		"special_tweaks_listid"		"-1"
+		"Protection upgrades"
+		{
+			"Attr1"		"max health additive bonus"
+			"Attr3"		"dmg taken from crit reduced(wearable)"
+		}
+		"Charge upgrades"
+		{
+			"Attr0"		"charge time increased"
+			"Attr3"		"charge impact damage increased"
+			"Attr4"		"charge recharge rate increased"
+			"Attr5"		"mult charge turn control"
+		}
+	}
+	
+	"demopipe"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus*"
+			"Attr3"		"Damage Multiplier [E]"
+			"Attr2"		"Stickybomb charge damage increase"
+			"Attr5"		"Blast radius increased"
+			"Attr6"		"Lifesteal"
+			"Attr9"		"stickies detonate stickies"
+			//"Attr10"		"minicrits become crits"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"		"crit vs disguised players"
+		}
+		"Pipebomb launcher specific upgrades"
+		{
+			"Attr1"		"fire rate bonus"
+			"Attr2"		"clip size bonus"
+			"Attr13"	"stickybomb charge rate"
+			"Attr3"		"max pipebombs increased"
+			"Attr4"		"faster reload rate"
+			"Attr9"		"sticky arm time bonus"
+			"Attr5"		"Projectile force increased"
+			"Attr6"		"rocket jump damage reduction"
+			"Attr7"		"sticky detonate mode"
+			"Attr10"		"no self blast dmg"
+			"Attr11"		"self dmg push force increased"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			"SpecialTweak2"		"Some Beggar Tweak"
+			"SpecialTweak3"		"Some Other Beggar Tweak"
+			"SpecialTweak4"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"demomel"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus++"
+			"Attr5"		"Damage Multiplier [M]"
+			//"Attr10"	"Exponential Melee Damage"
+			"Attr9"		"Afterburn Damage Multiplier"
+			"Attr11"	"Lifesteal"
+			//"Attr4"		"minicrits become crits"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+			//"Attr8"		"crit vs disguised players"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr0"		"melee attack rate bonus"
+			//"Attr2"		"minicritboost on kill"
+			"Attr3"		"melee range multiplier"
+			"Attr4"		"melee bounds multiplier"
+			"Attr5"		"damage all connected"
+			"Attr6"		"crit from behind"
+			"Attr7"		"speed buff ally"
+			"Attr9"		"ammo becomes health"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+			"Sp4"		"Charging Bull"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"scoclea" //dmg upgrades won t work on scout cleaver
+	{
+		"special_tweaks_listid"		"-1"
+		"Damage upgrades"
+		{
+			"Attr10"	"Damage Bonus Special[C]"
+			"Attr13"	"Damage Multiplier [CC]"
+			//"Attr1"		"Extra Damage Bonus[C]"
+			//"Attr45"	"bleeding duration"
+			"Attr14"	"Afterburn Damage Multiplier"
+			"Attr11"	"Set DamageType Ignite"
+			"Attr12"	"afterburn time increased"
+			"Attr15"	"Lifesteal"
+			//"Attr6"		"minicrits become crits"
+			"Attr7"		"mod mini-crit airborne"
+			"Attr8"		"reveal cloaked victim on hit"
+			"Attr9"		"reveal disguised victim on hit"
+			//"Attr10"	"crit vs disguised players"
+		}
+		"Cleaver specific upgrades"
+		{
+			"Attr0"		"effect bar recharge rate increased"
+			"Attr1"		"fire rate bonus(throw)"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	
+	
+	"buffban"
+	{
+		"special_tweaks_listid"		"-1"
+		"Buff banner specific upgrades"
+		{
+			"Attr0"		"increase buff duration"
+			"Attr1"		"dmg taken reduced(wearable)"
+		}
+	}
+	"wearable"
+	{
+		"special_tweaks_listid"		"-1"
+		"Buff banner specific upgrades"
+		{
+			"Attr3"		"dmg taken from crit reduced(wearable)"
+			"Attr6"		"dmg taken reduced(wearable)"
+		}
+	}
+	"razorback"
+	{
+		"special_tweaks_listid"		"-1"
+		"Buff banner specific upgrades"
+		{
+			"Attr3"		"dmg taken from crit reduced(wearable)"
+			"Attr6"		"dmg taken reduced(wearable)"
+			"Attr8"		"recharge rate(razorback)"
+		}
+	}
+	"lunchbox(bonk)"
+	{
+		"special_tweaks_listid"		"-1"
+		"Lunchbox specific upgrades"
+		{
+			"Attr0"		"effect bar recharge rate increased"
+			"Attr2"		"dmg taken reduced(lunchbox)"
+		}
+	}
+	"lunchbox"
+	{
+		"special_tweaks_listid"		"-1"
+		"Lunchbox specific upgrades"
+		{
+			"Attr0"		"recharge rate(lunchbox)"
+			"Attr1"		"lunchbox healing increased"
+			"Attr2"		"dmg taken reduced(lunchbox)"
+		}
+	}
+	"jarat"
+	{
+		"Jarate specific upgrades"
+		{
+			"Attr0"		"effect bar recharge rate increased"
+			"Attr1"		"fire rate bonus(throw)"
+			"Attr2" 	"Blast radius increased (J)"
+		}
+	}
+	"explmel"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus++"
+			"Attr8"		"Damage Multiplier [M]"
+			//"Attr14"	"Exponential Melee Damage"
+			"Attr10"	"Afterburn Damage Multiplier"
+			"Attr1"		"Blast radius increased"
+			"Attr6"		"Lifesteal"
+			//"Attr9"		"minicrits become crits"
+			"Attr11"		"reveal cloaked victim on hit"
+			"Attr12"		"reveal disguised victim on hit"
+			//"Attr13"		"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr0"		"melee attack rate bonus"
+			"Attr1"		"self dmg push force increased"
+			"Attr10"		"rocket jump damage reduction"
+			//"Attr3"			"minicritboost on kill"
+			"Attr4"			"melee bounds multiplier"
+			"Attr5"			"melee range multiplier"
+			"Attr6"			"crit from behind"
+			"Attr7"			"speed buff ally"
+			"Attr9"			"ammo becomes health"
+		}
+		"Special Tweaks"
+		{
+			//"Sp0"		"Slow swing"
+			"Sp2"		"Australium"
+			"Sp3"		"Solar Edge"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"widowmaker"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr4"		"Damage Multiplier [B]"
+			//"Attr1"		"accuracy scales damage"
+			"Attr10"	"Afterburn Damage Multiplier"
+			"Attr6"		"Lifesteal"
+			//"Attr5"		"minicrits become crits"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			//"Attr9"		"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr13"	"bullets per shot bonus"
+			"Attr4"		"weapon spread bonus"
+			"Attr5"		"projectile penetration heavy"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Sentry Bigger Caliber"
+			//"SpecialTweak1"		"Sentry Heavy Motor"
+			//"SpecialTweak2"		"Assault Weapon"
+			"SpecialTweak3"		"Fast Shot"
+			"SpecialTweak6"		"Dragon's Breath Rounds"
+			//"SpecialTweak7"		"Double-Ought Buckshot"
+			//"SpecialTweak4"		"Bigger Caliber(widowmaker)"
+			"SpecialTweak5"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"dragonsfury"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus***"
+			"Attr9"		"Damage Multiplier [DF]"
+			"Attr2"		"Damage Bonus vs Player [Dragon's Fury]"
+			"Attr3"		"Afterburn Damage Multiplier"
+			"Attr6"		"Lifesteal"
+			"Attr6"		"reveal cloaked victim on hit"
+			"Attr7"		"reveal disguised victim on hit"
+		}
+		"Flamethrower specific upgrades"
+		{
+			"Attr2"		"recharge rate"
+			"Attr4"		"mult airblast refire time"
+			"Attr5"		"airblast pushback scale"
+			"Attr6"		"deflection size multiplier"
+			"Attr7"		"airblast cost decreased"
+			"Attr8"		"crit from behind"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Concentrated Fire(sniper)"
+			"SpecialTweak1"		"Australium"
+			"SpecialTweak2"		"Dragon's Breath"
+			"SpecialTweak3"		"Dragon Scales"
+			//"SpecialTweak4"		"Hellish Punch"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"gaspasser"
+	{
+		"special_tweaks_listid"		"-1"
+		"Jarate specific upgrades"
+		{
+			"Attr2"		"Gas explosion"
+			"Attr0"		"recharge rate(gas)"
+			"Attr5"		"Blast radius increased (J)"
+			"Attr7"		"Damage Bonus Special"
+			//"Attr1"		"Damage bonus vs player (C)"
+			//"Attr6"		"Gas passer damage multiplier"
+			//"Attr3"		"afterburn dmg increased"
+			"Attr4"		"afterburn time increased"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"thermalthruster"
+	{
+		"special_tweaks_listid"		"-1"
+		"Rocketpack upgrades"
+		{
+			"Attr0"		"recharge rate(rocketpack)"
+			"Attr1"		"Launch mid-air"
+			"Attr2"		"holster animation time"
+			"Attr3"		"dmg taken from crit reduced(wearable)"
+			"Attr6"		"dmg taken reduced(wearable)"
+		}
+	}
+	"wrangler"
+	{
+		"special_tweaks_listid"		"1"
+		"Weapon Specific upgrades"
+		{
+			"Attr0"		"rocket specialist"
+		}
+		"Special Tweaks"
+		{
+			"SpecialTweak0"		"Thick Building Armor"
+
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"l"
+	{
+		"special_tweaks_listid"	"-1"
+		"revolver is secondary"
+		{
+			"Attr0"		"revolver-secondary"
+		}
+	}
+	"sprweap3"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr4"		"Damage Multiplier [B]"
+			//"Attr1"		"accuracy scales damage"
+			"Attr6"		"Lifesteal"
+			//"Attr5"		"minicrits become crits"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			//"Attr9"		"crit vs disguised players"
+		}
+		"Gun specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr6"		"faster reload rate"
+			"Attr1"		"clip size bonus"
+			"Attr13"	"Bullets Per Shot Bonus [S]"
+			"Attr4"		"weapon spread bonus"
+			"Attr5"		"projectile penetration heavy"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			//"SpecialTweak2"		"Bigger Little Caliber."
+			"SpecialTweak3"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"engweaprescue"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr11"	"Damage Multiplier [B]"
+			"Attr10"	"damage hidden multiplier"
+			"Attr6"		"Lifesteal"
+			//"Attr5"		"minicrits become crits"
+			"Attr6"		"mod mini-crit airborne"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			//"Attr9"		"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			"Attr4"		"Increased Arrow Healing"
+			"Attr5"		"projectile penetration heavy"
+			"Attr5"		"Projectile speed increased(arrows)"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Sentry Bigger Caliber"
+			//"SpecialTweak1"		"Sentry Heavy Motor"
+			//"SpecialTweak2"		"Assault Weapon"
+			"SpecialTweak3"		"Some Other Beggar Tweak"
+			//"SpecialTweak4"		"Bigger Caliber"
+			"SpecialTweak5"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"scorchshot"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus%%"
+			"Attr6"		"Damage Multiplier [FG]"
+			//"Attr1"		"Rage damage boost"
+			//"Attr2"		"Afterburn Damage Multiplier"
+			//"Attr3"		"afterburn time increased"
+			"Attr6"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr10"		"reveal cloaked victim on hit"
+			"Attr11"		"reveal disguised victim on hit"
+			//"Attr12"		"crit vs disguised players"
+		}
+		"Flaregun specific upgrades"
+		{
+			"Attr0"		"faster reload rate(scorchshot)"
+			"Attr1"		"Fire Rate Bonus"
+			"Attr2"		"Blast radius increased"
+			"Attr3"		"Projectile speed increased"
+		}
+		"Special Tweaks"
+		{
+			"SpecialTweak3"		"Some Other Beggar Tweak(E)"
+			//"SpecialTweak2"		"Concentrated Fire"
+			"SpecialTweak3"		"Australium"
+
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"vaccinator"
+	{
+		"special_tweaks_listid"		"2"
+		"Vaccinator Specific upgrades"
+		{
+			"Attr1"		"preserve ubercharge"
+			"Attr2"		"heal rate bonus"
+			"Attr3"		"ubercharge rate bonus"
+			"Attr4"		"overheal bonus"
+			"Attr5"		"overheal decay bonus"
+			"Attr6"		"ubercharge rate bonus for healer"
+		}
+		"Vaccinator resist upgrades"
+		{
+		    "Attr0"		"passive fire resist"
+            "Attr1"		"passive blast resist"
+			"Attr2"		"passive bullet resist"
+			"Attr6"		"passive melee resist"
+            "Attr3"		"medigun fire resist deployed"
+			"Attr4"		"medigun blast resist deployed"
+			"Attr5"		"medigun bullet resist deployed"
+		}
+		//"Medic Shield Upgrades"
+		//{
+		//	"Attr0"		"generate rage on heal"
+		//	"Attr1"		"increase buff duration(shield)"
+		//	"Attr2"		"Shield damage bonus"
+		//}
+		"Special Tweaks"
+		{
+			"Sp1" 	"Doooctoor!"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"enforcer"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			//"Attr10"	"accuracy scales damage"
+			"Attr2"		"add cloak on hit"
+			"Attr6"		"Lifesteal"
+			"Attr4"		"sapper kills collect crits"
+			"Attr7"		"reveal cloaked victim on hit"
+			"Attr8"		"reveal disguised victim on hit"
+			"Attr9"		"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr2"		"fire rate bonus"
+			"Attr6"		"faster reload rate"
+			"Attr0"		"clip size bonus"
+			"Attr13"	"bullets per shot bonus (single)"
+			"Attr4"		"weapon spread bonus"
+			"Attr5"		"projectile penetration heavy"
+		}
+		"Special Tweaks"
+		{
+			"SpecialTweak0"		"Assault Weapon"
+			"SpecialTweak1"		"Fast Shot"
+			"SpecialTweak2"		"Bigger Little Caliber."
+			"SpecialTweak3"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"directhit"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus*"
+			"Attr3"			"Damage Multiplier [E]"
+			//"Attr12"		"Afterburn Damage Multiplier"
+			"Attr9"			"dmg falloff decreased"
+			//"Attr2"			"Rage damage boost"
+			"Attr6"			"Lifesteal"
+			//"Attr11"		"minicrits become crits"
+			"Attr13"		"reveal cloaked victim on hit"
+			"Attr14"		"reveal disguised victim on hit"
+			//"Attr15"		"crit vs disguised players"
+		}
+		"Launcher specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			//"Attr7"		"Fire More Rockets"
+			//"Attr3"		"Projectile speed increased"
+			"Attr8"		"Homing Projectiles"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr6"		"no self blast dmg"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			//"SpecialTweak1"		"Army of not Many"
+			"SpecialTweak2"		"Some Beggar Tweak"
+			"SpecialTweak3"		"Some Other Beggar Tweak"
+			"SpecialTweak4"		"Australium"
+			//"SpecialTweak5"		"Napalm Rockets"
+			//"SpecialTweak6"		"Methanol Injected Fuel"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"specialwep"
+	{
+		"special_tweaks_listid"		"-1"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus*"
+			"Attr3"		"Damage Multiplier [E]"
+			"Attr14"	"Afterburn Damage Multiplier"
+			"Attr1"		"Blast radius increased"
+			"Attr2"		"dmg falloff decreased"
+			"Attr6"		"Lifesteal"
+			//"Attr9"		"minicrits become crits"
+			"Attr11"		"reveal cloaked victim on hit"
+			"Attr12"		"reveal disguised victim on hit"
+			//"Attr13"		"crit vs disguised players"
+		}
+		"Cannon specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr8"		"Projectile speed increased"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr7"		"no self blast dmg"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"specialwep2"
+	{
+		"special_tweaks_listid"		"-1"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus*"
+			"Attr3"			"Damage Multiplier [E]"
+			"Attr12"		"Afterburn Damage Multiplier"
+			//"Attr2"			"Rage damage boost"
+			"Attr6"			"Lifesteal"
+			"Attr13"		"reveal cloaked victim on hit"
+			"Attr14"		"reveal disguised victim on hit"
+			//"Attr15"		"crit vs disguised players"
+		}
+		"Launcher specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			//"Attr7"		"Fire More Rockets"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr6"		"no self blast dmg"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"CustomClip_Sniperrifle"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr1"		"Damage Bonus"
+			"Attr8"		"Damage Multiplier [B]"
+			"Attr2"		"sniper full charge damage bonus"
+			"Attr4"		"headshot damage increase"
+			"Attr5"		"sniper penetrate players when charged"
+			"Attr6"		"Lifesteal"
+			//"Attr10"		"minicrits become crits"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"		"crit vs disguised players"
+		}
+		"Sniper specific upgrades"
+		{
+			"Attr0"		"Fire Rate Bonus [Sniper]"
+			"Attr5"		"clip size bonus"
+			"Attr6"		"faster reload rate"
+			"Attr1"		"bullets per shot bonus (single)"
+			"Attr2"		"sniper charge per sec"
+			"Attr3"		"mult sniper charge after headshot"
+			"Attr4"		"aiming movespeed increased"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Bigger Caliber(sniper)"
+			"SpecialTweak1"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Three_Tailed_Fox"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus*"
+			"Attr3"			"Damage Multiplier [E]"
+			"Attr1"			"Blast radius increased"
+			"Attr12"		"Afterburn Damage Multiplier"
+			"Attr9"			"dmg falloff decreased"
+			//"Attr2"			"Rage damage boost"
+			"Attr6"			"Lifesteal"
+			//"Attr11"		"minicrits become crits"
+			"Attr13"		"reveal cloaked victim on hit"
+			"Attr14"		"reveal disguised victim on hit"
+			//"Attr15"		"crit vs disguised players"
+		}
+		"Launcher specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			//"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			//"Attr7"		"Fire More Rockets"
+			"Attr3"		"Projectile speed increased"
+			"Attr8"		"Homing Projectiles"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr6"		"no self blast dmg"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			//"SpecialTweak1"		"Army of not Many"
+			"SpecialTweak2"		"Some Beggar Tweak"
+			"SpecialTweak3"		"Some Other Beggar Tweak"
+			"SpecialTweak4"		"Australium"
+			//"SpecialTweak5"		"Napalm Rockets"
+			"SpecialTweak6"		"Methanol Injected Fuel"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Void_Mangler"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus*"
+			"Attr3"			"Damage Multiplier [E]"
+			"Attr1"			"Blast radius increased"
+			//"Attr12"		"Afterburn Damage Multiplier"
+			"Attr9"			"dmg falloff decreased"
+			//"Attr2"			"Rage damage boost"
+			"Attr6"			"Lifesteal"
+			//"Attr11"		"minicrits become crits"
+			"Attr13"		"reveal cloaked victim on hit"
+			"Attr14"		"reveal disguised victim on hit"
+			//"Attr15"		"crit vs disguised players"
+		}
+		"Launcher specific upgrades"
+		{
+			"Attr0"		"Fire Rate Bonus"
+			"Attr1"		"clip size bonus (E)"
+			"Attr2"		"faster reload rate"
+			//"Attr7"		"Fire More Rockets"
+			//"Attr3"		"Projectile speed increased"
+			//"Attr8"		"Homing Projectiles"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr6"		"no self blast dmg"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			//"SpecialTweak1"		"Army of not Many"
+			//"SpecialTweak2"		"Some Beggar Tweak"
+			"SpecialTweak3"		"Some Other Beggar Tweak(E)"
+			"SpecialTweak4"		"Australium"
+			//"SpecialTweak5"		"Napalm Rockets"
+			//"SpecialTweak6"		"Methanol Injected Fuel"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Solar_Flare"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus*"
+			"Attr3"			"Damage Multiplier [E]"
+			"Attr1"			"Blast radius increased custom"
+			"Attr12"		"Afterburn Damage Multiplier"
+			//"Attr9"			"dmg falloff decreased"
+			//"Attr2"			"Rage damage boost"
+			"Attr6"			"Lifesteal"
+			//"Attr11"		"minicrits become crits"
+			"Attr13"		"reveal cloaked victim on hit"
+			"Attr14"		"reveal disguised victim on hit"
+			//"Attr15"		"crit vs disguised players"
+		}
+		"Launcher specific upgrades"
+		{
+			"Attr0"		"fire rate bonus"
+			//"Attr1"		"clip size bonus (E)"
+			"Attr2"		"faster reload rate"
+			//"Attr7"		"Fire More Rockets"
+			//"Attr3"		"Projectile speed increased"
+			"Attr8"		"Homing Projectiles"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr6"		"no self blast dmg"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			//"SpecialTweak1"		"Army of not Many"
+			//"SpecialTweak2"		"Some Beggar Tweak"
+			"SpecialTweak3"		"Some Other Beggar Tweak"
+			"SpecialTweak4"		"Australium"
+			//"SpecialTweak5"		"Napalm Rockets"
+			"SpecialTweak6"		"Methanol Injected Fuel"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Arcstrike"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus*"
+			"Attr3"			"Damage Multiplier [E]"
+			"Attr1"			"Blast radius increased"
+			//"Attr12"		"Afterburn Damage Multiplier"
+			"Attr9"			"dmg falloff decreased"
+			//"Attr2"			"Rage damage boost"
+			"Attr6"			"Lifesteal"
+			//"Attr11"		"minicrits become crits"
+			"Attr13"		"reveal cloaked victim on hit"
+			"Attr14"		"reveal disguised victim on hit"
+			//"Attr15"		"crit vs disguised players"
+		}
+		"Launcher specific upgrades"
+		{
+			"Attr0"		"Fire Rate Bonus"
+			"Attr1"		"clip size bonus"
+			"Attr2"		"faster reload rate"
+			//"Attr7"		"Fire More Rockets"
+			//"Attr3"		"Projectile speed increased"
+			//"Attr8"		"Homing Projectiles"
+			"Attr4"		"self dmg push force increased"
+			"Attr5"		"rocket jump damage reduction"
+			"Attr6"		"no self blast dmg"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Armor Piercing Explosive"
+			//"SpecialTweak1"		"Army of not Many"
+			//"SpecialTweak2"		"Some Beggar Tweak"
+			"SpecialTweak3"		"Some Other Beggar Tweak(E)"
+			"SpecialTweak4"		"Australium"
+			//"SpecialTweak5"		"Napalm Rockets"
+			//"SpecialTweak6"		"Methanol Injected Fuel"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Third_Degree"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus++"
+			"Attr1"			"Damage Multiplier [M]"
+			"Attr6"			"Lifesteal"
+			"Attr10"		"reveal cloaked victim on hit"
+			"Attr11"		"reveal disguised victim on hit"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr4"		"Melee Attack Rate Bonus"
+			"Attr6"		"melee bounds multiplier"
+			"Attr7"		"melee range multiplier"
+			"Attr10"		"crit from behind"
+			"Attr12"		"speed buff ally"
+			"Attr14"		"ammo becomes health"
+			"Attr14"		"damage applies to sappers"
+		}
+		"Special Tweaks"
+		{
+			"Sp2"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Minigun_Dynamic_FR"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr6"		"Damage Multiplier [BH]"
+			//"Attr1"		"accuracy scales damage(S)"
+			"Attr3"		"Afterburn Damage Multiplier"
+			"Attr4"		"afterburn time increased"
+			"Attr5"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr9"		"reveal cloaked victim on hit"
+			"Attr10"		"reveal disguised victim on hit"
+			//"Attr11"		"crit vs disguised players"
+		}
+		"Minigun specific upgrades"
+		{
+			"Attr2"		"bullets per shot bonus (heavy)"
+			"Attr3"		"weapon spread bonus"
+			"Attr4"		"projectile penetration heavy"
+			"Attr5"		"attack projectiles"
+			"Attr6"		"minigun spinup time decreased"
+			//"Attr7"		"mod medic killed revenge"
+			"Attr8"		"minigun no spin sounds"
+			"Attr9"		"aiming movespeed increased"
+			//"Attr10"		"generate rage on damage"
+			//"Attr11"		"ring of fire while aiming"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Heavy Heavy Heavy Weapon"
+			//"SpecialTweak1"		"Heavy Electric Motor"
+			"SpecialTweak2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Forged_Volcanic_Fragment"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"			"Damage Bonus++"
+			"Attr1"			"Damage Multiplier [M]"
+			"Attr2"		"Afterburn Damage Multiplier"
+			"Attr3"		"afterburn time increased"
+			"Attr6"			"Lifesteal"
+			"Attr10"		"reveal cloaked victim on hit"
+			"Attr11"		"reveal disguised victim on hit"
+		}
+		"Melee specific upgrades"
+		{
+			"Attr4"		"Melee Attack Rate Bonus"
+			"Attr6"		"melee bounds multiplier"
+			"Attr7"		"melee range multiplier"
+			"Attr10"		"crit from behind"
+			"Attr12"		"speed buff ally"
+			"Attr14"		"ammo becomes health"
+			"Attr14"		"damage applies to sappers"
+		}
+		"Special Tweaks"
+		{
+			"Sp2"		"Australium"
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Le_Monarque"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus Special"
+			"Attr1"		"Damage Multiplier [Cbow]"
+			//"Attr2"		"bleeding duration"
+			"Attr6"		"Lifesteal"
+			"Attr9"		"projectile penetration"
+			//"Attr10"		"minicrits become crits"
+			//"Attr11"		"mod mini-crit airborne"
+			"Attr12"		"reveal cloaked victim on hit"
+			"Attr13"		"reveal disguised victim on hit"
+			//"Attr14"	"crit vs disguised players"
+		}
+		"Weapon Specific upgrades"
+		{
+			"Attr1"		"faster reload rate (U)"
+			"Attr4"		"maxammo primary increased (S)"
+			"Attr2"		"aiming movespeed increased"
+			"Attr5"		"Projectile speed increased(arrows)"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Assault Weapon(CB)"
+			"SpecialTweak1"		"Australium"
+
+		}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Thunderlord"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr6"		"Damage Multiplier [BH]"
+			//"Attr1"		"accuracy scales damage(S)"
+			//"Attr3"		"Afterburn Damage Multiplier"
+			//"Attr4"		"afterburn time increased"
+			"Attr5"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr9"		"reveal cloaked victim on hit"
+			"Attr10"		"reveal disguised victim on hit"
+			//"Attr11"		"crit vs disguised players"
+		}
+		"Minigun specific upgrades"
+		{
+			"Attr2"		"bullets per shot bonus (heavy)"
+			"Attr3"		"weapon spread bonus"
+			"Attr4"		"projectile penetration heavy"
+			"Attr5"		"attack projectiles"
+			"Attr6"		"minigun spinup time decreased"
+			//"Attr7"		"mod medic killed revenge"
+			"Attr8"		"minigun no spin sounds"
+			"Attr9"		"aiming movespeed increased"
+			//"Attr10"		"generate rage on damage"
+			//"Attr11"		"ring of fire while aiming"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Heavy Heavy Heavy Weapon"
+			//"SpecialTweak1"		"Heavy Electric Motor"
+			"SpecialTweak2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Abbadon"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr6"		"Damage Multiplier [BH]"
+			//"Attr1"		"accuracy scales damage(S)"
+			"Attr3"		"Afterburn Damage Multiplier"
+			"Attr4"		"afterburn time increased"
+			"Attr5"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr9"		"reveal cloaked victim on hit"
+			"Attr10"		"reveal disguised victim on hit"
+			//"Attr11"		"crit vs disguised players"
+		}
+		"Minigun specific upgrades"
+		{
+			"Attr2"		"bullets per shot bonus (heavy)"
+			"Attr3"		"weapon spread bonus"
+			"Attr4"		"projectile penetration heavy"
+			"Attr5"		"attack projectiles"
+			"Attr6"		"minigun spinup time decreased"
+			//"Attr7"		"mod medic killed revenge"
+			"Attr8"		"minigun no spin sounds"
+			"Attr9"		"aiming movespeed increased"
+			//"Attr10"		"generate rage on damage"
+			//"Attr11"		"ring of fire while aiming"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Heavy Heavy Heavy Weapon"
+			//"SpecialTweak1"		"Heavy Electric Motor"
+			"SpecialTweak2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+	"Nova_Mortis"
+	{
+		"special_tweaks_listid"		"2"
+		"Damage upgrades"
+		{
+			"Attr0"		"Damage Bonus"
+			"Attr6"		"Damage Multiplier [BH]"
+			//"Attr1"		"accuracy scales damage(S)"
+			//"Attr3"		"Afterburn Damage Multiplier"
+			//"Attr4"		"afterburn time increased"
+			"Attr5"		"Lifesteal"
+			//"Attr7"		"minicrits become crits"
+			"Attr9"		"reveal cloaked victim on hit"
+			"Attr10"		"reveal disguised victim on hit"
+			//"Attr11"		"crit vs disguised players"
+		}
+		"Minigun specific upgrades"
+		{
+			"Attr2"		"bullets per shot bonus (heavy)"
+			"Attr3"		"weapon spread bonus"
+			"Attr4"		"projectile penetration heavy"
+			"Attr5"		"attack projectiles"
+			"Attr6"		"minigun spinup time decreased"
+			//"Attr7"		"mod medic killed revenge"
+			"Attr8"		"minigun no spin sounds"
+			"Attr9"		"aiming movespeed increased"
+			//"Attr10"		"generate rage on damage"
+			//"Attr11"		"ring of fire while aiming"
+		}
+		"Special Tweaks"
+		{
+			//"SpecialTweak0"		"Heavy Heavy Heavy Weapon"
+			//"SpecialTweak1"		"Heavy Electric Motor"
+			"SpecialTweak2"		"Australium"
+		}
+		//"Extra features*"
+		//{
+		//	"Attr0"		"Damage Bonus vs burning"
+		//	"Attr1"		"Kills Grant Speed Boost"
+		//	"Attr2"		"Damage Bonus Against Buildings"
+		//}
+		"Cosmetic Upgrades"
+		{
+			"Attr0"		"Professional Killstreak"
+			"Attr1"		"KS idle effect - Team Shine"
+			"Attr2"		"KS idle effect - Deadly Daffodil"
+			"Attr3"		"KS idle effect - Manndarin"
+			"Attr4"		"KS idle effect - Mean Green"
+			"Attr5"		"KS idle effect - Agonizing Emerald"
+			"Attr6"		"KS idle effect - Villainous Violet"
+			"Attr7"		"KS idle effect - Hot Rod"
+			"Attr8"		"killstreak effect - Fire Horns"
+			"Attr9"		"killstreak effect - Cerebral Discharge"
+			"Attr10"	"killstreak effect - Tornado"
+			"Attr11"	"killstreak effect - Flames"
+			"Attr12"	"killstreak effect - Singularity"
+			"Attr13"	"killstreak effect - Incinerator"
+			"Attr14"	"Killstreak Effect - Hypno-Beam"
+			"Attr15"	"Festive"
+			"Attr16"	"Gib on Crit Kill"
+			"Attr17"	"Ragdolls Plasma effect"
+			"Attr18"	"Ragdolls become Ash"
+		}
+	}
+}

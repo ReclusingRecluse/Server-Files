@@ -1,0 +1,88 @@
+"Lumina"
+{
+	"classes"
+	{
+		"spy"		"0"
+	}
+	"baseclass"		"revolver"
+	"baseindex"		"460"
+	"nobots"		"0"
+	"logname"		"lumina"
+	"quality"		"14"
+	"mag"			"9"
+	"ammo"			"36"
+	"description"	"An Aggressive Frame supportive revolver, has a slightly larger cylinder size, can headshot\n \nNoble Rounds\nKills add to Noble Round count\nWhile having Noble Rounds, press Reload key to switch to firing Noble Rounds\nWhile Active: Fire a projectile that heals teammates for 35% of their health, an addtional 5% every 1.5 seconds, and doubling their damage\nNoble Round healing also gives teammates 15% of their max Overshield and regenerates Armor\nLasts 4 seconds"
+	"cw3_attributes"
+	{
+		"override projectile type"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"6"
+		}
+		"energy weapon no deflect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.70"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"cannot delete"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"headshot damage increase"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.01"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"dmg pierces resists absorbs"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

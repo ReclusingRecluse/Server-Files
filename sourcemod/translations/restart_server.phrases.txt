@@ -1,0 +1,17 @@
+"Phrases"
+{
+	"admin_warning"
+	{
+		"#format"		"{1:N}"
+		"en"			"{1} you restart the server, and your data is written to the log."
+	}
+	"countdown_timer"
+	{
+		"#format"		"{1:d}"
+		"en" "Restart the server after {1} seconds."
+	}
+	"warning_restart"
+	{
+		"en" "Server shutdown"
+	}
+}

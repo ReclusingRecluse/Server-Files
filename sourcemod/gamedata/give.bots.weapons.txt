@@ -1,0 +1,23 @@
+"Games"
+{
+	/* Team Fortress 2 */
+	"tf"
+	{
+		"Offsets"
+		{
+			"WeaponEquip"
+			{
+				"windows"	"266"
+				"linux"		"267"
+				"mac"		"267"
+			}
+			
+			"TF2Util_EquipPlayerWearable"
+			{
+				"windows"	"434"
+				"linux"		"435"
+				"mac"		"435"
+			}
+		}
+	}
+}

@@ -1,0 +1,51 @@
+"Homerunner"
+{
+	"classes"
+	{
+		"scout"		"2"
+	}
+	"baseclass"		"bat_wood"
+	"baseindex"		"44"
+	"nobots"		"0"
+	"quality"		"15"
+	"logname"		"homerunner"
+	"description"	"Send your enemies outta here"
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"airblast pushback scale"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2500.00"
+		}
+		"damage causes airblast"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"combo"
+		{
+			"plugin"	"orion"
+			"value"		"1 1 1"
+		}
+		"stun on hitcrit"
+		{
+			"plugin"	"orion"
+			"value"		"0.1 1"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"10 100 1 1"
+		}
+		"increased pushscale"
+		{
+			"plugin"	"moreaw2"
+			"value"		"3"
+		}
+	}
+}

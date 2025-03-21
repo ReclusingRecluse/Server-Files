@@ -1,0 +1,58 @@
+"Glock 18"
+{
+	"classes"
+	{
+		"scout"		"1"
+	}
+	"baseclass"		"pistol"
+	"baseindex"		"773"
+	"nobots"		"1"
+	"quality"		"13"
+	"mag"			"30"
+	"logname"		"glock_eighteen"
+	"description"	"Fire rate increases rapidly overtime.\nHas deeper ammo reserves and a larger magazine.\nDecreased damage.\nIncreased reload time.\nCan headshot."
+	"cw3_attributes"
+	{	
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.45"
+		}
+		"heat increases fire rate"
+		{
+			"plugin"	"orion"
+			"value"		"0.05 0.15 4 1"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.30"
+		}
+		"Reload time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.75"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7.00"
+		}
+		"revolver use hit locations"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"mult_spread_scales_consecutive"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}
+		

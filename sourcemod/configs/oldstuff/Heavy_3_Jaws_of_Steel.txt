@@ -1,0 +1,61 @@
+"Jaws of Steel"
+{
+	"classes"
+	{
+		"heavy"		"2"
+	}
+	"baseclass"		"fists"
+	"baseindex"		"331"
+	"nobots"		"0"
+	"quality"		"6"
+	"logname"		"jaws_of_steel"
+	"description"	"While in water, jarated, or mad milked:\n \n25% bonus move speed\n25% bonus damage\n25% bonus attack speed\n \nWhile in not water, jarated, or mad milked:\n \n50% slower move speed\n25% less damage\n25% slower attack speed\n \nThis weapon deploys & holsters 50% slower\n \n \nCredit:\nGeneral Stat Sugguestion\n-Karma Charger\nCustom Attribute\n-Theray"
+	"cw3_attributes"
+	{
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.5"
+		}
+		"single wep holster time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.5"
+		}
+"swim speed increased"
+{
+"plugin""rays-attributes"
+"value""1.25"
+}
+"move speed decrease while not swimming"
+{
+"plugin""rays-attributes"
+"value""0.5"
+}
+"damage while swimming increased"
+{
+"plugin""rays-attributes"
+"value""1.25"
+}
+"damage while not swimming decreased"
+{
+"plugin""rays-attributes"
+"value""0.75"
+}
+"attack speed increased while swimming"
+{
+"plugin""rays-attributes"
+"value""0.75"
+}
+"attack speed decreased while not swimming"
+{
+"plugin""rays-attributes"
+"value""1.25"
+}
+		"weapon_allow_inspect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+	}
+}

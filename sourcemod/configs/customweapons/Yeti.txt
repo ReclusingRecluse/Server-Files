@@ -1,0 +1,86 @@
+"Siberian Yeti"
+{
+	"classes"
+	{
+		"heavy"		"0"
+	}
+	"baseclass"		"minigun"
+	"baseindex"		"424"
+	"nobots"		"0"
+	"logname"		"railgun"
+	"quality"		"5"
+	"description"	"MM"
+	"cw3_attributes"
+	{
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.90"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.20"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.80"
+		}
+		"minigun spinup time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.15"
+		}
+		"aiming movespeed increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.40"
+		}
+		"deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.10"
+		}
+		"dmg taken increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.40"
+		}
+		"strange score selector"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"switch from wep deploy time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.70"
+		}
+		"uses ammo while aiming"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"maxammo primary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.60"
+		}
+		"heal on hit for rapidfire"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"weapon lvlup 2"
+		{
+			"plugin"	"moreaw2"
+			"value"		"70 0.25 0.6 0.9 20 0 0.4"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

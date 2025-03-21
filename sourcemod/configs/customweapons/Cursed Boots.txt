@@ -1,0 +1,40 @@
+"Reflective Staff"
+{
+	"classes"
+	{
+		"demoman"	"2"
+	}
+	"baseclass"		"saxxy"
+	"baseindex"		"880"
+	"nobots"		"1"
+	"quality"		"13"
+	"description"	"Damage nearby enemies when you take damage\nMovement speed and damage taken is increased\n \n \nPost Mortem\nOn death, all damage taken is released to nearby enemies"
+	"cw3_attributes"
+	{
+		"dmg taken dmg nearby enemies on death"
+		{
+			"plugin"	"orion"
+			"value"		"1.00 300 0 1"
+		}
+		"max health additive bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"25.00"
+		}
+		"dmg taken increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"move speed bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"blade mail"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.25"
+		}
+	}
+}

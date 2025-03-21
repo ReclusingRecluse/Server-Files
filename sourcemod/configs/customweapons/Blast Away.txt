@@ -1,0 +1,67 @@
+"Blast Away"
+{
+	"classes"
+	{
+		"demoman"	"1"
+	}
+	"baseclass"		"pipebomblauncher"
+	"baseindex"		"806"
+	"quality"		"3"
+	"nobots"		"0"
+	"mag"			"3"
+	"logname"		"blast_sticky"
+	"description"	"Fire a sticky with increased blast push force.\nDecreased damage and cylinder size.\nDamage slows and increased self damage.\nCan only place 3 bombs.\nStickies arm faster."
+	"attributes"
+	{
+		"cw3 weapon"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"damage blast push"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"max pipebombs decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"-5"
+		}
+		"blast dmg to self increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.65"
+		}
+		"slow enemy on hit major"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"clip size penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.40"
+		}
+		"sticky arm time bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.25"
+		}
+		"Projectile range increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

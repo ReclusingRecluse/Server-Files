@@ -1,0 +1,9 @@
+﻿"Phrases"
+{
+        "Welcome_message"
+        {
+                "#format"               "{1:s}"
+                "en"                    "{haunted}Welcome to Jacksepticeye.tf. If you are new to Uberupgrades, type {ivory}!uuhelp {haunted}in chat to see a presentation on how it works"
+
+        }
+}

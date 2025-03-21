@@ -1,0 +1,193 @@
+"Eyes of Tomorrow"
+{
+	"classes"
+	{
+		"soldier"		"0"
+	}
+	"baseclass"		"grenadelauncher"
+	"baseindex"		"228"
+	"nobots"		"1"
+	"logname"		"eyes_of_tomorrow"
+	"quality"		"8"
+	"mag"			"20"
+	"ammo"			"60"
+	"description"	"A Heavy Frame solar rocket launcher. Fires a salvo of 20 tracking rockets. Strong Against Overload Champions\nAfterburn applies 30 Scorch to victims\n \nSyphoning Force\nWhile equipped: All weapons deal 75% less damage\n \nAnti-Air Specialization\nDeals 120% more damage to airborne enemies.\n \nBuilding Buster\nDeals massive damage to buildings\n \nSolar Flare\nHas a 15% chance to ignite enemies for 5 seconds\nConsecutive hits on burning enemies increase afterburn damage\nCrits multiply damage by 2.7 and cause a devastating explosion"
+	"cw3_attributes"
+	{
+		"cw3 weapon"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"eyes of tomorrow"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.10"
+		}
+		"weapon burn dmg reduced"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"Blast radius decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.30"
+		}
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"6.50"
+		}
+		"override projectile type"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"auto fires full clip all at once"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"projectile spread angle penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"12"
+		}
+		"maxammo primary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.00"
+		}
+		"Reload time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.0001"
+		}
+		"fury swipe"
+		{
+			"plugin"	"dota2"
+			"value"		"1 40 0.3"
+		}
+		"homproj"
+		{
+			"plugin"	"orion"
+			"value"		"290 0 0"
+		}
+		"dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 400 35 2"
+		}
+		"burning spear"
+		{
+			"plugin"	"dota2"
+			"value"		"2 8"
+		}
+		"chance to ignite"
+		{
+			"plugin"	"orion"
+			"value"		"0.15 5"
+		}
+		"all dmg done multiplier"
+		{
+			"plugin"	"orion"
+			"value"		"0.25"
+		}
+		"crit dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 600 0.40 1"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"2.70"
+		}
+		"dmg bonus vs airborne players"
+		{
+			"plugin"	"orion"
+			"value"		"2.2"
+		}
+		"crits ignite"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"1"
+		}
+		"dmg bonus vs buildings"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"15.00"
+		}
+		"scorch"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"30"
+		}
+		"taunt attack name"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"no crit boost"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.75"
+		}
+		"single wep holster time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.75"
+		}
+		"SPELL: Halloween pumpkin explosions"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"is_festivized"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2005"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}	

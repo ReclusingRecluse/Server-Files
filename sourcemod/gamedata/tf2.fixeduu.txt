@@ -1,0 +1,24 @@
+"Games"
+{
+	"tf"
+	{
+		"Offsets"
+		{
+			"CBaseGrenade::GetDamageRadius()"
+			{
+				"windows"	"234"
+				"linux"		"235"
+			}
+		}
+		"Functions"
+		{
+			"CBaseGrenade::GetDamageRadius()"
+			{
+				"offset"		"CBaseGrenade::GetDamageRadius()"
+				"callconv"		"thiscall"
+				"return"		"float"
+				"this"			"entity"
+			}
+		}
+	}
+}

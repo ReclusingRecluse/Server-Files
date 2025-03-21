@@ -1,0 +1,99 @@
+"Laser Blaster"
+{
+	"classes"
+	{
+		"scout"		"1"
+		"engineer"	"1"
+	}
+	"baseclass"		"pistol"
+	"baseindex"		"30666"
+	"nobots"		"0"
+	"mag"			"200"
+	"logname"		"pistol_laser"
+	"quality"		"8"
+	"description"	"A fast firing laser pistol.\nDeals low damage but accuracy scales damage.\nExtremely accurate and has deep ammo reserves.\nDamage sets targets on fire."
+	"attributes"
+	{
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.00"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.08"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+16.70"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+22.22"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.15"
+		}
+		"ragdolls become ash"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"projectile penetration heavy"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"accuracy scales damage"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.50"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"Set DamageType Ignite"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"weapon burn time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.15"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}
+		

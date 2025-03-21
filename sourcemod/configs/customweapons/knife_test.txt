@@ -1,0 +1,55 @@
+"knife_test"
+{
+	"classes"
+	{
+		"spy"		"2"
+	}
+	"baseclass"		"knife"
+	"baseindex"		"461"
+	"nobots"		"1"
+	"flags"			"z"
+	"description"	"test"
+	"cw3_attributes"
+	{
+		"fervor"
+		{
+			"plugin"	"dota2"
+			"value"		"0.20 3 1"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.05"
+		}
+		"hotsauce on crit"
+		{
+			"plugin"	"orion"
+			"value"		"7 3"
+		}
+		"lifesteal crit"
+		{
+			"plugin"	"dota2"
+			"value"		"0.70 1"
+		}
+		"fury swipe"
+		{
+			"plugin"	"dota2"
+			"value"		"3 300 1"
+		}
+		"stun on hitcrit"
+		{
+			"plugin"	"orion"
+			"value"		"1.5 1"
+		}
+		"no backstab"
+		{
+			"plugin"	"moreaw2"
+			"value"		"40 1"
+		}
+		"bleeding duration"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+	}
+}

@@ -1,0 +1,45 @@
+"Texan Dynamics"
+{
+	"classes"
+	{
+		"engineer"	"2"
+	}
+	"baseclass"		"wrench"
+	"baseindex"		"155"
+	"nobots"		"0"
+	"logname"		"texan_dynamics"
+	"description"	"A heavy professional grade wrench.\nBuildings have more health\nhas a slower swing and repair speed.\nDispensers have increased range.\nUpgrades buildings faster.\nIncreased metal reserves."
+	"attributes"
+	{
+		"fire rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.15"
+		}
+		"engy building health bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"engy dispenser radius increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.50"
+		}
+		"Repair rate decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.35"
+		}
+		"upgrade rate decrease"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.60"
+		}
+		"maxammo metal increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.60"
+		}
+	}
+}	

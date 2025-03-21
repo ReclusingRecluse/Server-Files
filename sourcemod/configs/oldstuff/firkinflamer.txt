@@ -1,0 +1,74 @@
+"The Firkin Flamer"
+{
+	"classes"
+	{
+		"pyro"		"0"
+	}
+	"baseclass"		"flamethrower"
+	"baseindex"		"215"
+	"logname"		"firkin_flamer"
+	"description"	"Alt-Fire: Leak oil, which can be ignited\n-90% afterburn duration"
+	"cw3_attributes"
+	{
+		"item in slot 6"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"550"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.70"
+		}
+		"ragdolls plasma effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"airblast disabled"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+        	"weapon burn time reduced"
+        	{
+           		 "plugin"	"tf2attributes"
+			"value"		"0.1"
+        	}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"flame_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4000"
+		}
+		"flame_lifetime"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_up_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7"
+		}
+		"flame_ignore_player_velocity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_gravity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"flame_drag"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+	}
+}

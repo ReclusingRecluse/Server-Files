@@ -1,0 +1,76 @@
+"Borealis"
+{
+	"classes"
+	{
+		"sniper"		"0"
+	}
+	"baseclass"		"sniperrifle"
+	"baseindex"		"526"
+	"nobots"		"0"
+	"logname"		"borealis"
+	"quality"		"5"
+	"description"	"A Heavy Frame Void Sniper Rifle\n \nThe Fundamentals\nPress reload key to switch between Void, Solar, and Arc elements\nWhile Arc is active: Gain a 70% chance to chain damage to nearby enemies and a 20% damage bonus\nWhile Solar is active: Ignite and apply 50 Scorch on hit, grants Firefly\nWhile Void is active: Slow for 3 seconds and apply 15 Void on hit, gain a 25% damage bonus\n \nDisruptor MKII\nMassively increased damage to targets with an Overshield, cause an explosion when you destroy an Overshield, Strong against Barrier Champions"
+	"attributes"
+	{
+		"cw3 weapon"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"fire rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"revive"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"strange restriction user type 2"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"damage penalty on bodyshot"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"SRifle Charge rate decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.40"
+		}
+		"referenced item id low"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"120000"
+		}
+		"sniper aiming movespeed decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

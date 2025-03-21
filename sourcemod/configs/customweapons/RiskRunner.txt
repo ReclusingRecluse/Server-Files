@@ -1,0 +1,57 @@
+"Riskrunner"
+{
+	"classes"
+	{
+		"sniper"	"1"
+	}
+	"baseclass"		"smg"
+	"baseindex"		"16"
+	"nobots"		"0"
+	"mag"			"32"
+	"ammo"			"128"
+	"logname"		"riskrunner"
+	"description"	"An Aggressive Arc Frame SMG. Has 20% chance to chain damage to nearby enemies\n \nSuperConductor\nTaking Arc damage increases weapon damage by 30% and increases chaining damage chance to 100%\nWeapon deploy and reload speed is increased by 50%\nLasts 5 seconds."
+	"cw3_attributes"
+	{
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.70"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.40"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"throwable particle trail only"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"super conductor"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"cannot delete"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}				

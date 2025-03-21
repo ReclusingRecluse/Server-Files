@@ -1,0 +1,66 @@
+"uu_new_weapons"
+{
+	"Scout"
+	{
+		"tf_weapon_scattergun"
+			"tf_weapon_handgun_scout_primary"
+				"tf_weapon_soda_popper"
+					"tf_weapon_pep_brawler_blaster"
+						"tf_weapon_pistol"
+							"tf_weapon_lunchbox_drink"
+								`"tf_weapon_handgun_scout_secondary"
+									tf_weapon_cleaver"
+										"tf_weapon_jar_milk"
+	}
+	"Soldier"
+	{
+		"tf_weapon_rocketlauncher_airstrike"
+		"tf_weapon_shotgun_soldier"
+		"tf_weapon_shotgun"
+		"tf_weapon_parachute"
+		"tf_weapon_katana"
+	}
+	"Pyro"
+	{
+		"tf_weapon_rocketlauncher_fireball"
+		"tf_weapon_shotgun_pyro"
+		"tf_weapon_shotgun"
+		"tf_weapon_flaregun_revenge"
+		"tf_weapon_flaregun"
+		"tf_weapon_rocketpack"
+		"tf_weapon_jar_gas"
+	
+	}
+	"DemoMan"
+	{
+		"tf_weapon_parachute"
+	
+	}
+	"Heavy"
+	{
+		"tf_weapon_shotgun_hwg"
+		"tf_weapon_shotgun"
+	}
+	"Medic"
+	{
+	
+	}
+	"Sniper"
+	{
+		"tf_weapon_sniperrifle_classic"
+	
+	}
+	"Engineer"
+	{
+		"tf_weapon_shotgun_primary"
+		"tf_weapon_sentry_revenge"
+		"tf_weapon_shotgun_building_rescue"
+		"tf_weapon_laser_pointer"
+		"tf_weapon_mechanical_arm"
+	
+	}
+	"Spy"
+	{
+	
+	}
+}

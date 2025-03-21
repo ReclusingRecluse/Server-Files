@@ -1,0 +1,56 @@
+"One Two Punch"
+{
+	"classes"
+	{
+		"heavy"		"2"
+	}
+	"baseclass"		"fists"
+	"baseindex"		"43"
+	"nobots"		"0"
+	"quality"		"14"
+	"logname"		"one_two_punch"
+	"description"	"An Aggressive pair of gloves.\nHas a slower fire rate and does less damage.\n \nOne Two Punch\nHitting 2 consecutive hits on the same target will cuase the third to crit\nCritical hits return health\n \nOverpower\nPressing Mouse 2 grants a 60% faster swing speed for 10 seconds or 3 hits\nhas a 10 second cooldown\n \nEnrage\nPressing Reload grants a 35% damage resistance for 5 seconds\nHas a 15 second cooldown"
+	"cw3_attributes"
+	{
+		"fire rate penalty HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"combo"
+		{
+			"plugin"	"orion"
+			"value"		"150 3 1"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"lifesteal crit"
+		{
+			"plugin"	"dota2"
+			"value"		"0.30 0"
+		}
+		"enrage"
+		{
+			"plugin"	"dota2"
+			"value"		"1 0.35 5 15"
+		}
+		"melee bounds multiplier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"melee range multiplier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.50"
+		}
+		"overpower"
+		{
+			"plugin"	"dota2"
+			"value"		"0.60 10 3 10 1"
+		}
+	}
+}

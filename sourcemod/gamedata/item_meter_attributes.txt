@@ -1,0 +1,36 @@
+item_meter_charge_type: 2-bit bitmask
+  bit 0 [0x1]
+    - if set: CTFPlayerShared::UpdateItemChargeMeters will passively recharge
+      - only if item has IHasGenericMeter as a base class
+      - only when item->ShouldUpdateMeter() returns true
+      - rate is based on: item_meter_charge_rate * mult_item_meter_charge_rate
+      - rate is also affected by item->GetMeterMultiplier()
+  bit 1 [0x2]
+    - if set: CTFPlayer::OnDealtDamage will recharge when dealing damage
+      - but not if: playing MvM mode and playing as pyro and weapon is in secondary slot
+                    and weapon is Gas Passer and dmg custom is TF_DMG_CUSTOM_BURNING
+      - only if item has IHasGenericMeter as a base class
+      - only when item->ShouldUpdateMeter() returns true
+      - amount charged is affected by dmginfo.m_flDamage and mult_item_meter_charge_rate
+
+item_meter_charge_rate:
+- determines the base passive charge rate (when item_meter_charge_type bit 0 is set)
+
+item_meter_resupply_denied:
+- if  > 0: CTFPlayerShared::Spawn won't call SetItemChargeMeter(GetDefaultItemChargeMeterValue())
+- if != 0: CTFPlayer::Regenerate won't call SetItemChargeMeter(GetDefaultItemChargeMeterValue())
+
+item_meter_damage_for_full_charge:
+- sets the scale for damage-based charge gains (when item_meter_charge_type bit 1 is set)
+
+mult_item_meter_charge_rate:
+- scales passive charge meter gains (when item_meter_charge_type bit 0 is set)
+- scales damage-based charge meter gains (when item_meter_charge_type bit 1 is set)
+
+
+Note that there is no attribute to determine the starting value of the item meter.
+That is controlled entirely by the game code (via virtual func CBaseEntity::GetDefaultItemChargeMeterValue).
+The base function returns 100.0 (i.e. almost all generic-item-meter items will spawn with 100% charge).
+The only class which overrides it is CTFJarGas (Gas Passer): it returns 0.0 (i.e. spawns with 0% charge).
+
+The default spawn charge can be modded fairly easily; but it cannot be affected merely via item attributes.

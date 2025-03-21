@@ -1,0 +1,67 @@
+"Capper"
+{
+	"classes"
+	{
+		"scout"		"1"
+		"engineer"	"1"
+	}
+	"baseclass"		"pistol"
+	"baseindex"		"449"
+	"nobots"		"0"
+	"mag"			"30"
+	"logname"		"capper"
+	"description"	"A lightweight fast firing pistol.\nHas a larger ammo capacity and a faster fire rate.\nGain a speed boost after a kill.\nDamage causes bleeding."
+	"attributes"
+	{
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.55"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+2.50"
+		}
+		"Reload time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.60"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+6.00"
+		}
+		"speed_boost_on_kill"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"speed boost when active"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.95"
+		}
+		"provide on active"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}						
+	}
+}				

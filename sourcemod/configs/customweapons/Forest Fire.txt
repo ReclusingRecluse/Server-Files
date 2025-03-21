@@ -1,0 +1,96 @@
+"Forest Fire"
+{
+	"classes"
+	{
+		"pyro"		"0"
+	}
+	"baseclass"		"flamethrower"
+	"baseindex"		"40"
+	"nobots"		"0"
+	"logname"		"forest_fire"
+	"quality"		"14"
+	"description"	"An Aggressive frame Flamethrower.\nFires flames at a 6 degree spread\n \nUsing this weapon for long periods of time increases damage the user takes\n \nLasting Embers\nKills continuously increase damage up to 20 kills\n \nRampage\nDoing damage charges up Rampage, once at 100%, taunting grants damage resistance and a damage increase."
+	"cw3_attributes"
+	{
+		"flame_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2000"
+		}
+		"flame_lifetime"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_up_speed"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7"
+		}
+		"flame_ignore_player_velocity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"flame_gravity"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"10"
+		}
+		"flame_drag"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"flame_spread_degree"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"6"
+		}
+		"speed_boost_on_kill"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"psycho rampage"
+		{
+			"plugin"	"orion"
+			"value"		"0.35 2 15 1 0"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.30"
+		}
+		"necromastery"
+		{
+			"plugin"	"dota2"
+			"value"		"2 20 0.00 1"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"dmg bonus vs buildings"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5.00"
+		}
+		"weapon burn dmg reduced"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"heat increases dmg taken"
+		{
+			"plugin"	"orion"
+			"value"		"0.5 0.1 4"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

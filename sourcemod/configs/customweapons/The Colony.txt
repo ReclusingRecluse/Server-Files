@@ -1,0 +1,77 @@
+"The Colony"
+{
+	"classes"
+	{
+		"demoman"		"0"
+	}
+	"baseclass"		"grenadelauncher"
+	"baseindex"		"19"
+	"nobots"		"0"
+	"quailty"		"13"
+	"mag"			"8"
+	"logname"		"The Colony"
+	"description"	"An Aggressive frame grenade launcher.\nHas a higher fire rate but does less damage.\n \nReversal Fortune\nGrenades deal more damage to those farther away from the explosion but take longer to explode\n \nAutoloading Damage Dealer\nDealing damage reloads secondary weapon"
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.50"
+		}
+		"reload clip on damage"
+		{
+			"plugin"	"aw2attrib"
+			"value"		"1"
+		}
+		"dmg falloff increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"grenade no spin"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"grenade detonation damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"Blast radius increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.80"
+		}
+		"Projectile speed increased HIDDEN"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4.00"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"fuse bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.60"
+		}
+		"SPELL: Halloween pumpkin explosions"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

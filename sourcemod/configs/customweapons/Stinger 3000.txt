@@ -1,0 +1,97 @@
+"Stinger 3000"
+{
+	"classes"
+	{
+		"soldier"	"0"
+	}
+	"baseclass"		"rocketlauncher_directhit"
+	"baseindex"		"127"
+	"nobots"		"0"
+	"quality"		"14"
+	"logname"		"tracking_rocket"
+	"description"	"Fires Homing Rockets that aggressively track enemies.\nRockets are faster, have less blast radius, and do less damage.\n \nOverpower\nPressing Alt-Fire grants an 18% increase in fire rate for 10 seconds or four hits, has a 10 second cooldown\n*ROCKETS WILL TRACK THE ENEMY NEARST TO THEM*"
+	"cw3_attributes"
+	{
+		"homproj"
+		{
+			"plugin"	"orion"
+			"value"		"315 0 0"
+		}
+		"projectile speed increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"Reload time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.25"
+		}
+		"crit mod disabled"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"Blast radius decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.25"
+		}
+		"speed buff ally"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"700"
+		}
+		"mini rockets"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.55"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"overpower"
+		{
+			"plugin"	"dota2"
+			"value"		"0.18 10 4 10 0.25"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.00"
+		}
+	}
+}
+	

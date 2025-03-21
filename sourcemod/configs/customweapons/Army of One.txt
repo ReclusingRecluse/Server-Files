@@ -1,0 +1,101 @@
+"Army of One"
+{
+	"classes"
+	{
+		"soldier"	"0"
+	}
+	"baseclass"		"rocketlauncher"
+	"baseindex"		"513"
+	"nobots"		"0"
+	"logname"		"army_of_one"
+	"quality"		"14"
+	"description"		"50% increased clip size\n35% increased reload time\nFaster fire rate, projectile speed, and increased blast radius at the cost of damage with an increased in damage taken\nGrants a movement speed boost on kill\n \nWeapon Level Up\n \nLevel 1 grants 25% life steal\nLevel 2 grants 60% bonus damage\nLevel 3 grants a 20% crit chance \nLevel 4 grants Ubercharge (Alt-fire to activate, lasts 3 seconds)"
+	"cw3_attributes"
+	{
+		"cw3 weapon"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.00"
+		}
+		"Reload time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.35"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.65"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.45"
+		}
+		"Blast radius increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"Projectile speed increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.50"
+		}
+		"dmg falloff decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.75"
+		}
+		"dmg taken increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.35"
+		}
+		"speed_boost_on_kill"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"5"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"weapon lvlup"
+		{
+			"plugin"	"moreaw2"
+			"value"		"30 0.25 1.60 0.2 3"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

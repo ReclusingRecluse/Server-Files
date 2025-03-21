@@ -1,0 +1,121 @@
+"Nemesis Star"
+{
+	"classes"
+	{
+		"heavy"		"0"
+	}
+	"baseclass"		"minigun"
+	"baseindex"		"312"
+	"nobots"		"1"
+	"quality"		"14"
+	"logname"		"nemesis_star"
+	"description"	"A Solar Heavy Frame Minigun\n \nIllegal Modification\nHas an abnormally high fire rate, spinup, and deploy speed\n \nFocus Fire\nFire rate decreases over time, weapon has a tighter spread\n \nSolar Flare\nHas a 20% chance to ignite enemies for 5 seconds\nConsecutive hits on burning enemies increase afterburn damage\nCrits cause a devastating explosion."
+	"cw3_attributes"
+	{
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"3.50"
+		}
+		"fire rate bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.001"
+		}
+		"minigun spinup time decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.01"
+		}
+		"bullets per shot bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.20"
+		}
+		"mult_spread_scales_consecutive"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.20"
+		}
+		"spread penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.35"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"heat increases fire rate"
+		{
+			"plugin"	"orion"
+			"value"		"0.2 -0.10 10 0.5"
+		}
+		"combo"
+		{
+			"plugin"	"orion"
+			"value"		"30 3 0"
+		}
+		"burning spear"
+		{
+			"plugin"	"dota2"
+			"value"		"10 8"
+		}
+		"chance to ignite"
+		{
+			"plugin"	"orion"
+			"value"		"0.2 5"
+		}
+		"crit dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 400 40 2"
+		}
+		"dynamic fire rate minigun"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"2.10"
+		}
+		"flat damage increase"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"200"
+		}
+		"damage bonus vs burning"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.30"
+		}
+		"ragdolls become ash"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

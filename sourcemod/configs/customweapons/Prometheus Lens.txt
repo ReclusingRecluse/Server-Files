@@ -1,0 +1,120 @@
+"Prometheus Lens"
+{
+	"classes"
+	{
+		"scout"		"1"
+		"engineer"	"1"
+	}
+	"baseclass"		"pistol"
+	"baseindex"		"30666"
+	"nobots"		"1"
+	"mag"			"200"
+	"ammo"			"800"
+	"logname"		"pistol_laser"
+	"quality"		"8"
+	"description"	"A Solar lightweight pistol\n \nFocusing Lens\nWeapon is highly accurate, Strong against Overload Champions\n \nSolar Flare\nCritical hits cause a massive explosion\nDealing damage increases afterburn damage"
+	"cw3_attributes"
+	{
+		"damage penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.08"
+		}
+		"taunt attack name"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"heat increases fire rate"
+		{
+			"plugin"	"orion"
+			"value"		"0.1 0.50 2 1"
+		}
+		"clip size bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+16.70"
+		}
+		"maxammo secondary increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+22.22"
+		}
+		"weapon spread bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.15"
+		}
+		"ragdolls become ash"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"combo"
+		{
+			"plugin"	"orion"
+			"value"		"4 40 1"
+		}
+		"burning spear"
+		{
+			"plugin"	"dota2"
+			"value"		"1 800"
+		}
+		"chance to ignite"
+		{
+			"plugin"	"orion"
+			"value"		"0.2 2"
+		}
+		"crit dmg is explosive"
+		{
+			"plugin"	"moreaw2"
+			"value"		"0 340 15 2"
+		}
+		"crit damage multiplier"
+		{
+			"plugin"	"basic-attributes"
+			"value"		"1.80"
+		}
+		"damage bonus vs burning"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.08"
+		}
+		"projectile penetration heavy"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"item style override"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"is australium item"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1.00"
+		}
+		"killstreak tier"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+1"
+		}
+		"killstreak idleeffect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"+7"
+		}
+		"killstreak effect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2006"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}
+		

@@ -1,0 +1,91 @@
+"Crowd Pleaser"
+{
+	"classes"
+	{
+		"heavy"		"0"
+	}
+	"baseclass"		"minigun"
+	"baseindex"		"654"
+	"nobots"		"0"
+	"quality"		"11"
+	"logname"		"crowd_pleaser"
+	"description"	"An Aggressive Frame minigun, fires slow rockets\nRockets have a small homing radius\nKills increase overall damage done\nUsing this weapon for long periods of time increases the damage the user takes."
+	"cw3_attributes"
+	{
+		"override projectile type"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2"
+		}
+		"projectile spread angle penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"4"
+		}
+		"damage bonus"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.40"
+		}
+		"maxammo primary reduced"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.25"
+		}
+		"minigun spinup time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.70"
+		}
+		"single wep deploy time increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"2.25"
+		}
+		"aiming movespeed decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.55"
+		}
+		"fly while shooting"
+		{
+			"plugin"	"moreaw2"
+			"value"		"1"
+		}
+		"necromastery"
+		{
+			"plugin"	"dota2"
+			"value"		"7 5 0.00 1"
+		}
+		"blast dmg to self increased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"7.00"
+		}
+		"Blast radius decreased"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0.60"
+		}
+		"fire rate penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1.25"
+		}
+		"heat increases dmg taken"
+		{
+			"plugin"	"orion"
+			"value"		"2 0.2 4"
+		}
+		"homproj"
+		{
+			"plugin"	"orion"
+			"value"		"145 0 0"
+		}
+		"allowed in medieval mode"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+	}
+}

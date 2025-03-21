@@ -1,0 +1,51 @@
+"AW - Plot Hook"
+{
+	"classes"
+	{
+		"spy"		"4"
+	}
+	"baseclass"		"invis"
+	"baseindex"		"30"
+	"nobots"		"1"
+	"quality"		"6"
+	"logname"		"plot_hook"
+	"description"	"Cloak hooks you to a nearby wall or ceiling\nOn cloak: removes any negative debuff\n \nUnable to carry the intelligence\n \n \nCredit:\nGeneral Stat Sugguestion\n-Advanced Weaponiser\nCustom Attribute\n-Zethax\n-Theray\n \nDefault *Invis Watch* Model"
+	"cw3_attributes"
+	{
+		"cloak is hook"
+		{
+			"plugin"	"aw2attrib"
+			"value"		"1"
+		}
+		"remove negative status while cloaked"
+		{
+			"plugin"	"zethax-ctf2w"
+			"value"		"1"
+		}
+		"cannot pick up intelligence"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+		"mult cloak rate"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"-.9"
+		}
+		"mult decloak rate"
+		{
+			"plugin"	"tf2attributes"
+			"value"		".1"
+		}
+		"SET BONUS: cloak blink time penalty"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"0"
+		}
+		"weapon_allow_inspect"
+		{
+			"plugin"	"tf2attributes"
+			"value"		"1"
+		}
+	}
+}
