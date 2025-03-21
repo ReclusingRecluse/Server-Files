@@ -11,8 +11,9 @@
 #include <sdkhooks>
 #include <custom_status_hud>
 #include <cw3>
+#include <updater>
 
-
+#define UPDATE_URL		"https://github.com/ReclusingRecluse/Server-Files/blob/48c52490cbf9fef3aed682bf5b5ecb219793850f/updater%20files/uu_update.txt"
 
 #define UU_VERSION "2.2.0"
 
@@ -176,6 +177,10 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int maxlen)
 
 public OnPluginStart()
 {
+	if (LibraryExists("updater"))
+	{
+			Updater_AddPlugin(UPDATE_URL);
+	}
 	cvar_StartMoney = CreateConVar("sm_uu_moneystart", "60000", "Sets the starting currency used for upgrades. Default: 60000");
 	//cvar_TimerMoneyGiven_BlueTeam = CreateConVar("sm_uu_timermoneygive_blueteam", "25", "Sets the currency you obtain on kill. Default: 25");
 	//cvar_KillMoneyRatioForTeam = CreateConVar("sm_uu_moneyonkill", "", "Sets the currency you obtain on kill. Default: 25");
@@ -216,6 +221,13 @@ public OnPluginStart()
 	return;
 }
 
+public OnLibraryAdded(const String:name[])
+{
+	if (StrEqual(name, "updater"))
+	{
+		Updater_AddPlugin(UPDATE_URL);
+	}
+}
 
 stock bool:IsMvM(bool:forceRecalc = false)
 {
@@ -671,7 +683,7 @@ public Action:Timer_Cat(Handle:Timer, any:slot)
 						
 						//Set Scattergun knockback to 0
 						PresetUpgradeValue(client, slot, 0, 0.0, false);
-						SetUpgradeName(client, slot, 0, "Strand Element");
+						//SetUpgradeName(client, slot, 0, "Strand Element");
 						
 						//Set Bullets per shot bonus to 1
 						PresetUpgradeValue(client, slot, 2, 1.0, false);
@@ -759,6 +771,7 @@ stock PresetUpgradeValue(client, int slot, int upgradenum, float:value, bool:Tog
 	return 1;
 }
 
+/*
 stock SetUpgradeName(client, int slot, int upgradenum, const char[] name)
 {
 	if (!IsValidClient(client) || slot < 0){return 0;}
@@ -767,7 +780,7 @@ stock SetUpgradeName(client, int slot, int upgradenum, const char[] name)
 	upgradesNames[u] = name;
 	return 1;
 }
-	
+*/
 
 stock bool WepAttribCheck(c_weapon, const char[] attribname)
 {
