@@ -16,8 +16,8 @@
             "Plugin"    "https://github.com/ReclusingRecluse/Server-Files/blob/0a9d3f6f32d19aee99f2fadd797cc667f8bf0927/sourcemod/configs/uu_attributes.txt"
             "Plugin"    "https://github.com/ReclusingRecluse/Server-Files/blob/0a9d3f6f32d19aee99f2fadd797cc667f8bf0927/sourcemod/configs/uu_lists.txt"
             "Plugin"    "https://github.com/ReclusingRecluse/Server-Files/blob/0a9d3f6f32d19aee99f2fadd797cc667f8bf0927/sourcemod/configs/uu_weapons.txt"
-            "Plugin"    https://github.com/ReclusingRecluse/Server-Files/blob/0a9d3f6f32d19aee99f2fadd797cc667f8bf0927/sourcemod/translations/tf2items_uu.phrases.txt"
-            
+            "Plugin"    "https://github.com/ReclusingRecluse/Server-Files/blob/0a9d3f6f32d19aee99f2fadd797cc667f8bf0927/sourcemod/translations/tf2items_uu.phrases.txt"
+
             "Source"    "https://github.com/ReclusingRecluse/Server-Files/blob/612fe5f487b4ea741b22616f6010a510db092dee/sourcemod/scripting/tf2attributes_ubup.sp"
     }
 }
