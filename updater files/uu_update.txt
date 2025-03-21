@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 "Updater"
 {
     "Information"
@@ -15,4 +16,24 @@
 
             "Source"    "https://github.com/ReclusingRecluse/Server-Files/blob/612fe5f487b4ea741b22616f6010a510db092dee/sourcemod/scripting/tf2attributes_ubup.sp"
     }
+}
+=======
+"Updater"
+{
+    "Information"
+    {
+        "Version"
+        {
+            "Latest"    "1.0.0"
+        }
+        "Notes" "Test Update For UU."
+    }
+
+    "Files"
+    {
+            "Plugin"    "https://github.com/ReclusingRecluse/Server-Files/blob/612fe5f487b4ea741b22616f6010a510db092dee/sourcemod/plugins/tf2attributes_ubup.smx"
+
+            "Source"    "https://github.com/ReclusingRecluse/Server-Files/blob/612fe5f487b4ea741b22616f6010a510db092dee/sourcemod/scripting/tf2attributes_ubup.sp"
+    }
+>>>>>>> dc876b6781bbc03143580ff7cdd575ebf67c97f1
 }
