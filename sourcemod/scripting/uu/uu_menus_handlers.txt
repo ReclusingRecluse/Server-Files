@@ -1,0 +1,285 @@
+
+
+//menubuy 3-Handler
+public MenuHandler_BuyNewWeapon(Handle:menu, MenuAction:action, mclient, param2)
+{
+	if (action == MenuAction_Select)
+	{
+		new iCash = GetEntProp(mclient, Prop_Send, "m_nCurrency", iCash);
+		if (iCash > 200)
+		{
+			if (currentitem_idx[mclient][3])
+			{
+				PrintToChat(mclient, "You already have")
+			}
+			ResetClientUpgrade_slot(mclient, 3)
+			currentitem_idx[mclient][3] = newweaponidx[param2];
+			currentitem_classname[mclient][3] = newweaponcn[param2];
+			SetEntProp(mclient, Prop_Send, "m_nCurrency", iCash - 200);
+			client_spent_money[mclient][3] = 200;
+			//PrintToChat(mclient, "You will have it next spawn.")
+			GiveNewWeapon(mclient, 3)
+		}
+		else
+		{
+			new String:buffer[64]
+			Format(buffer, sizeof(buffer), "%T", "You have not enough money!!", mclient);
+			PrintToChat(mclient, buffer);
+		}
+	}
+}
+
+
+public MenuHandler_AccessDenied(Handle:menu, MenuAction:action, mclient, param2)
+{
+	if (action == MenuAction_Select)
+	{
+		PrintToChat(mclient, "This feature is donators/VIPs only")
+	}
+	else if (action == MenuAction_End)
+	{
+		CloseHandle(menu);
+	}
+}
+
+//menubuy 3-Handler
+public MenuHandler_UpgradeChoice(Handle:menu, MenuAction:action, mclient, param2)
+{
+	if (action == MenuAction_Select)
+	{
+		client_respawn_handled[mclient] = 0
+		new slot = current_slot_used[mclient]
+		new w_id = current_w_list_id[mclient]
+		new cat_id = current_w_c_list_id[mclient]
+		new upgrade_choice = given_upgrd_list[w_id][cat_id][param2]
+		new inum = upgrades_ref_to_idx[mclient][slot][upgrade_choice]
+
+		if (is_client_got_req(mclient, upgrade_choice, slot, inum))
+		{
+			UpgradeItem(mclient, upgrade_choice, inum, 1.0)
+			GiveNewUpgradedWeapon_(mclient, slot)
+		}
+		decl String:fstr2[100]
+		decl String:fstr[40]
+		decl String:fstr3[20]
+		if (slot != 4)
+		{
+			Format(fstr, sizeof(fstr), "%t", given_upgrd_classnames[w_id][cat_id], 
+					mclient)
+			Format(fstr3, sizeof(fstr3), "%t", current_slot_name[slot], mclient)
+			Format(fstr2, sizeof(fstr2), "%d$ [%s] - %s", client_iCash[mclient], fstr3,
+				fstr)
+		}
+		else
+		{
+			Format(fstr, sizeof(fstr), "%t", given_upgrd_classnames[current_class[mclient] - 1][cat_id], 
+					mclient)
+			Format(fstr3, sizeof(fstr3), "%t", "Body upgrade", mclient)
+			Format(fstr2, sizeof(fstr2), "%d$ [%s] - %s", client_iCash[mclient], fstr3,
+				fstr)
+		}
+		SetMenuTitle(menu, fstr2);
+		decl String:desc_str[255]
+		new tmp_up_idx
+		new tmp_ref_idx
+		new up_cost
+		new Float:tmp_val
+		new Float:tmp_ratio
+		decl String:plus_sign[1]
+		
+		tmp_up_idx = given_upgrd_list[w_id][cat_id][param2]
+		up_cost = upgrades_costs[tmp_up_idx] / 2
+		if (slot == 1)
+		{
+			up_cost = RoundToFloor((up_cost * 1.0) * 0.75)
+		}
+		tmp_ref_idx = upgrades_ref_to_idx[mclient][slot][tmp_up_idx]
+		if (tmp_ref_idx != 9999)
+		{	
+			tmp_val = currentupgrades_val[mclient][slot][tmp_ref_idx] - upgrades_i_val[tmp_up_idx]
+		}
+		else
+		{
+			tmp_val = 0.0
+		}
+		tmp_ratio = upgrades_ratio[tmp_up_idx]
+		if (tmp_val && tmp_ratio)
+		{
+			up_cost += RoundToFloor(up_cost * (tmp_val / tmp_ratio) * upgrades_costs_inc_ratio[tmp_up_idx])
+			if (up_cost < 0.0)
+			{
+				up_cost *= -1;
+				if (up_cost < (upgrades_costs[tmp_up_idx] / 2))
+				{
+					up_cost = upgrades_costs[tmp_up_idx] / 2
+				}
+			}
+		}
+		if (tmp_ratio > 0.0)
+		{
+			plus_sign = "+"
+		}
+		else
+		{
+			tmp_ratio *= -1.0
+			plus_sign = "-"
+		}
+		new String:buf[64]
+		Format(buf, sizeof(buf), "%T", upgradesNames[tmp_up_idx], mclient)
+		if (tmp_ratio < 0.99)
+		{
+			Format(desc_str, sizeof(desc_str), "%5d$ -%s\n\t\t\t%s%i%%\t(%i%%)",
+				up_cost, buf,
+				plus_sign, RoundToFloor(tmp_ratio * 100), ((RoundToFloor(tmp_val * 100) / 5) * 5))
+		}
+		else
+		{
+			Format(desc_str, sizeof(desc_str), "%5d$ -%s\n\t\t\t%s%3i\t(%i)",
+				up_cost, buf,
+				plus_sign, RoundToFloor(tmp_ratio), RoundToFloor(tmp_val))
+		}
+		
+		
+		InsertMenuItem(menu, param2, "upgrade", desc_str);
+		RemoveMenuItem(menu, param2 + 1);
+		DisplayMenuAtItem(menu, mclient, GetMenuSelectionPosition(), 20)
+		
+	}
+	//else if (action == MenuAction_End)
+	//{
+		//CloseHandle(menu);
+	//}
+}
+
+
+//menubuy 2- Handler
+public MenuHandler_BodyUpgrades(Handle:menu, MenuAction:action, mclient, param2)
+{
+	if (action == MenuAction_Select)
+	{
+		decl String:fstr2[100]
+		decl String:fstr[40]
+		decl String:fstr3[20]
+		
+		Format(fstr, sizeof(fstr), "%T", given_upgrd_classnames[current_class[mclient] - 1][param2], 
+					mclient)
+		Format(fstr3, sizeof(fstr3), "%T", "Body upgrade", mclient)
+		Format(fstr2, sizeof(fstr2), "%d$ [%s] - %s", client_iCash[mclient], fstr3,
+				fstr)
+
+		Menu_UpgradeChoice(mclient, param2, fstr2)
+	}
+	else if (action == MenuAction_End)
+	{
+		CloseHandle(menu);
+	}
+}
+
+public MenuHandler_SpeMenubuy(Handle:menu, MenuAction:action, mclient, param2)
+{
+	
+	CloseHandle(menu);
+	//return Plugin_Handled;
+}
+
+public MenuHandler_Choosecat(Handle:menu, MenuAction:action, mclient, param2)
+{
+//	PrintToChatAll("exitbutton  %d", param2)
+	if (action == MenuAction_Select)
+	{
+		decl String:fstr2[100]
+		decl String:fstr[40]
+		decl String:fstr3[20]
+		new slot = current_slot_used[mclient]
+		new cat_id = currentitem_catidx[mclient][slot]
+		if (slot == 4)
+		{
+			Format(fstr, sizeof(fstr), "%T", given_upgrd_classnames[current_class[mclient] - 1][param2], 
+					mclient)
+			Format(fstr3, sizeof(fstr3), "%T", current_slot_name[slot], mclient)
+			Format(fstr2, sizeof(fstr2), "%d$ [%s] - %s", client_iCash[mclient], fstr3,
+				fstr)
+			Menu_UpgradeChoice(mclient, param2, fstr2)
+		}
+		else
+		{
+			Format(fstr, sizeof(fstr), "%T", given_upgrd_classnames[cat_id][param2], mclient)
+			Format(fstr3, sizeof(fstr3), "%T", "Body upgrade", mclient)
+			Format(fstr2, sizeof(fstr2), "%d$ [%s] - %s", client_iCash[mclient], fstr3, 
+					fstr)
+			if (param2 == given_upgrd_classnames_tweak_idx[cat_id])
+			{
+				Menu_SpecialUpgradeChoice(mclient, param2, fstr2,0)
+			}
+			else
+			{
+				Menu_UpgradeChoice(mclient, param2, fstr2)
+			}
+		}
+	}
+	else if (action == MenuAction_End)
+	{
+		CloseHandle(menu);
+	}
+}
+
+
+public MenuHandler_BuyUpgrade(Handle:menu, MenuAction:action, mclient, param2)
+{
+	/* If an option was selected, tell the client about the item. */
+	if (action == MenuAction_Select)
+	{
+		if (param2 == 0)
+		{
+			decl String:fstr[30]
+			decl String:fstr2[64]
+			current_slot_used[mclient] = 4;
+			client_iCash[mclient] = GetEntProp(mclient, Prop_Send, "m_nCurrency", client_iCash[mclient]);
+			Format(fstr, sizeof(fstr), "%T", "Body upgrade", mclient)
+			Format(fstr2, sizeof(fstr2), "%d$ [ - %s - ]", client_iCash[mclient], fstr)
+			Menu_ChooseCategory(mclient, fstr2)
+			//DisplayCurrentUps(mclient);
+		}
+		else if (param2 == 4)
+		{
+			Menu_TweakUpgrades(mclient);
+			//DisplayCurrentUps(mclient);
+		}
+		else if (param2 == 5)
+		{
+			Menu_BuyNewWeapon(mclient);
+			//DisplayCurrentUps(mclient);
+		}
+		else if (param2 == 6)
+		{
+			decl String:fstr[30]
+			decl String:fstr2[64]
+			current_slot_used[mclient] = 3
+			
+			Format(fstr, sizeof(fstr), "%T", "Body upgrade", mclient)
+			client_iCash[mclient] = GetEntProp(mclient, Prop_Send, "m_nCurrency", client_iCash[mclient]);
+			Format(fstr2, sizeof(fstr2), "%d$ [ - Upgrade %s - ]", client_iCash[mclient]
+															  ,fstr)
+			Menu_ChooseCategory(mclient, fstr2)
+		}
+		else
+		{
+			decl String:fstr[30]
+			decl String:fstr2[64]
+			param2 -= 1
+			current_slot_used[mclient] = param2
+			Format(fstr, sizeof(fstr), "%T", current_slot_name[param2], mclient)
+			client_iCash[mclient] = GetEntProp(mclient, Prop_Send, "m_nCurrency", client_iCash[mclient]);
+			Format(fstr2, sizeof(fstr2), "%d$ [ - Upgrade %s - ]", client_iCash[mclient]
+															  ,fstr)
+			Menu_ChooseCategory(mclient, fstr2)
+			
+		}
+	}
+	else if (action == MenuAction_End)
+	{
+		CloseHandle(menu);
+	}
+	//return Plugin_Handled;
+}
+ 

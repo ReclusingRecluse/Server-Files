@@ -1,0 +1,26 @@
+//yep
+public ConnectDB()
+{
+	new String:error_[255]
+	db = SQL_DefConnect(error_, sizeof(error_))
+ 
+	if (db == INVALID_HANDLE)
+	{
+		PrintToServer("Could not connect: %s", error_)
+	} else {
+		CloseHandle(db)
+	}
+	
+	new Handle:query = SQL_Query(db, "SELECT lastname FROM hlstats_Players ORDER BY skill DESC LIMIT 10")
+	if (query == INVALID_HANDLE)
+	{
+		SQL_GetError(db, error_, sizeof(error_))
+		PrintToServer("Failed to query (error: %s)", error_)
+	} else {
+		
+		
+		CloseHandle(query)
+	}
+}
+
+//yep

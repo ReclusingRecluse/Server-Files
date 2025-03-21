@@ -1,0 +1,160 @@
+	
+public	Menu_TweakUpgrades(mclient)
+{
+	new Handle:menu = CreateMenu(MenuHandler_AttributesTweak);
+	new s
+	
+	SetMenuTitle(menu, "Display Upgrades/Remove downgrades");
+	for (s = 0; s < 5; s++)
+	{
+			decl String:fstr[100]
+		
+			Format(fstr, sizeof(fstr), "%d$ of upgrades) Modify/Remove my %s attributes", client_spent_money[mclient][s], current_slot_name[s])
+			AddMenuItem(menu, "tweak", fstr);
+	}
+	if (IsValidClient(mclient) && IsPlayerAlive(mclient))
+	{
+		DisplayMenu(menu, mclient, 20);
+	}
+}
+
+public	Menu_TweakUpgrades_slot(mclient, arg)
+{
+	if (arg > -1 && arg < 5
+	&& IsValidClient(mclient) 
+	&& IsPlayerAlive(mclient))
+	{
+		new Handle:menu = CreateMenu(MenuHandler_AttributesTweak_action);
+		new i, s
+			
+		s = arg;
+		current_slot_used[mclient] = s;
+		SetMenuTitle(menu, "%d$ ***%s - Choose attribute:", client_iCash[mclient], current_slot_name[s]);
+		decl String:buf[64]
+		decl String:fstr[255]
+		for (i = 0; i < currentupgrades_number[mclient][s]; i++)
+		{
+			new u = currentupgrades_idx[mclient][s][i]
+			Format(buf, sizeof(buf), "%T", upgradesNames[u], mclient)
+			if (upgrades_costs[u] < -0.0001)
+			{
+				Format(fstr, sizeof(fstr), "[%s] :\n\t\t%10.2f\n%d", buf, currentupgrades_val[mclient][s][i], 
+				RoundToFloor(upgrades_costs[u] * ((upgrades_i_val[u] - currentupgrades_val[mclient][s][i]) / upgrades_ratio[u]) * 3))
+			}
+			else
+			{
+				Format(fstr, sizeof(fstr), "[%s] :\n\t\t%10.2f", buf, currentupgrades_val[mclient][s][i])
+			}
+			AddMenuItem(menu, "yep", fstr);
+		}
+		if (IsValidClient(mclient) && IsPlayerAlive(mclient))
+		{
+			DisplayMenu(menu, mclient, 20);
+		}
+	}
+}
+
+public remove_attribute(client, inum)
+{
+	new slot = current_slot_used[client];
+	//new nb = currentupgrades_number[client][slot]
+	
+	//new tmpswap1, Float:tmpswap2
+	currentupgrades_val[client][slot][inum] = upgrades_i_val[currentupgrades_idx[client][slot][inum]];
+	
+	// if ((nb - 1) != inum)
+	// {
+		// tmpswap1 = currentupgrades_idx[client][slot][nb - 1]
+		// currentupgrades_idx[client][slot][inum] = tmpswap1
+		// tmpswap2 = currentupgrades_val[client][slot][nb - 1]
+		// currentupgrades_val[client][slot][inum] = tmpswap2	
+		// upgrades_ref_to_idx[client][slot][tmpswap1] = inum
+	// }
+	// currentupgrades_idx[client][slot][nb - 1] = 9999;
+	// currentupgrades_val[client][slot][nb - 1] = 0.0;
+	
+	GiveNewUpgradedWeapon_(client, slot)
+}
+
+
+
+//menubuy 3- choose the upgrade
+public Action:Menu_SpecialUpgradeChoice(client, cat_choice, String:TitleStr[100], selectidx)
+{
+	//PrintToChat(client, "Entering menu_upchose");
+	new i, j
+
+	
+	new Handle:menu = CreateMenu(MenuHandler_SpecialUpgradeChoice);
+	SetMenuPagination(menu, 2);
+	//PrintToChat(client, "Entering menu_upchose [%d] wid%d", cat_choice, current_w_list_id[client]);
+	if (cat_choice != -1)
+	{
+		decl String:desc_str[512]
+		new w_id = current_w_list_id[client]
+		new tmp_up_idx
+		new tmp_spe_up_idx
+		new tmp_ref_idx
+		new Float:tmp_val
+		new Float:tmp_ratio
+		new slot
+		decl String:plus_sign[1]
+		new String:buft[64]
+	
+		current_w_c_list_id[client] = cat_choice
+		slot = current_slot_used[client]
+		for (i = 0; i < given_upgrd_classnames_tweak_nb[w_id]; i++)
+		{
+			tmp_spe_up_idx = given_upgrd_list[w_id][cat_choice][i]
+			Format(buft, sizeof(buft), "%T",  upgrades_tweaks[tmp_spe_up_idx], client)
+			//PrintToChat(client, "--->special ID", tmp_spe_up_idx);	
+			desc_str = buft;
+			for (j = 0; j < upgrades_tweaks_nb_att[tmp_spe_up_idx]; j++)
+			{
+				tmp_up_idx = upgrades_tweaks_att_idx[tmp_spe_up_idx][j]
+				tmp_ref_idx = upgrades_ref_to_idx[client][slot][tmp_up_idx]
+				if (tmp_ref_idx != 9999)
+				{	
+					tmp_val = currentupgrades_val[client][slot][tmp_ref_idx] - upgrades_i_val[tmp_up_idx]
+				}
+				else
+				{
+					tmp_val = 0.0
+				}
+				tmp_ratio = upgrades_ratio[tmp_up_idx]
+				if (tmp_ratio > 0.0)
+				{
+					plus_sign = "+"
+				}
+				else
+				{
+					tmp_ratio *= -1.0
+					plus_sign = "-"
+				}
+				new String:buf[64]
+				Format(buf, sizeof(buf), "%T", upgradesNames[tmp_up_idx], client)
+				if (tmp_ratio < 0.99)
+				{
+					tmp_ratio *= upgrades_tweaks_att_ratio[tmp_spe_up_idx][j]
+					Format(desc_str, sizeof(desc_str), "%s\n%\t-%s\n\t\t\t%s%i%%\t(%i%%)",
+						desc_str, buf,
+						plus_sign, RoundToFloor(tmp_ratio * 100), RoundToFloor(tmp_val * 100))
+				}
+				else
+				{
+					tmp_ratio *= upgrades_tweaks_att_ratio[tmp_spe_up_idx][j]
+					Format(desc_str, sizeof(desc_str), "%s\n\t-%s\n\t\t\t%s%3i\t(%i)",
+						desc_str, buf,
+						plus_sign, RoundToFloor(tmp_ratio), RoundToFloor(tmp_val))
+				}
+			}
+			AddMenuItem(menu, "upgrade", desc_str);
+		}
+	}
+	SetMenuTitle(menu, TitleStr);
+	SetMenuExitButton(menu, true);
+	DisplayMenuAtItem(menu, client, selectidx, 30);
+ 
+//	return Plugin_Handled;
+}
+

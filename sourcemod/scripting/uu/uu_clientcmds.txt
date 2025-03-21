@@ -1,0 +1,53 @@
+
+public Action:Disp_Help(client, args)
+{
+	PrintToChat(client, "!uuhelp : display help");
+	PrintToChat(client, "!nohelp : stop displaying the repetitive help message");
+	PrintToChat(client, "!uudteamup [0 1] : turn off team upgrades notifications in chat (def 0)");
+	PrintToChat(client, "!uurspwn [0 1] : Turn off display buy menu on respawn (def 1)");
+	PrintToChat(client, "!buy : display buy menu");
+	PrintToChat(client, "<showscore> + <reload>: display buy menu (by default ");
+	PrintToChat(client, "To get your money/all your money back, change loadout or class.");
+	PrintToChat(client, "In game, use MOUSESCROLL to switch to your original weapons and use NUMERICS for your additional one(s).");
+}
+
+//!uusteamup -> toggle shows team upgrades in chat for a client
+public Action:Toggl_DispTeamUpgrades(client, args)
+{
+	new String:arg1[32];
+	new arg;
+	
+	client_no_d_team_upgrade[client] = 0
+	if (GetCmdArg(1, arg1, sizeof(arg1)))
+	{
+		arg = StringToInt(arg1);
+		if (arg == 0)
+		{
+			client_no_d_team_upgrade[client] = 1
+		}
+	}
+}
+
+//!uurspwn -> toggle shows buymenu when a client respawn
+public Action:Toggl_DispMenuRespawn(client, args)
+{
+	new String:arg1[32];
+	new arg;
+	
+	client_no_d_menubuy_respawn[client] = 0
+	if (GetCmdArg(1, arg1, sizeof(arg1)))
+	{
+		arg = StringToInt(arg1);
+		if (arg == 0)
+		{
+			client_no_d_menubuy_respawn[client] = 1
+		}
+	}
+}
+
+public Action:StopDisp_chatHelp(client, args)
+{
+
+	client_no_showhelp[client] = 1
+}
+

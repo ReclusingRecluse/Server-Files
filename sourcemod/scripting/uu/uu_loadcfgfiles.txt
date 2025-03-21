@@ -1,0 +1,486 @@
+GetWeaponsCatKVSize(Handle:kv)
+{
+	new siz = 0
+	do
+	{
+		if (!KvGotoFirstSubKey(kv, false))
+		{
+			// Current key is a regular key, or an empty section.
+			if (KvGetDataType(kv, NULL_STRING) != KvData_None)
+			{
+				siz++
+			}
+		}
+	}
+	while (KvGotoNextKey(kv, false));
+	return siz
+}
+
+BrowseWeaponsCatKV(Handle:kv)
+{
+	new u_id = 0
+	new t_idx = 0
+	SetTrieValue(_weaponlist_names, "body_scout" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_sniper" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_soldier" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_demoman" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_medic" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_heavy" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_pyro" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_spy" , t_idx++, false);
+	SetTrieValue(_weaponlist_names, "body_engie" , t_idx++, false);
+	decl String:Buf[64];
+	do
+	{
+		if (KvGotoFirstSubKey(kv, false))
+		{
+			BrowseWeaponsCatKV(kv);
+			KvGoBack(kv);
+		}
+		else
+		{
+			if (KvGetDataType(kv, NULL_STRING) != KvData_None)
+			{
+				KvGetSectionName(kv, Buf, sizeof(Buf));
+				wcnamelist[u_id] = Buf
+				KvGetString(kv, "", Buf, 64);
+				if (SetTrieValue(_weaponlist_names, Buf, t_idx, false))
+				{
+					t_idx++
+				}
+				GetTrieValue(_weaponlist_names, Buf, wcname_l_idx[u_id])
+				//PrintToServer("weapon list %d: %s - %s(%d)", u_id,wcnamelist[u_id], Buf, wcname_l_idx[u_id])
+				u_id++;
+				//PrintToServer("%s linked : %s->%d",  wcnamelist[u_id], Buf,wcname_l_idx[u_id])
+				//PrintToServer("value:%s", Buf)
+			}
+		}
+	}
+	while (KvGotoNextKey(kv, false));
+}
+
+BrowseAttributesKV(Handle:kv)
+{
+	decl String:Buf[64];
+	do
+	{
+		if (KvGotoFirstSubKey(kv, false))
+		{
+			//PrintToServer("\nAttribute #%d", _u_id)
+			BrowseAttributesKV(kv);
+			KvGoBack(kv);
+		}
+		else
+		{
+			// Current key is a regular key, or an empty section.
+			if (KvGetDataType(kv, NULL_STRING) != KvData_None)
+			{
+				KvGetSectionName(kv, Buf, sizeof(Buf));
+				if (!strcmp(Buf,"ref"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					upgradesNames[_u_id] = Buf
+					SetTrieValue(_upg_names, Buf, _u_id, true);
+				//	PrintToServer("ref:%s --uid:%d", Buf, _u_id)
+				}
+				if (!strcmp(Buf,"name"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					if (strcmp(Buf,""))
+					{
+						//PrintToServer("Name:%s-", Buf)
+						//new _:att_id = TF2II_GetAttributeIDByName(Buf)
+						for (new i_ = 1; i_ < MAX_ATTRIBUTES; i_++)
+						{
+							if (!strcmp(upgradesWorkNames[i_], Buf))
+							{
+								upgrades_to_a_id[_u_id] = i_
+							//	PrintToServer("up_ref/id[%d]:%s/%d", _u_id, Buf, upgrades_to_a_id[_u_id])
+								break;
+							}
+						}
+					}
+				}
+				if (!strcmp(Buf,"cost"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					upgrades_costs[_u_id] = StringToInt(Buf)
+					//PrintToServer("cost:%d", upgrades_costs[_u_id])
+				}
+				if (!strcmp(Buf,"increase_ratio"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					upgrades_costs_inc_ratio[_u_id] = StringToFloat(Buf)
+					//PrintToServer("increase rate:%f", upgrades_costs_inc_ratio[_u_id])
+				}
+				if (!strcmp(Buf,"value"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					upgrades_ratio[_u_id] = StringToFloat(Buf)
+					//PrintToServer("val:%f", upgrades_ratio[_u_id])
+				}
+				if (!strcmp(Buf,"init"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					upgrades_i_val[_u_id] = StringToFloat(Buf)
+					//PrintToServer("init:%f", upgrades_i_val[_u_id])
+				}
+				if (!strcmp(Buf,"max"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					upgrades_m_val[_u_id] = StringToFloat(Buf)
+					//PrintToServer("max:%f", upgrades_m_val[_u_id])
+					_u_id++
+				}
+
+			}
+		}
+	}
+	while (KvGotoNextKey(kv, false));
+	return (_u_id)
+}
+
+
+BrowseAttListKV(Handle:kv, &w_id = -1, &w_sub_id = -1, w_sub_att_idx = -1, level = 0)
+{
+	decl String:Buf[64];
+	do
+	{
+		KvGetSectionName(kv, Buf, sizeof(Buf));
+		if (level == 1)
+		{
+			if (!GetTrieValue(_weaponlist_names, Buf, w_id))
+			{
+				PrintToServer("[uu_lists] Malformated uu_lists | uu_weapon.txt file?: %s was not found", Buf)
+			}
+			w_sub_id = -1;
+			given_upgrd_classnames_tweak_nb[w_id] = 0
+		}
+		if (level == 2)
+		{
+			KvGetSectionName(kv, Buf, sizeof(Buf))
+			if (!strcmp(Buf, "special_tweaks_listid"))
+			{
+
+				KvGetString(kv, "", Buf, 64);
+				//PrintToServer("  ->Sublist/#%s -- #%d", Buf, w_id)
+				given_upgrd_classnames_tweak_idx[w_id] = StringToInt(Buf)
+			}
+			else
+			{
+				w_sub_id++
+			//	PrintToServer("section #%s", Buf)
+				given_upgrd_classnames[w_id][w_sub_id] = Buf
+				given_upgrd_list_nb[w_id]++
+				w_sub_att_idx = 0
+			}
+		}
+		if (KvGotoFirstSubKey(kv, false))
+		{
+			KvGetSectionName(kv, Buf, sizeof(Buf));
+			BrowseAttListKV(kv, w_id, w_sub_id, w_sub_att_idx, level + 1);
+			KvGoBack(kv);
+		}
+		else
+		{
+			if (KvGetDataType(kv, NULL_STRING) != KvData_None)
+			{
+				new attr_id
+				KvGetSectionName(kv, Buf, sizeof(Buf));
+			//	PrintToServer("section:%s", Buf)
+				if (strcmp(Buf, "special_tweaks_listid"))
+				{
+					KvGetString(kv, "", Buf, 64);
+					if (w_sub_id == given_upgrd_classnames_tweak_idx[w_id])
+					{
+						given_upgrd_classnames_tweak_nb[w_id]++
+						if (!GetTrieValue(_spetweaks_names, Buf, attr_id))
+						{
+							PrintToServer("[uu_lists] Malformated uu_lists | uu_specialtweaks.txt file?: %s was not found", Buf)
+						}
+					}
+					else
+					{
+						if (!GetTrieValue(_upg_names, Buf, attr_id))
+						{
+							PrintToServer("[uu_lists] Malformated uu_lists | uu_attributes.txt file?: %s was not found", Buf)
+						}
+					}
+			//		PrintToServer("             **list%d sublist%d %d :%s(%d)", w_sub_att_idx, w_id, w_sub_id, Buf, attr_id)
+					given_upgrd_list[w_id][w_sub_id][w_sub_att_idx] = attr_id
+					w_sub_att_idx++
+				}
+			}
+		}
+	}
+	while (KvGotoNextKey(kv, false));
+}
+
+
+BrowseSpeTweaksKV(Handle:kv, &u_id = -1, att_id = -1, level = 0)
+{
+	decl String:Buf[64];
+	new attr_ref
+	do
+	{
+		if (level == 2)
+		{
+			KvGetSectionName(kv, Buf, sizeof(Buf));
+			u_id++
+			SetTrieValue(_spetweaks_names, Buf, u_id)
+			upgrades_tweaks[u_id] = Buf
+			upgrades_tweaks_nb_att[u_id] = 0
+			att_id = 0
+		}
+		if (level == 3)
+		{
+			KvGetSectionName(kv, Buf, sizeof(Buf));
+			if (!GetTrieValue(_upg_names, Buf, attr_ref))
+			{
+				PrintToServer("[spetw_lists] Malformated uu_specialtweaks | uu_attribute.txt file?: %s was not found", Buf)
+			}
+		//	PrintToServer("Adding Special tweak [%s] attribute %s(%d)", upgrades_tweaks[u_id], Buf, attr_ref)
+			upgrades_tweaks_att_idx[u_id][att_id] = attr_ref
+			KvGetString(kv, "", Buf, 64);
+			upgrades_tweaks_att_ratio[u_id][att_id] = StringToFloat(Buf)
+		//	PrintToServer("               ratio => %f)", upgrades_tweaks_att_ratio[u_id][att_id])
+			upgrades_tweaks_nb_att[u_id]++
+			att_id++
+		}
+		if (KvGotoFirstSubKey(kv, false))
+		{
+			BrowseSpeTweaksKV(kv, u_id, att_id, level + 1);
+			KvGoBack(kv);
+		}
+	}
+	while (KvGotoNextKey(kv, false));
+	return (u_id)
+}
+
+//public TF2II_OnItemSchemaUpdated()
+//{
+//	_load_cfg_files()
+//}
+
+public _load_cfg_files()
+{
+	
+
+	_upg_names = CreateTrie();
+	_weaponlist_names = CreateTrie();
+	_spetweaks_names = CreateTrie();
+
+	new Handle:kv = CreateKeyValues("uu_weapons");
+	kv = CreateKeyValues("weapons");
+	FileToKeyValues(kv, "addons/sourcemod/configs/uu_weapons.txt");
+	if (!KvGotoFirstSubKey(kv))
+	{
+		return false;
+	}
+	new siz = GetWeaponsCatKVSize(kv)
+	PrintToServer("[UberUpgrades] %d weapons loaded", siz)
+	KvRewind(kv);
+	BrowseWeaponsCatKV(kv)
+	CloseHandle(kv);
+
+
+	kv = CreateKeyValues("attribs");
+	FileToKeyValues(kv, "addons/sourcemod/configs/uu_attributes.txt");
+	_u_id = 0
+	PrintToServer("browsin uu attribs (kvh:%d)", kv)
+	BrowseAttributesKV(kv)
+	PrintToServer("[UberUpgrades] %d attributes loaded", _u_id)
+	CloseHandle(kv);
+
+
+
+	new static_uid = -1
+	kv = CreateKeyValues("special_tweaks");
+	FileToKeyValues(kv, "addons/sourcemod/configs/uu_specialtweaks.txt");
+	BrowseSpeTweaksKV(kv, static_uid)
+	PrintToServer("[UberUpgrades] %d special tweaks loaded", static_uid)
+	CloseHandle(kv);
+
+	static_uid = -1
+	kv = CreateKeyValues("lists");
+	FileToKeyValues(kv, "addons/sourcemod/configs/uu_lists.txt");
+	BrowseAttListKV(kv, static_uid)
+	PrintToServer("[UberUpgrades] %d lists loaded", static_uid)
+	CloseHandle(kv);
+	
+	// new Handle:fi = OpenFile("yepyep2.txt", "w");
+	// new Handle:_tmptmptmp = CreateTrie();
+	// for (new i = 0; i < siz; i++)
+	// {
+		// for (j = 0; j < given_upgrd_list_nb[i]; j++)
+		// {
+			// new _:k
+			// if (GetTrieValue(_tmptmptmp, given_upgrd_classnames[i][j], k) == false)
+			// {
+				// SetTrieValue(_tmptmptmp, given_upgrd_classnames[i][j], 1)
+				// new String:tmp[256]
+				// Format(tmp, sizeof(tmp), "\t\"%s\"",given_upgrd_classnames[i][j])
+				// WriteFileLine(fi, tmp)
+				// WriteFileLine(fi,"\t{")
+				// Format(tmp, sizeof(tmp), "\t\t\"en\"\t\t\"%s\"",given_upgrd_classnames[i][j])
+				// WriteFileLine(fi,tmp)
+				// WriteFileLine(fi,"\t}")
+			// }
+		// }
+	// }
+	// ClearTrie(_tmptmptmp)
+	// CloseHandle(fi)
+	//TODO -> buyweapons.cfg
+	newweaponidx[0] = 13;
+	newweaponcn[0] = "tf_weapon_scattergun";
+	newweaponmenudesc[0] = "Scattergun";
+
+	newweaponidx[1] = 45;
+	newweaponcn[1] = "tf_weapon_scattergun";
+	newweaponmenudesc[1] = "Force-A-Nature";
+
+	newweaponidx[2] = 220;
+	newweaponcn[2] = "tf_weapon_handgun_scout_primary";
+	newweaponmenudesc[2] = "The Shortstop";
+
+	newweaponidx[3] = 772;
+	newweaponcn[3] = "tf_weapon_scattergun";
+	newweaponmenudesc[3] = "Baby Face's Blaster";
+
+	newweaponidx[4] = 18;
+	newweaponcn[4] = "tf_weapon_rocketlauncher";
+	newweaponmenudesc[4] = "Rocket Launcher";
+
+	newweaponidx[5] = 127;
+	newweaponcn[5] = "tf_weapon_rocketlauncher_directhit";
+	newweaponmenudesc[5] = "The Direct Hit";
+
+	newweaponidx[6] = 228;
+	newweaponcn[6] = "tf_weapon_rocketlauncher";
+	newweaponmenudesc[6] = "The Black Box";
+
+	newweaponidx[7] = 414;
+	newweaponcn[7] = "tf_weapon_rocketlauncher";
+	newweaponmenudesc[7] = "The Libery Launcher";
+
+	newweaponidx[8] = 441;
+	newweaponcn[8] = "tf_weapon_particle_cannon";
+	newweaponmenudesc[8] = "The Cow Mangler 5000";
+
+	newweaponidx[9] = 730;
+	newweaponcn[9] = "tf_weapon_rocketlauncher";
+	newweaponmenudesc[9] = "The Begger's Bazooka";
+
+	newweaponidx[10] = 21;
+	newweaponcn[10] = "tf_weapon_flamethrower";
+	newweaponmenudesc[10] = "Flamethrower";
+
+	newweaponidx[11] = 40;
+	newweaponcn[11] = "tf_weapon_flamethrower";
+	newweaponmenudesc[11] = "The Backburner";
+
+	newweaponidx[12] = 215;
+	newweaponcn[12] = "tf_weapon_flamethrower";
+	newweaponmenudesc[12] = "The Degreaser";
+
+	newweaponidx[13] = 594;
+	newweaponcn[13] = "tf_weapon_flamethrower";
+	newweaponmenudesc[13] = "The Phlogistinator";
+
+	newweaponidx[14] = 19;
+	newweaponcn[14] = "tf_weapon_grenadelauncher";
+	newweaponmenudesc[14] = "Grenade Launcher";
+
+	newweaponidx[15] = 308;
+	newweaponcn[15] = "tf_weapon_grenadelauncher";
+	newweaponmenudesc[15] = "The Loch-n-Load";
+
+	newweaponidx[16] = 996;
+	newweaponcn[16] = "tf_weapon_cannon";
+	newweaponmenudesc[16] = "The Loose Cannon";
+
+	newweaponidx[17] = 15;
+	newweaponcn[17] = "tf_weapon_minigun";
+	newweaponmenudesc[17] = "Minigun";
+
+	newweaponidx[18] = 298;
+	newweaponcn[18] = "tf_weapon_minigun";
+	newweaponmenudesc[18] = "Iron Curtain";
+
+	newweaponidx[19] = 312;
+	newweaponcn[19] = "tf_weapon_minigun";
+	newweaponmenudesc[19] = "The Brass Beast";
+
+	newweaponidx[20] = 9;
+	newweaponcn[20] = "tf_weapon_shotgun";
+	newweaponmenudesc[20] = "Engineer's Shotgun";
+
+	newweaponidx[21] = 588;
+	newweaponcn[21] = "tf_weapon_drg_pomson";
+	newweaponmenudesc[21] = "The Pomson 6000";
+
+	newweaponidx[22] = 997;
+	newweaponcn[22] = "tf_weapon_shotgun_building_rescue";
+	newweaponmenudesc[22] = "The Rescue Ranger";
+
+	newweaponidx[23] = 17;
+	newweaponcn[23] = "tf_weapon_syringegun_medic";
+	newweaponmenudesc[23] = "Syringe Gun";
+
+	newweaponidx[24] = 36;
+	newweaponcn[24] = "tf_weapon_syringegun_medic";
+	newweaponmenudesc[24] = "The Blutsauger";
+
+	newweaponidx[25] = 305;
+	newweaponcn[25] = "tf_weapon_crossbow";
+	newweaponmenudesc[25] = "Crusader's Crossbow";
+
+	newweaponidx[26] = 14;
+	newweaponcn[26] = "tf_weapon_sniperrifle";
+	newweaponmenudesc[26] = "Sniper Rifle";
+
+	newweaponidx[27] = 56;
+	newweaponcn[27] = "tf_weapon_compound_bow";
+	newweaponmenudesc[27] = "The Huntsman";
+
+	newweaponidx[28] = 230;
+	newweaponcn[28] = "tf_weapon_sniperrifle";
+	newweaponmenudesc[28] = "The Sydney Sleeper";
+
+	newweaponidx[29] = 24;
+	newweaponcn[29] = "tf_weapon_revolver";
+	newweaponmenudesc[29] = "Revolver";
+
+	newweaponidx[30] = 4;
+	newweaponcn[30] = "tf_weapon_knife";
+	newweaponmenudesc[30] = "Knife";
+
+	newweaponidx[31] = 30;
+	newweaponcn[31] = "tf_weapon_invis";
+	newweaponmenudesc[31] = "Watch";
+
+	newweaponidx[32] = 29;
+	newweaponcn[32] = "tf_weapon_medigun";
+	newweaponmenudesc[32] = "Medigun";
+
+	newweaponidx[33] = 357;
+	newweaponcn[33] = "tf_weapon_katana";
+	newweaponmenudesc[33] = "The Half-Zatoichi";
+
+	newweaponidx[34] = 20;
+	newweaponcn[34] = "tf_weapon_pipebomblauncher";
+	newweaponmenudesc[34] = "Pipebomb launcher";
+
+	newweaponidx[35] = 58;
+	newweaponcn[35] = "tf_weapon_jar";
+	newweaponmenudesc[35] = "Jarate";
+
+	newweaponidx[36] = 25;
+	newweaponcn[36] = "tf_weapon_pda_engineer_build";
+	newweaponmenudesc[36] = "engie pda";
+
+
+
+	CreateBuyNewWeaponMenu()
+	return true
+}

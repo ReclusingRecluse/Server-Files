@@ -1,0 +1,101 @@
+
+static Handle:db;
+ 
+
+new Handle:cvar_uu_version
+
+new Handle:cvar_StartMoney
+new StartMoney
+new Handle:cvar_TimerMoneyGive_BlueTeam
+new TimerMoneyGive_BlueTeam
+new Handle:cvar_TimerMoneyGive_RedTeam
+new TimerMoneyGive_RedTeam
+new Handle:cvar_MoneyBonusKill
+new MoneyBonusKill
+//new Handle:cvar_MoneyForTeamRatioRed
+new Handle:cvar_AutoMoneyForTeamRatio
+new Float:MoneyForTeamRatio[2]
+new Float:MoneyTotalFlow[2]
+
+new Handle:Timers_[4]
+
+
+new clientLevels[MAXPLAYERS + 1]
+new String:clientBaseName[MAXPLAYERS + 1][255]
+new moneyLevels[MAXLEVEL_D + 1]
+
+new given_upgrd_list_nb[_NUMBER_DEFINELISTS]
+new given_upgrd_list[_NUMBER_DEFINELISTS][_NUMBER_DEFINELISTS_CAT][64]
+new String:given_upgrd_classnames[_NUMBER_DEFINELISTS][_NUMBER_DEFINELISTS_CAT][64]
+new given_upgrd_classnames_tweak_idx[_NUMBER_DEFINELISTS]
+new given_upgrd_classnames_tweak_nb[_NUMBER_DEFINELISTS]
+
+new String:wcnamelist[WCNAMELISTSIZE][64]
+new wcname_l_idx[WCNAMELISTSIZE]
+new current_w_list_id[MAXPLAYERS + 1]
+new current_w_c_list_id[MAXPLAYERS + 1]
+
+new _:current_class[MAXPLAYERS + 1]
+
+
+new String:current_slot_name[5][32]
+new current_slot_used[MAXPLAYERS + 1]
+new currentupgrades_idx[MAXPLAYERS + 1][5][MAX_ATTRIBUTES_ITEM]
+new Float:currentupgrades_val[MAXPLAYERS + 1][5][MAX_ATTRIBUTES_ITEM]
+//new currentupgrades_special_ratio[MAXPLAYERS + 1][5][MAX_ATTRIBUTES_ITEM]
+new currentupgrades_number[MAXPLAYERS + 1][5]
+
+new currentitem_level[MAXPLAYERS + 1][5]
+new currentitem_idx[MAXPLAYERS + 1][5]
+new currentitem_ent_idx[MAXPLAYERS + 1][5] 
+new currentitem_catidx[MAXPLAYERS + 1][5]
+
+new String:currentitem_classname[MAXPLAYERS + 1][5][64]
+
+new upgrades_ref_to_idx[MAXPLAYERS + 1][5][MAX_ATTRIBUTES]
+new currentupgrades_idx_mvm_chkp[MAXPLAYERS + 1][5][MAX_ATTRIBUTES_ITEM]
+new Float:currentupgrades_val_mvm_chkp[MAXPLAYERS + 1][5][MAX_ATTRIBUTES_ITEM]
+new currentupgrades_number_mvm_chkp[MAXPLAYERS + 1][5]
+
+new _u_id;
+new client_spent_money[MAXPLAYERS + 1][5]
+new client_new_weapon_ent_id[MAXPLAYERS + 1]
+new client_spent_money_mvm_chkp[MAXPLAYERS + 1][5]
+new client_last_up_slot[MAXPLAYERS + 1]
+new client_last_up_idx[MAXPLAYERS + 1]
+new client_iCash[MAXPLAYERS + 1];
+					
+
+new client_respawn_handled[MAXPLAYERS + 1]
+new client_respawn_checkpoint[MAXPLAYERS + 1]
+
+new client_no_showhelp[MAXPLAYERS + 1]
+new client_no_d_team_upgrade[MAXPLAYERS + 1]
+new client_no_d_menubuy_respawn[MAXPLAYERS + 1]
+
+new Handle:_upg_names
+new Handle:_weaponlist_names
+new Handle:_spetweaks_names
+
+new String:upgradesNames[MAX_ATTRIBUTES][64]
+new String:upgradesWorkNames[MAX_ATTRIBUTES][96]
+new upgrades_to_a_id[MAX_ATTRIBUTES]
+new upgrades_costs[MAX_ATTRIBUTES]
+new Float:upgrades_ratio[MAX_ATTRIBUTES]
+new Float:upgrades_i_val[MAX_ATTRIBUTES]
+new Float:upgrades_m_val[MAX_ATTRIBUTES]
+new Float:upgrades_costs_inc_ratio[MAX_ATTRIBUTES]
+
+new String:upgrades_tweaks[_NB_SP_TWEAKS][64]
+new upgrades_tweaks_nb_att[_NB_SP_TWEAKS]
+new upgrades_tweaks_att_idx[_NB_SP_TWEAKS][10]
+new Float:upgrades_tweaks_att_ratio[_NB_SP_TWEAKS][10]
+
+new gamemode
+#define MVM_GAMEMODE 0
+#define CP_GAMEMODE 1
+
+
+new newweaponidx[128];
+new String:newweaponcn[64][64];
+new String:newweaponmenudesc[64][64];

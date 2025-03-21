@@ -1,0 +1,115 @@
+public Event_RoundStart(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	//PrintToChatAll("Round start!")
+	//new full_reset = GetEventInt(event, "full_reset");
+	MoneyForTeamRatio[RED] = 1.0
+	MoneyForTeamRatio[BLUE] = 1.0
+	//if (gamemode != MVM_GAMEMODE &&  full_reset)
+	//{
+	//	for (new client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+	//	{
+	//		if (IsValidClient(client_id, false))
+	//		{
+	//			CreateTimer(0.3, Timer_Resetupgrades, GetClientUserId(client_id));
+	//		}
+	//	}
+		
+	//}
+
+}
+
+public Event_teamplay_round_win(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	new slot, i
+	new team = GetEventInt(event, "team");
+	if (gamemode == MVM_GAMEMODE && team == 3)
+	{
+		//PrintToChatAll("bot TEAM wins!")
+		for (new client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+		{
+			if (IsValidClient(client_id))
+			{
+				
+				client_respawn_checkpoint[client_id] = 1
+				client_spent_money[client_id] = client_spent_money_mvm_chkp[client_id]
+				for (slot = 0; slot < 5; slot++)
+				{
+					for (i = 0; i < currentupgrades_number[client_id][slot]; i++)
+					{
+						upgrades_ref_to_idx[client_id][slot][currentupgrades_idx[client_id][slot][i]] = 9999
+					}			
+					currentupgrades_idx[client_id][slot] = currentupgrades_idx_mvm_chkp[client_id][slot]
+					currentupgrades_val[client_id][slot] = currentupgrades_val_mvm_chkp[client_id][slot]
+					currentupgrades_number[client_id][slot] = currentupgrades_number_mvm_chkp[client_id][slot]
+					for (i = 0; i < currentupgrades_number[client_id][slot]; i++)
+					{
+						upgrades_ref_to_idx[client_id][slot][currentupgrades_idx[client_id][slot][i]] = i
+					}
+				}
+			}
+		}
+	}
+	else
+	{
+		//PrintToChatAll("hmuan TEAM wins!")
+	}
+}
+  
+public Event_mvm_begin_wave(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	new client_id
+	//new i
+	//PrintToChatAll("EVENT MVM BEGIN WAVE")
+	gamemode = MVM_GAMEMODE
+	for (client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+	{
+		if (IsValidClient(client_id))
+		{
+			
+	
+			//client_spent_money_mvm_chkp[client_id] = client_spent_money[client_id]
+			//PrintToChat(client_id, "Current checkpoint money: %d", client_spent_money_mvm_chkp[client_id])
+		}
+	}
+}
+
+public Event_mvm_wave_complete(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	new client_id, slot
+	
+	//PrintToChatAll("EVENT MVM WAVE COMPLETE")
+	for (client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+	{
+		if (IsValidClient(client_id))
+		{
+		
+			client_spent_money_mvm_chkp[client_id] = client_spent_money[client_id]
+			for (slot = 0; slot < 5; slot++)
+			{
+				currentupgrades_number_mvm_chkp[client_id][slot] = currentupgrades_number[client_id][slot]
+				currentupgrades_idx_mvm_chkp[client_id][slot] = currentupgrades_idx[client_id][slot]
+				currentupgrades_val_mvm_chkp[client_id][slot] = currentupgrades_val[client_id][slot]
+			}
+			//PrintToChat(client_id, "Current checkpoint money: %d", client_spent_money_mvm_chkp[client_id])
+		}
+	}
+}
+
+public Action:mvm_CheckPointAdjustCash(Handle:timer, any:userid)
+{
+	new client = GetClientOfUserId(userid);
+	//PrintToChatAll("ckpoint adjust")
+	
+	if (IsValidClient(client) && client_respawn_checkpoint[client])
+	{
+		new iCash = GetEntProp(client, Prop_Send, "m_nCurrency", iCash);
+		SetEntProp(client, Prop_Send, "m_nCurrency", iCash -
+				(client_spent_money_mvm_chkp[client][0] 
+				+ client_spent_money_mvm_chkp[client][1] 
+				+ client_spent_money_mvm_chkp[client][2] 
+				+ client_spent_money_mvm_chkp[client][3]) );
+		client_respawn_checkpoint[client] = 0
+		CreateTimer(0.1, WeaponReGiveUpgrades, GetClientUserId(client));
+	}
+}
+

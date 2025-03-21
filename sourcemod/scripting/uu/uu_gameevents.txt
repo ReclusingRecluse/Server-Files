@@ -1,0 +1,284 @@
+
+
+public Event_PlayerChangeClass(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	new client = GetClientOfUserId(GetEventInt(event, "userid"));
+	if (IsValidClient(client))
+	{
+		current_class[client] = _:TF2_GetPlayerClass(client)
+		ResetClientUpgrades(client)
+		//PrintToChat(client, "client changeclass");
+		if (!client_respawn_handled[client])
+		{
+			CreateTimer(0.2, ClChangeClassTimer, GetClientUserId(client));
+		}
+	}	
+}
+
+
+public Event_PlayerreSpawn(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	new client = GetClientOfUserId(GetEventInt(event, "userid"));
+//	new team = GetClientOfUserId(GetEventInt(event, "team"));
+	
+	if (!client_respawn_handled[client])
+	{
+		client_respawn_handled[client] = 1
+		//PrintToChat(client, "TEAM #%d", team)
+
+		if (client_respawn_checkpoint[client])
+		{
+			//PrintToChatAll("cash readjust")
+			CreateTimer(0.3, mvm_CheckPointAdjustCash, GetClientUserId(client));
+		}
+		else
+		{
+			CreateTimer(0.4, WeaponReGiveUpgrades, GetClientUserId(client));
+		}
+	}
+}
+
+public Action:Timer_GetConVars(Handle:timer)//Reload con_vars into vars
+{
+	new entityP = FindEntityByClassname(-1, "func_upgradestation");
+	if (entityP > -1)
+	{
+		//	SetVariantString(buffer);
+			AcceptEntityInput(entityP, "Kill");
+	//		PrintToServer("kill sent to funcupstat")
+	}	
+	else
+	{
+	//	PrintToServer("no funcupstat found")
+	}
+	
+	//CostIncrease_ratio_default  = GetConVarFloat(cvar_CostIncrease_ratio_default)
+	MoneyBonusKill = GetConVarInt(cvar_MoneyBonusKill)
+	//MoneyForTeamRatio[RED]  = GetConVarFloat(cvar_MoneyForTeamRatioRed)
+	//MoneyForTeamRatio[BLUE]  = GetConVarFloat(cvar_MoneyForTeamRatioBlue)
+	TimerMoneyGive_BlueTeam = GetConVarInt(cvar_TimerMoneyGive_BlueTeam)
+	TimerMoneyGive_RedTeam = GetConVarInt(cvar_TimerMoneyGive_RedTeam)
+	StartMoney = GetConVarInt(cvar_StartMoney)
+	
+	//if (CostIncrease_ratio_default) //quick compile warning bypass // TODO INCLUDE CostIncrease_ratio_default
+	//{
+	//}
+}
+
+public Action:Timer_GiveSomeMoney(Handle:timer)//GIVE MONEY EVRY 20s
+{
+	new iCashtmp;
+	
+	MoneyTotalFlow[RED] = 0.00
+	MoneyTotalFlow[BLUE] = 0.00
+	for (new client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+	{
+		if (IsValidClient(client_id) && (GetClientTeam(client_id) > 1))
+		{
+			iCashtmp = GetEntProp(client_id, Prop_Send, "m_nCurrency", iCashtmp);
+			//iCashtmp = 0
+			iCashtmp += client_spent_money[client_id][0]
+						   +client_spent_money[client_id][1]
+						   +client_spent_money[client_id][2]
+						   +client_spent_money[client_id][3];
+			if (GetClientTeam(client_id) == 3)
+			{
+				MoneyTotalFlow[BLUE] += iCashtmp
+			}
+			else
+			{
+				MoneyTotalFlow[RED] += iCashtmp
+			}
+				
+		}
+	}
+
+	if (MoneyTotalFlow[RED])
+	{
+		MoneyForTeamRatio[RED] = MoneyTotalFlow[BLUE] / MoneyTotalFlow[RED]
+	}
+	if (MoneyTotalFlow[BLUE])
+	{
+		MoneyForTeamRatio[BLUE] = MoneyTotalFlow[RED] / MoneyTotalFlow[BLUE]
+	}
+	if (MoneyForTeamRatio[RED] > 3.0)
+	{
+		MoneyForTeamRatio[RED] = 3.0
+	}
+	if (MoneyForTeamRatio[BLUE] > 3.0)
+	{
+		MoneyForTeamRatio[BLUE] = 3.0
+	}
+	MoneyForTeamRatio[BLUE] *= MoneyForTeamRatio[BLUE]
+	MoneyForTeamRatio[RED] *= MoneyForTeamRatio[RED]
+	for (new client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+	{
+		if (IsValidClient(client_id))
+		{
+			iCashtmp = GetEntProp(client_id, Prop_Send, "m_nCurrency", iCashtmp);
+			if (GetClientTeam(client_id) == 3)//BLUE TEAM
+			{
+				if (GetConVarInt(cvar_AutoMoneyForTeamRatio))
+				{
+					SetEntProp(client_id, Prop_Send, "m_nCurrency",
+								iCashtmp + RoundToFloor(TimerMoneyGive_BlueTeam * MoneyForTeamRatio[BLUE]));
+				}
+				else
+				{
+					SetEntProp(client_id, Prop_Send, "m_nCurrency",
+								iCashtmp + TimerMoneyGive_BlueTeam);
+				}
+			}
+			else if (GetClientTeam(client_id) == 2)//RED TEAM
+			{
+				if (GetConVarInt(cvar_AutoMoneyForTeamRatio))
+				{
+					SetEntProp(client_id, Prop_Send, "m_nCurrency",
+								iCashtmp + RoundToFloor(TimerMoneyGive_RedTeam * MoneyForTeamRatio[RED]));
+				}
+				else
+				{
+					SetEntProp(client_id, Prop_Send, "m_nCurrency",
+								iCashtmp + TimerMoneyGive_RedTeam);
+				}
+			}
+		}
+	}
+	TimerMoneyGive_BlueTeam = GetConVarInt(cvar_TimerMoneyGive_BlueTeam)
+	TimerMoneyGive_RedTeam = GetConVarInt(cvar_TimerMoneyGive_RedTeam)
+
+}
+
+public Action:Timer_Resetupgrades(Handle:timer, any:userid)
+{
+	new client = GetClientOfUserId(userid);
+	
+	if (IsValidClient(client, false))
+	{
+		SetEntProp(client, Prop_Send, "m_nCurrency", StartMoney);
+	}
+	if (IsValidClient(client))
+	{
+		for (new slot = 0; slot < NB_SLOTS_UED; slot++)
+		{
+			client_spent_money[client][slot] = 0
+			client_spent_money_mvm_chkp[client][slot] = 0
+		}
+		ResetClientUpgrades(client)
+		if (!client_respawn_handled[client])
+		{
+			CreateTimer(0.2, ClChangeClassTimer, GetClientUserId(client));
+		}
+	}
+}
+
+
+public Action:ClChangeClassTimer(Handle:timer, any:userid)
+{
+	new client = GetClientOfUserId(userid);
+	
+	if (IsValidClient(client) && IsPlayerAlive(client))
+	{
+		client_respawn_checkpoint[client] = 0
+		if (!client_no_d_menubuy_respawn[client])
+		{
+			Menu_BuyUpgrade(client, 0);
+		}
+	
+	}
+}
+
+public Action:WeaponReGiveUpgrades(Handle:timer, any:userid)
+{
+	new client = GetClientOfUserId(userid);
+	
+	if (IsValidClient(client) && IsPlayerAlive(client))
+	{
+	//	if (current_class[client] == _:TFClass_Spy)
+	//	{
+	//			PrintToChat(client, "shpiee");
+	//	}
+		client_respawn_handled[client] = 1
+		for (new slot = 0; slot < NB_SLOTS_UED; slot++)
+		{
+			//PrintToChat(client, "money spent on slot  %d -- %d$", slot, client_spent_money[client][slot]);
+			if (client_spent_money[client][slot] > 0)
+			{
+				if (slot == 3 && client_new_weapon_ent_id[client])
+				{
+					GiveNewWeapon(client, 3)
+				}
+				GiveNewUpgradedWeapon_(client, slot)
+			//	PrintToChat(client, "player's upgrad!!");
+			}
+		}
+		if (!client_no_d_menubuy_respawn[client])
+		{
+			Menu_BuyUpgrade(client, 0);
+		}
+	}
+	client_respawn_handled[client] = 0
+}
+
+public OnClientDisconnect(client)
+{
+	PrintToServer("putoutserver #%d", client);
+	//if (IsClientInGame(client))
+	//{
+	ResetClientUpgrades(client)
+	//}
+}
+
+public OnClientPutInServer(client)
+{
+	new iCashtmp;
+	new maxCashtmp = 0;
+
+	
+	decl String:clname[255]
+	GetClientName(client, clname, sizeof(clname))
+	clientBaseName[client] = clname
+	//PrintToChatAll("putinserver #%d", client);
+	PrintToServer("putinserver #%d", client);
+	//current_class[client] = TF2_GetPlayerClass(client)
+	clientLevels[client] = 0
+	client_no_d_team_upgrade[client] = 1
+	client_no_showhelp[client] = 1
+	ResetClientUpgrades(client)
+	current_class[client] = _:TF2_GetPlayerClass(client)
+	//PrintToChat(client, "client changeclass");
+	if (!client_respawn_handled[client])
+	{
+		CreateTimer(0.2, ClChangeClassTimer, GetClientUserId(client));
+	}
+	if (gamemode != MVM_GAMEMODE)
+	{
+		iCashtmp = 0
+		maxCashtmp = 0
+		for (new client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+		{
+			if ((client_id != client) && IsValidClient(client_id) && IsPlayerAlive(client_id))
+			{
+					iCashtmp = client_spent_money[client_id][0]
+							   +client_spent_money[client_id][1]
+							   +client_spent_money[client_id][2]
+							   +client_spent_money[client_id][3];
+					if (iCashtmp > maxCashtmp)
+					{
+						maxCashtmp = iCashtmp
+					}
+					
+			}
+		}
+		//iCashtmp = GetEntProp(client, Prop_Send, "m_nCurrency", iCashtmp);
+		SetEntProp(client, Prop_Send, "m_nCurrency", maxCashtmp * 0.66);
+	}
+}
+
+public Action:OnPlayerRunCmd(client, &buttons, &impulse, Float:vel[3], Float:angles[3], &weapon)
+{
+	if ((buttons & IN_SCORE) && (buttons & IN_RELOAD))
+	{
+		Menu_BuyUpgrade(client, 0);
+	}
+}

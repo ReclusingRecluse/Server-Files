@@ -1,0 +1,7 @@
+
+new Handle:up_menus[MAXPLAYERS + 1]
+
+new Handle:menuBuy
+new Handle:BuyNWmenu
+
+new BuyNWmenu_enabled;

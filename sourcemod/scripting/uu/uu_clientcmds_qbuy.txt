@@ -1,0 +1,143 @@
+
+public Action:Menu_QuickBuyUpgrade(mclient, args)
+{
+	new String:arg1[32];
+	new arg1_;
+	new String:arg2[32];
+	new arg2_;
+	new String:arg3[32];
+	new arg3_ = 0;
+	new String:arg4[32];
+	new arg4_ = 0;
+	new	bool:flag = false
+	
+	if (GetCmdArg(1, arg1, sizeof(arg1)))
+	{
+		arg1_ = StringToInt(arg1);//SLOT USED
+		if (arg1_ > -1 && arg1_ < 5 && GetCmdArg(2, arg2, sizeof(arg2)))
+		{
+			new w_id = currentitem_catidx[mclient][arg1_]
+			arg2_ = StringToInt(arg2);
+			if (GetCmdArg(3, arg3, sizeof(arg3)))
+			{
+				arg3_ = StringToInt(arg3);
+				arg4_ = 1
+				if (GetCmdArg(4, arg4, sizeof(arg4)))
+				{
+					arg4_ = StringToInt(arg4);
+					if (arg4_ >= 100)
+					{
+						arg4_ = 100
+					}
+					if (arg4_ < 1)
+					{
+						arg4_ = 1
+					}
+				}
+				if (arg2_ > -1 && arg2_ < given_upgrd_list_nb[w_id]
+				&& given_upgrd_list[w_id][arg2_][arg3_])
+				{
+					new iCash = GetEntProp(mclient, Prop_Send, "m_nCurrency", iCash);
+					new upgrade_choice = given_upgrd_list[w_id][arg2_][arg3_]
+					new inum = upgrades_ref_to_idx[mclient][arg1_][upgrade_choice]
+					if (inum == 9999)
+					{
+						inum = currentupgrades_number[mclient][arg1_]
+						currentupgrades_number[mclient][arg1_]++
+						upgrades_ref_to_idx[mclient][arg1_][upgrade_choice] = inum;
+						currentupgrades_idx[mclient][arg1_][inum] = upgrade_choice 
+						currentupgrades_val[mclient][arg1_][inum] = upgrades_i_val[upgrade_choice];
+					}
+					new idx_currentupgrades_val = RoundToFloor((currentupgrades_val[mclient][arg1_][inum] - upgrades_i_val[upgrade_choice])
+																 / upgrades_ratio[upgrade_choice])
+					new Float:upgrades_val = currentupgrades_val[mclient][arg1_][inum]
+					new up_cost = upgrades_costs[upgrade_choice]
+					up_cost /= 2
+					if (arg1_ == 1)
+					{
+						up_cost = RoundToFloor((up_cost * 1.0) * 0.75)
+					}
+					if (inum != 9999 && upgrades_ratio[upgrade_choice])
+					{
+						new t_up_cost = 0
+						for (new idx = 0; idx < arg4_; idx++)
+						{
+							t_up_cost += up_cost + RoundToFloor(up_cost * (
+														 idx_currentupgrades_val
+															 * upgrades_costs_inc_ratio[upgrade_choice]))
+							idx_currentupgrades_val++		
+							upgrades_val += upgrades_ratio[upgrade_choice]
+						}
+												
+						if (t_up_cost < 0.0)
+						{
+							t_up_cost *= -1;
+							if (t_up_cost < (upgrades_costs[upgrade_choice] / 2))
+							{
+								t_up_cost = upgrades_costs[upgrade_choice] / 2
+							}
+						}
+						if (iCash < t_up_cost)
+						{
+							new String:buffer[64]
+							Format(buffer, sizeof(buffer), "%T", "You have not enough money!!", mclient);
+							PrintToChat(mclient, buffer);
+						}
+						else
+						{
+							if ((upgrades_ratio[upgrade_choice] > 0.0 && upgrades_val >= upgrades_m_val[upgrade_choice])
+							|| (upgrades_ratio[upgrade_choice] < 0.0 && upgrades_val <= upgrades_m_val[upgrade_choice]))
+							{
+								PrintToChat(mclient, "Maximum upgrade value reached for this category.");
+							}
+							else
+							{
+								flag = true
+								client_iCash[mclient] = iCash - t_up_cost
+								SetEntProp(mclient, Prop_Send, "m_nCurrency", client_iCash[mclient]);
+								currentupgrades_val[mclient][arg1_][inum] = upgrades_val
+								client_spent_money[mclient][arg1_] += t_up_cost
+								new totalmoney = 0
+								
+								for (new s = 0; s < 5; s++)
+								{
+									totalmoney += client_spent_money[mclient][s]
+								}
+								new ctr_m = clientLevels[mclient]
+								
+								while (ctr_m < MAXLEVEL_D && totalmoney > moneyLevels[ctr_m])
+								{
+									ctr_m++
+								}
+								if (ctr_m != clientLevels[mclient])
+								{
+									clientLevels[mclient] = ctr_m
+									decl String:clname[255]
+									new String:strsn[12]
+									if (ctr_m == MAXLEVEL_D)
+									{
+										strsn = "[_over9000]"
+									}
+									else
+									{
+										Format(strsn, sizeof(strsn), "[Lvl%d]", ctr_m + 1)
+									}
+									Format(clname, sizeof(clname), "%s%s", strsn, clientBaseName[mclient])
+									SetClientInfo(mclient, "name", clname);
+								}
+								GiveNewUpgradedWeapon_(mclient, arg1_)
+								PrintToChat(mclient, "yep");
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	if (!flag)
+	{
+		PrintToChat(mclient, "Usage: /qbuy [slot 0] [upgrade menu cat 0-n] [upgrade menu entry 0-n] [nb of buy]");
+		PrintToChat(mclient, "slot : 0 primary 1 secondary 2 melee 3 special 4 body");
+		PrintToChat(mclient, "for example /qbuy 4 0 1 10 will make you buy health regen 10 times");
+	}
+}

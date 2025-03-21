@@ -1,0 +1,116 @@
+
+
+public bool:GiveNewWeapon(client, slot)
+{
+	new Handle:newItem = TF2Items_CreateItem(OVERRIDE_ALL);
+	new Flags = 0;
+	
+	new itemDefinitionIndex = currentitem_idx[client][slot]
+	TF2Items_SetItemIndex(newItem, itemDefinitionIndex);
+	currentitem_level[client][slot] = 242
+	
+	TF2Items_SetLevel(newItem, 242);
+	
+	Flags |= PRESERVE_ATTRIBUTES;
+	
+	TF2Items_SetFlags(newItem, Flags);
+	
+	TF2Items_SetClassname(newItem, currentitem_classname[client][slot]);
+	
+	slot = 6
+	new weaponIndextorem_ = GetPlayerWeaponSlot(client, slot);
+	new weaponIndextorem = weaponIndextorem_;
+	
+	
+	new entity = TF2Items_GiveNamedItem(client, newItem);
+	if (IsValidEntity(entity))
+	{
+		while ((weaponIndextorem = GetPlayerWeaponSlot(client, slot)) != -1)
+		{
+			RemovePlayerItem(client, weaponIndextorem);
+			RemoveEdict(weaponIndextorem);
+		}
+		client_new_weapon_ent_id[client] = entity
+		EquipPlayerWeapon(client, entity);
+		return true;
+	}
+	else
+	{
+		return false
+	}
+}
+
+public GiveNewUpgrade(client, slot, uid, a)
+{
+	//new itemDefinitionIndex = currentitem_idx[client][slot]
+		
+//	PrintToChatAll("--Give new upgrade", slot);
+	new iEnt;
+	if (slot == 4 && IsValidEntity(client))
+	{
+		iEnt = client
+	}
+	else if (currentitem_level[client][slot] != 242)
+	{
+		iEnt = currentitem_ent_idx[client][slot]
+	}
+	else
+	{
+		slot = 3
+		iEnt = client_new_weapon_ent_id[client]
+	}
+	if (IsValidEntity(iEnt) && strcmp(upgradesWorkNames[upgrades_to_a_id[uid]], ""))
+	{
+		//PrintToChatAll("trytoremov slot %d", slot);
+		TF2Attrib_SetByName(iEnt, upgradesWorkNames[upgrades_to_a_id[uid]],
+								  currentupgrades_val[client][slot][a]);
+										  
+		//TF2Attrib_ClearCache(iEnt)
+	}
+}
+
+public GiveNewUpgradedWeapon_(client, slot)
+{
+	//new itemDefinitionIndex = currentitem_idx[client][slot]
+		
+	new a, iNumAttributes;
+	new iEnt;
+	iNumAttributes = currentupgrades_number[client][slot]
+	if (slot == 4 && IsValidEntity(client))
+	{
+		iEnt = client
+	}
+	else if (currentitem_level[client][slot] != 242)
+	{
+		iEnt = currentitem_ent_idx[client][slot]
+	}
+	else
+	{
+		slot = 3
+		iEnt = client_new_weapon_ent_id[client]
+	}
+	if (IsValidEntity(iEnt))
+	{
+		//PrintToChatAll("trytoremov slot %d", slot);
+		TF2Attrib_RemoveAll(iEnt)
+		if( iNumAttributes > 0 )
+		{
+			for( a = 0; a < 42 && a < iNumAttributes ; a++ )
+			{
+				new uuid = upgrades_to_a_id[
+										currentupgrades_idx[client][slot][a]]
+				if (strcmp(upgradesWorkNames[uuid], ""))
+				{
+					TF2Attrib_SetByName(iEnt, upgradesWorkNames[uuid],
+											  currentupgrades_val[client][slot][a]);
+				}
+			}
+		}
+		TF2Attrib_ClearCache(iEnt)
+	}
+}
+
+
+
+
+

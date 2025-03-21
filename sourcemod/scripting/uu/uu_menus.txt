@@ -1,0 +1,195 @@
+//cl command to display current item attributes tables
+public	DisplayCurrentUps(mclient)
+{
+	new i, s
+	PrintToChat(mclient, "***Current attributes:");
+	for (s = 0; s < 4; s++)
+	{
+		PrintToChat(mclient, "[%s]:", current_slot_name[s]);
+		for (i = 0; i < currentupgrades_number[mclient][s]; i++)
+		{
+			PrintToChat(mclient, "%s: %10.2f", upgradesNames[currentupgrades_idx[mclient][s][i]], currentupgrades_val[mclient][s][i]);
+		}
+	}
+}
+	
+
+public	Menu_BuyNewWeapon(mclient)
+{
+
+	if (IsValidClient(mclient) && IsPlayerAlive(mclient))
+	{
+		DisplayMenu(BuyNWmenu, mclient, 20);
+	}
+}
+
+
+
+//menubuy 2- choose the category of upgrades
+public Action:Menu_ChooseCategory(client, String:TitleStr[64])
+{
+//	PrintToChat(client, "Entering menu_chscat");
+	new i
+	new w_id
+	
+	new Handle:menu = CreateMenu(MenuHandler_Choosecat);
+	new slot = current_slot_used[client];
+	if (slot != 4)
+	{
+		w_id = currentitem_catidx[client][slot];
+	}
+	else
+	{
+		w_id = current_class[client] - 1;
+	}
+	if (w_id >= 0)
+	{
+		current_w_list_id[client] = w_id
+		new String:buf[64]
+		for (i = 0; i < given_upgrd_list_nb[w_id]; i++)
+		{
+			Format(buf, sizeof(buf), "%T", given_upgrd_classnames[w_id][i], client)
+			AddMenuItem(menu, "upgrade", buf);
+		}
+	}
+	SetMenuTitle(menu, TitleStr);
+	SetMenuExitButton(menu, true);
+	if (IsValidClient(client) && IsPlayerAlive(client))
+//	&& !TF2_IsPlayerInCondition(client, TFCond_Disguised))
+	{
+		DisplayMenu(menu, client, 20);
+	}
+	//return Plugin_Handled;
+}
+
+public isValidVIP(client)
+{
+	new flags = GetUserFlagBits (client) 
+	return (flags & ADMFLAG_CUSTOM1 )
+}
+
+//menubuy 3- choose the upgrade
+public Action:Menu_UpgradeChoice(client, cat_choice, String:TitleStr[100])
+{
+	new i
+
+	new Handle:menu = CreateMenu(MenuHandler_UpgradeChoice);
+	if (cat_choice != -1)
+	{
+		new w_id = current_w_list_id[client]
+
+		decl String:desc_str[255]
+		new tmp_up_idx
+		new tmp_ref_idx
+		new up_cost
+		new Float:tmp_val
+		new Float:tmp_ratio
+		new slot
+		decl String:plus_sign[1]
+		current_w_c_list_id[client] = cat_choice
+		slot = current_slot_used[client]
+		for (i = 0; (tmp_up_idx = given_upgrd_list[w_id][cat_choice][i]); i++)
+		{
+			up_cost = upgrades_costs[tmp_up_idx] / 2
+			if (slot == 1)
+			{
+				up_cost = RoundToFloor((up_cost * 1.0) * 0.75)
+			}
+			tmp_ref_idx = upgrades_ref_to_idx[client][slot][tmp_up_idx]
+			if (tmp_ref_idx != 9999)
+			{	
+			//	PrintToChat(client, "menuexisting att:%d", tmp_ref_idx)
+				tmp_val = currentupgrades_val[client][slot][tmp_ref_idx] - upgrades_i_val[tmp_up_idx]
+			}
+			else
+			{
+				tmp_val = 0.0
+			}
+			tmp_ratio = upgrades_ratio[tmp_up_idx]
+			if (tmp_val && tmp_ratio)
+			{
+				up_cost += RoundToFloor(up_cost * (tmp_val / tmp_ratio) * upgrades_costs_inc_ratio[tmp_up_idx])
+				if (up_cost < 0.0)
+				{
+					up_cost *= -1;
+					if (up_cost < (upgrades_costs[tmp_up_idx] / 2))
+					{
+						up_cost = upgrades_costs[tmp_up_idx] / 2
+					}
+				}
+			}
+			if (tmp_ratio > 0.0)
+			{
+				plus_sign = "+"
+			}
+			else
+			{
+				tmp_ratio *= -1.0
+				plus_sign = "-"
+			}
+			new String:buf[64]
+			Format(buf, sizeof(buf), "%T", upgradesNames[tmp_up_idx], client)
+			if (tmp_ratio < 0.99)
+			{
+				Format(desc_str, sizeof(desc_str), "%5d$ -%s\n\t\t\t%s%i%%\t(%i%%)",
+					up_cost, buf,
+					plus_sign, RoundToFloor(tmp_ratio * 100), ((RoundToFloor(tmp_val * 100) / 5) * 5))
+			}
+			else
+			{
+				Format(desc_str, sizeof(desc_str), "%5d$ -%s\n\t\t\t%s%3i\t(%i)",
+					up_cost, buf,
+					plus_sign, RoundToFloor(tmp_ratio), RoundToFloor(tmp_val))
+			}
+			
+			AddMenuItem(menu, "upgrade", desc_str);
+		}
+	}
+	SetMenuTitle(menu, TitleStr);
+	SetMenuExitButton(menu, true);
+	
+	DisplayMenu(menu, client, 20);
+ 
+	//return Plugin_Handled;
+}
+
+
+//menubuy 1-chose the item category of upgrade
+public Action:Menu_BuyUpgrade(client, args)
+{
+	 if (IsValidClient(client) && IsPlayerAlive(client) && !client_respawn_checkpoint[client])
+//		&& !TF2_IsPlayerInCondition(client, TFCond_Disguised) )
+	 {
+			new String:buffer[64];
+			menuBuy = CreateMenu(MenuHandler_BuyUpgrade);
+			SetMenuTitle(menuBuy, "****UberUpgrades");
+			Format(buffer, sizeof(buffer), "%T", "Body upgrade", client);
+			AddMenuItem(menuBuy, "upgrade_player", buffer);
+			
+			Format(buffer, sizeof(buffer), "%T", "Upgrade my primary weapon", client);
+			AddMenuItem(menuBuy, "upgrade_primary", buffer);
+			
+			Format(buffer, sizeof(buffer), "%T", "Upgrade my secondary weapon", client);
+			AddMenuItem(menuBuy, "upgrade_secondary", buffer);
+			
+			Format(buffer, sizeof(buffer), "%T", "Upgrade my melee weapon", client);
+			AddMenuItem(menuBuy, "upgrade_melee", buffer);
+			
+			//Format(buffer, sizeof(buffer), "%T", "Display Upgrades/Remove downgrades", client);
+			AddMenuItem(menuBuy, "upgrade_dispcurrups", "Display Upgrades/Remove downgrades");
+			if (!BuyNWmenu_enabled)
+			{
+				Format(buffer, sizeof(buffer), "%T", "Buy a neeew weapon!!", client);
+				AddMenuItem(menuBuy, "upgrade_buyoneweap", buffer);
+				if (currentitem_level[client][3] == 242)
+				{
+					Format(buffer, sizeof(buffer), "%T", "Upgrade my neeew weapon!!", client);
+					AddMenuItem(menuBuy, "upgrade_buyoneweap", buffer);
+				}
+			}
+			SetMenuExitButton(menuBuy, true);
+			DisplayMenu(menuBuy, client, 20);
+	}
+	//return Plugin_Handled;
+}
+ 

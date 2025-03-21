@@ -1,0 +1,88 @@
+
+public ResetClientUpgrade_slot(client, slot)
+{
+	new i
+	new iNumAttributes = currentupgrades_number[client][slot]
+	
+	//PrintToChat(client, "#resetupgrade monweyspend-> %d", client_spent_money[client][slot]);
+	if (client_spent_money[client][slot])
+	{
+		new iCash = GetEntProp(client, Prop_Send, "m_nCurrency", iCash);
+		SetEntProp(client, Prop_Send, "m_nCurrency", iCash + client_spent_money[client][slot]);
+	}
+	currentitem_level[client][slot] = 0
+	client_spent_money[client][slot] = 0
+	client_spent_money_mvm_chkp[client][slot] = 0
+	currentupgrades_number[client][slot] = 0
+//	PrintToChat(client, "enter ...#resetupgradeslot %d, resetting values for %d attributes", slot, iNumAttributes);
+	
+	for (i = 0; i < iNumAttributes; i++)
+	{
+	//	PrintToChat(client, "enter ...#resetupgrade [%d][%d] -> ref(%d)[%s]", slot, i,
+		//		upgrades_ref_to_idx[client][slot][currentupgrades_idx[client][slot][i]],
+		//		upgradesNames[currentupgrades_idx[client][slot][i]])
+		upgrades_ref_to_idx[client][slot][currentupgrades_idx[client][slot][i]] = 9999
+		//currentupgrades_idx[client][slot][i] = 9999
+	}
+
+	if (slot != 4 && currentitem_idx[client][slot])
+	{
+		currentitem_idx[client][slot] = 9999
+		GiveNewUpgradedWeapon_(client, slot)
+		
+		//
+		//currentitem_ent_idx[client][slot] = -1
+	}
+	//client_last_up_idx[client] = -1
+//	client_last_up_slot[client] = -1
+	if (slot == 3 && client_new_weapon_ent_id[client])
+	{
+		currentitem_idx[client][3] = 9999
+		currentitem_ent_idx[client][3] = -1
+		GiveNewUpgradedWeapon_(client, slot)
+		client_new_weapon_ent_id[client] = 0;
+	}
+	if (slot == 4)
+	{
+		GiveNewUpgradedWeapon_(client, slot)
+	}
+	new totalmoney = 0
+	for (new s = 0; s < 5; s++)
+	{
+		totalmoney += client_spent_money[client][s]
+	}
+	new ctr_m = clientLevels[client]
+	
+	while (ctr_m && totalmoney < moneyLevels[ctr_m])
+	{
+		ctr_m--
+	}
+	if (ctr_m != clientLevels[client])
+	{
+		clientLevels[client] = ctr_m
+		new String:strsn[12]
+		new String:clname[255]
+		if (ctr_m == MAXLEVEL_D)
+		{
+			strsn = "[_over9000]"
+		}
+		else
+		{
+			Format(strsn, sizeof(strsn), "[Lvl%d]", ctr_m + 1)
+		}
+		Format(clname, sizeof(clname), "%s%s", strsn, clientBaseName[client])
+		SetClientInfo(client, "name", clname);
+	}
+}
+
+public ResetClientUpgrades(client)
+{
+	new slot
+	
+	client_respawn_handled[client] = 0
+	for (slot = 0; slot < NB_SLOTS_UED; slot++)
+	{
+		ResetClientUpgrade_slot(client, slot)
+		//PrintToChatAll("reste all upgrade slot %d", slot)
+	}
+}

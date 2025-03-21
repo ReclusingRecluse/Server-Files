@@ -1,0 +1,145 @@
+
+public	is_client_got_req(mclient, upgrade_choice, slot, inum)
+{
+	new iCash = GetEntProp(mclient, Prop_Send, "m_nCurrency", iCash);
+	new up_cost = upgrades_costs[upgrade_choice]
+	new max_ups = currentupgrades_number[mclient][slot]
+	up_cost /= 2
+	client_iCash[mclient] = iCash;
+	if (slot == 1)
+	{
+		up_cost = RoundToFloor((up_cost * 1.0) * 0.75)
+	}
+	if (inum != 9999 && upgrades_ratio[upgrade_choice])
+	{
+		up_cost += RoundToFloor(up_cost * (
+											(currentupgrades_val[mclient][slot][inum] - upgrades_i_val[upgrade_choice])
+												/ upgrades_ratio[upgrade_choice]) 
+											* upgrades_costs_inc_ratio[upgrade_choice])
+		if (up_cost < 0.0)
+		{
+			up_cost *= -1;
+			if (up_cost < (upgrades_costs[upgrade_choice] / 2))
+			{
+				up_cost = upgrades_costs[upgrade_choice] / 2
+			}
+		}
+	}
+	if (iCash < up_cost)
+	{
+		new String:buffer[64]
+		Format(buffer, sizeof(buffer), "%T", "You have not enough money!!", mclient);
+		PrintToChat(mclient, buffer);
+		return 0
+	}
+	else
+	{
+		if (inum != 9999)
+		{	
+			if (currentupgrades_val[mclient][slot][inum] == upgrades_m_val[upgrade_choice])
+			{
+				PrintToChat(mclient, "You already have reached the maximum upgrade for this category.");
+				return 0
+			}
+		}
+		else
+		{
+			if (max_ups >= MAX_ATTRIBUTES_ITEM)
+			{
+				PrintToChat(mclient, "You have reached the maximum number of upgrade category for this item.");
+				return 0
+			}
+		}
+		// decl String:clname[255]
+		// new String:strsn[32]
+		// GetClientName(mclient, clname, sizeof(clname))
+		// if (slot != 4)
+		// {
+			// strsn = current_slot_name[slot]
+		// }
+		// else
+		// {
+			// strsn = "Body Armor"
+		// }
+		// for (new i = 1; i < MAXPLAYERS + 1; i++)
+		// {
+			// if (IsValidClient(i) && !client_no_d_team_upgrade[i])
+			// {
+				// PrintToChat(i,"%s : [%s upgrade] - %s", 
+				// clname, strsn, upgradesNames[upgrade_choice]);
+			// }
+		// }
+		
+		client_iCash[mclient] = iCash - up_cost
+		SetEntProp(mclient, Prop_Send, "m_nCurrency", client_iCash[mclient]);
+		client_spent_money[mclient][slot] += up_cost
+		new totalmoney = 0
+		for (new s = 0; s < 5; s++)
+		{
+			totalmoney += client_spent_money[mclient][s]
+		}
+		new ctr_m = clientLevels[mclient]
+		
+		while (ctr_m < MAXLEVEL_D && totalmoney > moneyLevels[ctr_m])
+		{
+			ctr_m++
+		}
+		if (ctr_m != clientLevels[mclient])
+		{
+			clientLevels[mclient] = ctr_m
+			decl String:clname[255]
+			new String:strsn[12]
+			if (ctr_m == MAXLEVEL_D)
+			{
+				strsn = "[_over9000]"
+			}
+			else
+			{
+				Format(strsn, sizeof(strsn), "[Lvl%d]", ctr_m + 1)
+			}
+			Format(clname, sizeof(clname), "%s%s", strsn, clientBaseName[mclient])
+		/SetClientInfo(mclient, "name", clname);
+		}
+		return 1
+	}
+}
+
+public	check_apply_maxvalue(mclient, slot, inum, upgrade_choice)
+{
+	if ((upgrades_ratio[upgrade_choice] > 0.0
+		 && currentupgrades_val[mclient][slot][inum] > upgrades_m_val[upgrade_choice])
+		|| (upgrades_ratio[upgrade_choice] < 0.0 
+			&& currentupgrades_val[mclient][slot][inum] < upgrades_m_val[upgrade_choice]))
+		{
+			currentupgrades_val[mclient][slot][inum] = upgrades_m_val[upgrade_choice]
+		}
+}
+
+public UpgradeItem(mclient, upgrade_choice, inum, Float:ratio)
+{
+	new slot = current_slot_used[mclient]
+	//PrintToChat(mclient, "Entering #upprimary");
+	
+	
+	if (inum == 9999)
+	{
+		inum = currentupgrades_number[mclient][slot]
+		upgrades_ref_to_idx[mclient][slot][upgrade_choice] = inum;
+		currentupgrades_idx[mclient][slot][inum] = upgrade_choice 
+		currentupgrades_val[mclient][slot][inum] = upgrades_i_val[upgrade_choice];
+		currentupgrades_number[mclient][slot] = currentupgrades_number[mclient][slot] + 1
+		//PrintToChat(mclient, "#upprimary Adding New Upgrade uslot(%d) [%s]", inum, upgradesNames[upgrade_choice]);
+		currentupgrades_val[mclient][slot][inum] += (upgrades_ratio[upgrade_choice] * ratio);
+	}
+	else
+	{
+	//	PrintToChat(mclient, "#upprimary existin attr: %d", inum)
+	//	PrintToChat(mclient, "#upprimary ++ Existing Upgrade(%d) %d[%s]", inum, currentupgrades_idx[mclient][slot][inum], upgradesNames[upgrade_choice]);
+		currentupgrades_val[mclient][slot][inum] += (upgrades_ratio[upgrade_choice] * ratio);
+		check_apply_maxvalue(mclient, slot, inum, upgrade_choice)
+	}
+		//PrintToChat(mclient, "#upprimary Entering givenew to slot %d", slot);
+	client_last_up_idx[mclient] = upgrade_choice
+	client_last_up_slot[mclient] = slot
+	//PrintToChat(mclient, "exit ...#upprimary");
+}

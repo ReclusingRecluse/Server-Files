@@ -1,0 +1,213 @@
+stock bool:IsValidClient(client, bool:nobots = true)
+{ 
+    if (client <= 0 || client > MaxClients || !IsClientConnected(client) || (nobots && IsFakeClient(client)))
+    {
+        return false; 
+    }
+    return IsClientInGame(client); 
+}
+
+//Initialize New Weapon menu
+public CreateBuyNewWeaponMenu()
+{
+	BuyNWmenu = CreateMenu(MenuHandler_BuyNewWeapon);
+	
+	SetMenuTitle(BuyNWmenu, "***Choose additional weapon for 200$:");
+	
+	for (new i=0; i < NB_B_WEAPONS; i++)
+	{
+		AddMenuItem(BuyNWmenu, "tweak", newweaponmenudesc[i]);
+	}
+	SetMenuExitButton(BuyNWmenu, true);
+}
+
+//Initialize menus , CVARs, con cmds and timers handlers on plugin load
+public UberShopinitMenusHandlers()
+{
+	LoadTranslations("tf2items_uu.phrases.txt");
+	gamemode = -1
+	BuyNWmenu_enabled = true
+	
+	cvar_uu_version = CreateConVar("uberupgrades_version", UU_VERSION, "The Plugin Version. Don't change.", FCVAR_NOTIFY);
+	//cvar_CostIncrease_ratio_default = 	CreateConVar("sm_uu_costincrease_ratio_defaut", "0.5", "Each time an upgrade is bought, next one will be increased by this ratio if not defined in uu_attributes.txt(Not yet implemented): default 0.5");
+	cvar_MoneyBonusKill = 				CreateConVar("sm_uu_moneybonuskill", "15000", "Sets the money bonus a client gets for killing: default 15000");
+	cvar_AutoMoneyForTeamRatio = 			CreateConVar("sm_uu_automoneyforteam_ratio", "1", "If set to 1, the plugin will manage money balancing");
+	////cvar_MoneyForTeamRatioRed = 			CreateConVar("sm_uu_moneyforteam_ratio", "1.00", "Sets the ratio of (money + money spent on upgrades) from a client that the team gets when killing him: default 0.05");
+	//cvar_MoneyForTeamRatioBlue = 			CreateConVar("sm_uu_moneyforteam_ratio", "1.00", "Sets the ratio of (money + money spent on upgrades) from a client that the team gets when killing him: default 0.05");
+	cvar_StartMoney = 					CreateConVar("sm_uu_startmoney", "30000", "Sets the starting money: default 30000");
+	cvar_TimerMoneyGive_BlueTeam = 		CreateConVar("sm_uu_timermoneygive_blueteam", "100", "Sets the money blue team get every timermoney event: default 100");
+	cvar_TimerMoneyGive_RedTeam =  		CreateConVar("sm_uu_timermoneygive_redteam", "100", "Sets the money blue team get every timermoney event: default 80");
+	if (cvar_uu_version) //Compile warning fast bypass
+	{
+	}
+	//CostIncrease_ratio_default  = GetConVarFloat(cvar_CostIncrease_ratio_default)
+	MoneyBonusKill = GetConVarInt(cvar_MoneyBonusKill)
+	MoneyForTeamRatio[RED]  = 1.0
+	MoneyForTeamRatio[BLUE]  = 1.0
+	TimerMoneyGive_BlueTeam = GetConVarInt(cvar_TimerMoneyGive_BlueTeam)
+	TimerMoneyGive_RedTeam = GetConVarInt(cvar_TimerMoneyGive_RedTeam)
+	StartMoney = GetConVarInt(cvar_StartMoney)
+	
+	RegConsoleCmd("uuhelp", Disp_Help)
+	RegAdminCmd("us_enable_buy_new_weapon", EnableBuyNewWeapon, ADMFLAG_GENERIC)
+	RegAdminCmd("sm_uuspentmoney", ShowSpentMoney, ADMFLAG_GENERIC)
+	RegAdminCmd("reload_cfg", ReloadCfgFiles, ADMFLAG_GENERIC)
+	RegConsoleCmd("uu", Disp_Help)
+	RegConsoleCmd("nohelp", StopDisp_chatHelp)
+	RegConsoleCmd("uudteamup", Toggl_DispTeamUpgrades)
+	RegConsoleCmd("uu_no", Toggl_DispTeamUpgrades)
+	RegConsoleCmd("uurspwn", Toggl_DispMenuRespawn)
+	RegConsoleCmd("uuaide", Disp_Help)
+	RegConsoleCmd("aide", Disp_Help)
+	RegConsoleCmd("buy", Menu_BuyUpgrade)
+	RegConsoleCmd("qbuy", Menu_QuickBuyUpgrade)
+	//RegConsoleCmd("sp_buy", Menu_SpecialBuyUpgrade)
+	RegConsoleCmd("upgrade", Menu_BuyUpgrade)
+	RegConsoleCmd("BUY", Menu_BuyUpgrade)
+	HookEvent("post_inventory_application", Event_PlayerreSpawn)
+	HookEvent("player_spawn", Event_PlayerreSpawn)
+	HookEvent("teamplay_round_start", Event_RoundStart)
+	
+	HookEvent("player_death", Event_PlayerDeath, EventHookMode_Pre)
+	HookEvent("player_changeclass", Event_PlayerChangeClass)
+	HookEvent("player_class", Event_PlayerChangeClass)
+	HookEvent("player_team", Event_PlayerChangeTeam)
+	AddCommandListener(jointeam_callback, "jointeam");
+	//HookEvent("item_pickup", Event_PlayerreSpawn)
+	//HookEvent("mm_lobby_member_join", Event_OnClientPutInServer
+	
+	
+	HookEvent("mvm_begin_wave", Event_mvm_begin_wave)
+	
+	HookEvent("mvm_wave_complete", Event_mvm_wave_complete)
+	HookEvent("teamplay_round_win", Event_teamplay_round_win)
+	 
+	Timers_[0] = CreateTimer(20.0, Timer_GetConVars, _, TIMER_REPEAT);
+	Timers_[1] = CreateTimer(20.0, Timer_GiveSomeMoney, _, TIMER_REPEAT);
+	Timers_[2] = CreateTimer(40.0, Timer_PrintMessageRepeat, _, TIMER_REPEAT);
+	Timers_[3] = CreateTimer(1.0, Timer_PrintMoneyHud, _, TIMER_REPEAT);
+	
+	moneyLevels[0] = 125;
+	for (new level = 1; level < MAXLEVEL_D; level++)
+	{
+		moneyLevels[level] = (125 + ((level + 1) * 50)) + moneyLevels[level - 1];
+	}
+}
+
+//Initialize menus , CVARs, con cmds and timers handlers on plugin load
+public UberShopUnhooks()
+{
+
+	UnhookEvent("post_inventory_application", Event_PlayerreSpawn)
+	UnhookEvent("player_spawn", Event_PlayerreSpawn)
+	UnhookEvent("teamplay_round_start", Event_RoundStart)
+	
+	UnhookEvent("player_death", Event_PlayerDeath)
+	UnhookEvent("player_changeclass", Event_PlayerChangeClass)
+	UnhookEvent("player_class", Event_PlayerChangeClass)
+	UnhookEvent("player_team", Event_PlayerChangeTeam)
+	
+	UnhookEvent("mvm_begin_wave", Event_mvm_begin_wave)
+	
+	UnhookEvent("mvm_wave_complete", Event_mvm_wave_complete)
+	UnhookEvent("teamplay_round_win", Event_teamplay_round_win)
+	 
+	KillTimer(Timers_[0]);
+	KillTimer(Timers_[1]);
+	KillTimer(Timers_[2]);
+	KillTimer(Timers_[3]);
+}
+
+public GetUpgrade_CatList(String:WCName[])
+{
+	new i, wis, w_id
+	
+	wis = 0// wcname_idx_start[cl_class]
+	//PrintToChatAll("Class: %d; WCname:%s", cl_class, WCName);
+	for (i = wis, w_id = -1; i < WCNAMELISTSIZE; i++)
+	{
+		if (!strcmp(wcnamelist[i], WCName, false))
+		{
+			w_id = wcname_l_idx[i]
+			//PrintToChatAll("wid found; %d", w_id)
+			return w_id
+		}
+	}
+	if (w_id < -1)
+	{
+		PrintToServer("UberUpgrade error: #%s# was not a valid weapon classname..", WCName)
+	}
+	return w_id
+}
+
+public OnPluginStart()
+{
+	//TODO CVARS cvar_StartMoney = CreateConVar("sm_uu_moneystart", "300", "Sets the starting currency used for upgrades. Default: 500");
+	//cvar_TimerMoneyGiven_BlueTeam = CreateConVar("sm_uu_timermoneygive_blueteam", "25", "Sets the currency you obtain on kill. Default: 25");
+	//cvar_KillMoneyRatioForTeam = CreateConVar("sm_uu_moneyonkill", "", "Sets the currency you obtain on kill. Default: 25");
+	//ConnectDB();
+	UberShopinitMenusHandlers()
+
+	UberShopDefineUpgradeTabs()
+	
+	
+	
+	for (new client = 0; client < MAXPLAYERS + 1; client++)
+	{
+		if (IsValidClient(client))
+		{
+			client_no_d_team_upgrade[client] = 1
+			client_no_showhelp[client] = 0
+			ResetClientUpgrades(client)
+			current_class[client] = _:TF2_GetPlayerClass(client)
+			//PrintToChat(client, "client changeclass");
+			if (!client_respawn_handled[client])
+			{
+				CreateTimer(0.2, ClChangeClassTimer, GetClientUserId(client));
+			}
+		}	
+	}
+	return true
+}
+
+public OnPluginEnd()
+{
+	PrintToServer("Plugin ends.")
+	UberShopUnhooks()
+	PrintToServer("Plugin ends -- Unload complete.")
+}
+
+public Action:Timer_PrintMoneyHud(Handle:timer)
+{
+	for (new i = 1; i < MAXPLAYERS + 1; i++)
+	{
+		if (IsValidClient(i))
+		{
+			decl String:Buffer[12]
+			Format(Buffer, sizeof(Buffer), "%d$", client_iCash[i]); 
+			SetHudTextParams(0.9, 0.8, 1.0, 255,0,0,255);
+			ShowHudText(i, -1, Buffer);
+		}
+	}
+}
+
+public Action:Timer_PrintMessageRepeat(Handle:timer)
+{
+	for (new i = 1; i < MAXPLAYERS + 1; i++)
+	{
+		if (IsValidClient(i) && !client_no_showhelp[i])
+		{
+			SetHudTextParams(0.01, -0.6, 8.0, 255,0,255,255);
+			//PrintToChat(i, "UbER_SHOP MOD****!\n**TO GET UPGRADES,\n hold <R>+<TAB> key(Reload + 'Showscore')or type !buy in chat\nType !ushelp in chat")
+			ShowHudText(i, -1, "UbER_SHOP****DEV SERVER!\n**TO GET UPGRADES,\n hold <R>+<TAB>keys(Reload + 'Showscore')or type !buy in chat\nType !ushelp in chat\nType !nohelp to remove this message.");
+		}
+	}
+}
+/*player_spawn
+Scout, Soldier, Pyro, DemoMan, Heavy, Medic, Sniper: 
+[code]0 - Primary 1 - Secondary 2 - Melee[/code] 
+Engineer: 
+[code]0 - Primary 1 - Secondary 2 - Melee 3 - Construction PDA 4 - Destruction PDA 5 - Building[/code] 
+Spy: 
+[code]0 - Secondary 1 - Sapper 2 - Melee 3 - Disguise Kit 4 - Invisibility Watch[/code]
+*/

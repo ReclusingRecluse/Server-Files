@@ -1,0 +1,77 @@
+
+
+public DefineAttributesTab(client, itemidx, slot)
+{	
+	//PrintToChat(client, "Entering Def attr tab, ent id: %d", itemidx);
+	//PrintToChat(client, "  #dattrtab item carried: %d - item_buff: %d", itemidx, currentitem_idx[client][slot]);
+	if (currentitem_idx[client][slot] == 9999)
+	{
+		new a, a2, i, a_i
+		
+		currentitem_idx[client][slot] = itemidx
+		new inumAttr = TF2II_GetItemNumAttributes( itemidx );
+		for( a = 0, a2 = 0; a < inumAttr && a < 42; a++ )
+		{
+			decl String:Buf[64]
+			a_i = TF2II_GetItemAttributeID( itemidx, a);
+			TF2II_GetAttribName( a_i, Buf, 64);
+		//	if (!GetTrieValue(_upg_names, Buf, i))
+		//	{
+		//		i = _u_id
+		//		upgradesNames[i] = Buf
+		//		upgrades_costs[i] = 1
+		//		SetTrieValue(_upg_names, Buf, _u_id++)
+		//		upgrades_to_a_id[i] = a_i
+		//	}
+			if (GetTrieValue(_upg_names, Buf, i))
+			{
+				currentupgrades_idx[client][slot][a2] = i
+			
+				upgrades_ref_to_idx[client][slot][i] = a2;
+				currentupgrades_val[client][slot][a2] = TF2II_GetItemAttributeValue( itemidx, a );
+				//PrintToChat(client, "init-attribute-[%s]%d [%d ; %f]", 
+			//	upgradesNames[currentupgrades_idx[client][slot][a2]],
+			//	itemidx, i, currentupgrades_val[client][slot][a]);
+				a2++
+			}
+		}
+		currentupgrades_number[client][slot] = a2
+	}
+	else
+	{
+		if (itemidx > 0 && itemidx != currentitem_idx[client][slot])
+		{
+			ResetClientUpgrade_slot(client, slot)
+			new a, a2, i, a_i
+		
+			currentitem_idx[client][slot] = itemidx
+			new inumAttr = TF2II_GetItemNumAttributes( itemidx );
+			for( a = 0, a2 = 0; a < inumAttr && a < 42; a++ )
+			{
+				decl String:Buf[64]
+				a_i = TF2II_GetItemAttributeID( itemidx, a);
+				TF2II_GetAttribName( a_i, Buf, 64);
+		//	if (!GetTrieValue(_upg_names, Buf, i))
+		//	{
+		//		i = _u_id
+		//		upgradesNames[i] = Buf
+		//		upgrades_costs[i] = 1
+		//		SetTrieValue(_upg_names, Buf, _u_id++)
+		//		upgrades_to_a_id[i] = a_i
+		//	}
+				if (GetTrieValue(_upg_names, Buf, i))
+				{
+					currentupgrades_idx[client][slot][a2] = i
+				
+					upgrades_ref_to_idx[client][slot][i] = a2;
+					currentupgrades_val[client][slot][a2] = TF2II_GetItemAttributeValue( itemidx, a );
+					//PrintToChat(client, "init-attribute-%d [%d ; %f]", itemidx, i, currentupgrades_val[client][slot][a]);
+					a2++
+				}
+			}
+			currentupgrades_number[client][slot] = a2
+		}
+	}
+	//PrintToChat(client, "..finish #dattrtab ");
+}
+

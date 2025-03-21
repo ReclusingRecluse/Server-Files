@@ -1,0 +1,58 @@
+
+ public Event_PlayerChangeTeam(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	new client = GetClientOfUserId(GetEventInt(event, "userid"));
+	if (IsValidClient(client))
+	{
+		ResetClientUpgrades(client)
+		//current_class[client] = TF2_GetPlayerClass(client)
+		//PrintToChat(client, "client changeteam");
+		if (!client_respawn_handled[client])
+		{
+			CreateTimer(0.2, ClChangeClassTimer, GetClientUserId(client));
+		}
+	}
+}
+
+public Action:jointeam_callback(client, const String:command[], argc) //protection from spectators
+{
+	decl String:arg[3];
+	arg[0] = '\0';
+	PrintToServer("jointeam callback #%d", client);
+	GetCmdArg(1, arg, sizeof(arg));
+	if(StrEqual(arg, "") || StringToInt(arg) == 0)
+	{
+		ResetClientUpgrades(client)
+		//current_class[client] = TF2_GetPlayerClass(client)
+		//PrintToChat(client, "client changeteam");
+		if (!client_respawn_handled[client])
+		{
+			CreateTimer(0.2, ClChangeClassTimer, GetClientUserId(client));
+		}
+		if (gamemode != MVM_GAMEMODE)
+		{
+			new iCashtmp;
+			new maxCashtmp = 0;
+			for (new client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+			{
+				if ((client_id != client) && IsValidClient(client_id) && IsPlayerAlive(client_id))
+				{
+					iCashtmp = GetEntProp(client, Prop_Send, "m_nCurrency", iCashtmp);
+					iCashtmp = client_spent_money[client_id][0]
+							   +client_spent_money[client_id][1]
+							   +client_spent_money[client_id][2]
+							   +client_spent_money[client_id][3];
+					if (iCashtmp > maxCashtmp)
+					{
+						maxCashtmp = iCashtmp
+					}
+						
+				}
+			}
+			PrintToServer("give to client #%d startmoney", (maxCashtmp * 3)/4);
+			//iCashtmp = GetEntProp(client, Prop_Send, "m_nCurrency", iCashtmp);
+			SetEntProp(client, Prop_Send, "m_nCurrency", (maxCashtmp * 3)/4);
+		}
+    }
+} 
+  

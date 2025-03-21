@@ -1,0 +1,135 @@
+	
+
+public MenuHandler_SpecialUpgradeChoice(Handle:menu, MenuAction:action, mclient, param2)
+{
+	if (action == MenuAction_Select)
+	{
+		client_respawn_handled[mclient] = 0
+		new String:fstr[100]
+		new got_req = 1
+		new slot = current_slot_used[mclient]
+		new w_id = current_w_list_id[mclient]
+		new cat_id = current_w_c_list_id[mclient]
+		new spTweak = given_upgrd_list[w_id][cat_id][param2]
+		for (new i = 0; i < upgrades_tweaks_nb_att[spTweak]; i++)
+		{
+			new upgrade_choice = upgrades_tweaks_att_idx[spTweak][i]
+			new inum = upgrades_ref_to_idx[mclient][slot][upgrade_choice]
+			if (inum != 9999)
+				{
+					if (currentupgrades_val[mclient][slot][inum] == upgrades_m_val[upgrade_choice])
+					{
+						PrintToChat(mclient, "You already have reached the maximum upgrade for this tweak.");
+						got_req = 0
+					}
+				}
+				else
+				{
+					if (currentupgrades_number[mclient][slot] + upgrades_tweaks_nb_att[spTweak] >= MAX_ATTRIBUTES_ITEM)
+					{
+						PrintToChat(mclient, "You have not enough upgrade category slots for this tweak.");
+						got_req = 0
+					}
+				}
+				
+		
+		}
+		if (got_req)
+		{
+			decl String:clname[255]
+			GetClientName(mclient, clname, sizeof(clname))
+			for (new i = 1; i < MAXPLAYERS + 1; i++)
+			{
+				if (IsValidClient(i) && !client_no_d_team_upgrade[i])
+				{
+					PrintToChat(i,"%s : [%s tweak] - %s!", 
+					clname, upgrades_tweaks[spTweak], current_slot_name[slot]);
+				}
+			}
+			for (new i = 0; i < upgrades_tweaks_nb_att[spTweak]; i++)
+			{
+				new upgrade_choice = upgrades_tweaks_att_idx[spTweak][i]
+				UpgradeItem(mclient, upgrade_choice, upgrades_ref_to_idx[mclient][slot][upgrade_choice], 
+					upgrades_tweaks_att_ratio[spTweak][i])
+			}
+			GiveNewUpgradedWeapon_(mclient, slot)
+			new String:buf[32]
+			Format(buf, sizeof(buf), "%T", current_slot_name[slot], mclient);
+			Format(fstr, sizeof(fstr), "%d$ [%s] - %s", client_iCash[mclient], buf, 
+					given_upgrd_classnames[w_id][cat_id])
+			Menu_SpecialUpgradeChoice(mclient, cat_id, fstr, GetMenuSelectionPosition())
+		}
+			//PrintToChat(mclient, "#MENU UPC FSTR=%s", fstr);
+	}
+	else if (action == MenuAction_End)
+	{
+		CloseHandle(menu);
+	}
+}
+
+
+public MenuHandler_AttributesTweak_action(Handle:menu, MenuAction:action, client, param2)
+{
+	if (IsValidClient(client) && IsPlayerAlive(client) && !client_respawn_checkpoint[client])
+	{
+		new s = current_slot_used[client]
+		if (s >= 0 && s < 4 && param2 < MAX_ATTRIBUTES_ITEM)
+		{
+			if (param2 >= 0)
+			{
+				new u = currentupgrades_idx[client][s][param2]
+				if (u != 9999)
+				{
+					if (upgrades_costs[u] < -0.0001)
+					{
+						new iCash = GetEntProp(client, Prop_Send, "m_nCurrency", iCash);
+						new nb_time_upgraded = RoundToFloor((upgrades_i_val[u] - currentupgrades_val[client][s][param2]) / upgrades_ratio[u])
+						new up_cost = upgrades_costs[u] * nb_time_upgraded * 3
+						if (iCash >= up_cost)
+						{
+						
+							remove_attribute(client, param2)
+							SetEntProp(client, Prop_Send, "m_nCurrency", iCash - up_cost);
+							client_iCash[client] = iCash;
+							client_spent_money[client][s] += up_cost
+							new String:buffer[80];
+							Format(buffer, sizeof(buffer), "%T", "Attribute removed", client, current_slot_name[s], upgradesNames[u]);
+							PrintToChat(client,"%s", buffer);
+						}
+						else
+						{
+							new String:buffer[64]
+							Format(buffer, sizeof(buffer), "%T", "You have not enough money!!", client);
+							PrintToChat(client, buffer);
+						}
+					}
+					else
+					{
+						PrintToChat(client,"Nope.")
+					}
+				}
+			}
+		}
+	}
+	else if (action == MenuAction_End)
+	{
+		CloseHandle(menu);
+	}
+	//return Plugin_Handled;
+}
+
+ 
+//menubuy 1-chose the item attribute to tweak
+public MenuHandler_AttributesTweak(Handle:menu, MenuAction:action, client, param2)
+{
+	if (IsValidClient(client) && IsPlayerAlive(client) && !client_respawn_checkpoint[client])
+	{
+		Menu_TweakUpgrades_slot(client, param2)
+	}
+	else if (action == MenuAction_End)
+	{
+		CloseHandle(menu);
+	}
+	//return Plugin_Handled;
+}
+ 

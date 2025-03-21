@@ -1,0 +1,32 @@
+#include <tf2>
+#include <sourcemod>
+#include <functions>
+#include <sdktools>
+#include <tf2_stocks>
+#include <tf2items>
+#include <tf2attributes>
+#include <tf2itemsinfo>
+#include <keyvalues>
+
+#define UU_VERSION "0.9.4"
+
+
+#define RED 0
+#define BLUE 1
+
+#define NB_B_WEAPONS 37
+
+#define NB_SLOTS_UED 5
+
+#define MAX_ATTRIBUTES 600
+
+#define MAX_ATTRIBUTES_ITEM 42
+
+#define _NUMBER_DEFINELISTS 90
+
+#define _NUMBER_DEFINELISTS_CAT 8
+
+#define WCNAMELISTSIZE 90
+
+#define _NB_SP_TWEAKS 90
+#define MAXLEVEL_D 400

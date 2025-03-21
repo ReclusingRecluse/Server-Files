@@ -1,0 +1,123 @@
+
+new Float:playerpos[3]
+
+public Action:Resspawnn(Handle:timer, any:client)
+{
+		new Float:nulVec[3];
+		nulVec[0] = 0.0;
+		nulVec[1] = 0.0;
+		nulVec[2] = 0.0;
+		//new Handle:event2 = CreateEvent("player_spawn")
+		//if (event == INVALID_HANDLE)
+		//{
+		//	return
+		//}
+ 
+		//PrintToChatAll("Timer user id : %d", client )
+	//	SetEventInt(event2, "userid", client)
+	//	FireEvent(event2)
+		//SetEntityHealth(client, 50)
+		//TF2_RespawnPlayer(client);
+		TF2_AddCondition(client, TFCond_OnFire, 50.0, 0)
+		TeleportEntity(client, playerpos, nulVec, nulVec);
+		//TF2_AddCondition(client, TFCond_UberchargeFading, 30.0, 0)
+		//TF2_AddCondition(client, TFCond_Overhealed, 30.0, 0)
+		
+		CloseHandle(timer)
+}
+
+
+public Action:Event_PlayerDeath(Handle:event, const String:name[], bool:dontBroadcast)
+{
+	new client = GetClientOfUserId(GetEventInt(event, "userid"));
+	//if (isValidVIP(client))
+	//{
+	//	PrintToChat(client, "AhhhA Vip death client#%d", client)
+	//	GetEntPropVector(client, Prop_Send, "m_vecOrigin", playerpos);
+//		TF2_RespawnPlayer(client);
+	//	CreateTimer(6.5, Resspawnn, client);
+	//	CreateTimer(4.0, Resspawnn, GetClientUserId(client));
+		
+	//}
+	
+	new attack = GetClientOfUserId(GetEventInt(event, "attacker"));
+	new assist = GetClientOfUserId(GetEventInt(event, "assister"));
+	if (gamemode != MVM_GAMEMODE)
+	{
+		//PrintToChat(client, "client death start(nomvm)_: %d %d %d", client, attack, assist);
+		new iCash_forteam;
+		
+		//PrintToChatAll("DEBUG death event: cl_dead%d cl_attack%d cl_assist%d", client, attack, assist)
+		if (IsValidClient(attack, false) && IsValidClient(client, false)
+		&& attack != client)
+		{
+
+			new team_a = GetClientTeam(attack)
+			new team_c = GetClientTeam(client)
+			new team_a_
+			new team_c_
+			new iCash_a = GetEntProp(attack, Prop_Send, "m_nCurrency", iCash_a);
+			iCash_forteam = client_iCash[client] + client_spent_money[client][0]
+								   +client_spent_money[client][1]
+								   +client_spent_money[client][2]
+								   +client_spent_money[client][3];
+			if (team_a == _:TFTeam_Red)
+			{
+				team_a_ = RED;
+				team_c_ = BLUE;
+			}
+			else
+			{
+				team_a_ = BLUE;
+				team_c_ = RED;
+			}
+			iCash_forteam = RoundToFloor(SquareRoot(iCash_forteam * 3.0) * MoneyForTeamRatio[team_a_])
+			iCash_a = iCash_a + MoneyBonusKill + iCash_forteam
+			client_iCash[attack] = iCash_a
+			SetEntProp(attack, Prop_Send, "m_nCurrency", iCash_a)
+			PrintToChat(attack, "Kill +%d$",  MoneyBonusKill + iCash_forteam)
+			
+			if (IsValidClient(assist))
+			{
+				new iCash_ass = GetEntProp(assist, Prop_Send, "m_nCurrency", iCash_ass);
+				iCash_ass += ((MoneyBonusKill + iCash_forteam) / 2)
+				client_iCash[assist] = iCash_ass
+				PrintToChat(assist, "Kill assist +%d$", 
+							((MoneyBonusKill + iCash_forteam) / 2))
+				SetEntProp(assist, Prop_Send, "m_nCurrency", iCash_ass)
+			}
+			new iCashtmpb, iCashtmpc
+			for (new client_id = 1; client_id < MAXPLAYERS + 1; client_id++)
+			{
+				if (IsValidClient(client_id))
+				{
+					if (GetClientTeam(client_id) == team_a
+					&& client_id != attack
+					&& client_id != assist)
+					{
+						iCashtmpb = GetEntProp(client_id, Prop_Send, "m_nCurrency", iCashtmpb);
+						iCashtmpb += iCash_forteam
+						SetEntProp(client_id, Prop_Send, "m_nCurrency", iCashtmpb);
+						client_iCash[client_id] = iCashtmpb
+						PrintToChat(client_id, "team kills! +%d$", iCash_forteam)
+					}
+					else if (client_id != client && GetClientTeam(client_id) == team_c)
+					{
+						iCashtmpb = GetEntProp(client_id, Prop_Send, "m_nCurrency", iCashtmpb);
+						iCashtmpc = RoundToFloor(iCash_forteam 
+									* 0.5 * (MoneyForTeamRatio[team_c_]) * (MoneyForTeamRatio[team_c_]))
+						iCashtmpb += iCashtmpc 
+						SetEntProp(client_id, Prop_Send, "m_nCurrency", iCashtmpb);
+						client_iCash[client_id] = iCashtmpb
+						PrintToChat(client_id, "teammate killed +%d$ for ", iCashtmpc)
+					}
+				}
+			}
+		}
+	}
+
+	
+	
+	return Plugin_Continue
+}
+

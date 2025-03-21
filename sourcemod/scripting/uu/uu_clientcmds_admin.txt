@@ -1,0 +1,71 @@
+
+public Action:ShowSpentMoney(admid, args)
+{
+	for(new i = 0; i < MAXPLAYERS + 1; i++)
+	{
+		if (IsValidClient(i))
+		{
+			decl String:cstr[255]
+			GetClientName(i, cstr, 255)
+			PrintToChat(admid, "**%s**\n**", cstr)
+			for (new s = 0; s < 5; s++)
+			{
+				PrintToChat(admid, "%s : %d$ of upgrades", current_slot_name[s], client_spent_money[i][s])
+			}
+		}
+	}
+}
+
+public Action:ShowTeamMoneyRatio(admid, args)
+{
+	for(new i = 0; i < MAXPLAYERS + 1; i++)
+	{
+		if (IsValidClient(i))
+		{
+			decl String:cstr[255]
+			GetClientName(i, cstr, 255)
+			PrintToChat(admid, "**%s**\n**", cstr)
+			for (new s = 0; s < 5; s++)
+			{
+				PrintToChat(admid, "%s : %d$ of upgrades", current_slot_name[s], client_spent_money[i][s])
+			}
+		}
+	}
+}
+
+public Action:ReloadCfgFiles(client, args)
+{
+	_load_cfg_files()
+	   
+	for (new cl = 0; cl < MAXPLAYERS + 1; cl++)
+	{
+		if (IsValidClient(cl))
+		{
+			ResetClientUpgrades(cl)
+			current_class[cl] = _:TF2_GetPlayerClass(client)
+			//PrintToChat(cl, "client changeclass");
+			if (!client_respawn_handled[cl])
+			{
+				CreateTimer(0.2, ClChangeClassTimer, GetClientUserId(cl));
+			}
+		}	
+	}
+}
+
+
+//admin cmd: enable/disable menu "buy an additional weapon"
+public Action:EnableBuyNewWeapon(client, args)
+{
+	new String:arg1[32];
+	new arg;
+	
+	BuyNWmenu_enabled = 0
+	if (GetCmdArg(1, arg1, sizeof(arg1)))
+	{
+		arg = StringToInt(arg1);
+		if (arg == 1)
+		{
+			BuyNWmenu_enabled = 1
+		}
+	}
+}
