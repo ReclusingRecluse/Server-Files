@@ -177,6 +177,7 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int maxlen)
 
 public OnPluginStart()
 {
+	//Handle Updating UU (hopefully)
 	if (LibraryExists("updater"))
 	{
 			Updater_AddPlugin(UPDATE_URL);
