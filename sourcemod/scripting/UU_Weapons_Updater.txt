@@ -1,0 +1,13 @@
+"Updater"
+{
+	"Information"
+	{
+		"Version"
+		{
+			"Latest"	"1.0.0"
+		}
+	}
+	
+	"Files"
+	{
+		"Plugin"	"https://drive.google.com/file/d/1I8fz1dhmWfWa5gqo3tw5IbGv_EE_S_oK/view?usp=drive_link"
