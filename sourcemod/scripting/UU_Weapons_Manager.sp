@@ -10,9 +10,10 @@
 #include <morecolors>
 #include <tf2utils>
 #include <custom_status_hud_Weapons>
+#include <updater>
 
 
-//#define UpdateURl	"http://drive.google.com/file/d/1I8fz1dhmWfWa5gqo3tw5IbGv_EE_S_oK/view?usp=sharing"
+#define UpdateURl	"https://github.com/ReclusingRecluse/Server-Files/blob/bc56fc503f6bc889902cd2a5ff527b01908a7c84/updater%20files/uu_update.txt"
 
 //Weapon Specific SPs
 #include "UU_Weapons/Black Box.sp"
