@@ -117,7 +117,7 @@ public Action:OnCustomStatusHUDUpdate3(int client, StringMap entries)
 	return Plugin_Changed;
 }
 
-/*
+
 public OnLibraryAdded(const String:name[])
 {
 	if (StrEqual(name, "updater"))
@@ -125,17 +125,15 @@ public OnLibraryAdded(const String:name[])
 		Updater_AddPlugin(UpdateURl);
 	}
 }
-*/
+
 public OnPluginStart()
 {
 	//Handle Updating Plugin if needed
 	
-	/*
 	if (LibraryExists("updater"))
 	{
 		Updater_AddPlugin(UpdateURl);
 	}
-	*/
 	
 	//g_UU_weapons_hud = CreateHudSynchronizer();
 	HookEvent("post_inventory_application", Event_Postinven);

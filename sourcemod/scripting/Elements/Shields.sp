@@ -6,7 +6,7 @@ bool Shieldactive_Solar[MAXPLAYERS+1] = {false, ...};
 
 bool Shieldactive_Stasis[MAXPLAYERS+1] = {false, ...};
 
-Float Shield_Health[MAXPLAYERS+1] = {0.0, ...};
+Float:Shield_Health[MAXPLAYERS+1] = {0.0, ...};
 
 public Action:OnTakeDamageShield(victim, &attacker, &inflictor, &Float:damage, &damagetype, &weapon, Float:damageForce[3], Float:damagePosition[3], damagecustom)
 {
@@ -82,7 +82,7 @@ void SetElementalShield(client, int ShieldType)
 			Shieldactive_Arc[client] = true;
 			SetEntityRenderColor(client, 200, 200, 255);
 		}
-		
+		//Stasis
 		case 4:
 		{
 			Shieldactive_Stasis[client] = true;

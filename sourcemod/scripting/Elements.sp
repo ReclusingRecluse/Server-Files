@@ -115,7 +115,7 @@ public OnClientPutInServer(client)
 	}
 }
 
-//Create Cross_plugin Natives
+//Create Cross_plugin Natives, for super mega custom stuff hopefully
 
 public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int maxlen) {
 	RegPluginLibrary("Destiny_Elements");
@@ -158,6 +158,27 @@ public OnPluginStart()
 	
 	attrib.SetName("scorch");
 	attrib.SetClass("element_scorch");
+	attrib.SetDescriptionFormat("value_is_additive");
+	attrib.Register();
+
+	//Elemental Shields
+	attrib.SetName("solar shield");
+	attrib.SetClass("element_solar_shield");
+	attrib.SetDescriptionFormat("value_is_additive");
+	attrib.Register();
+
+	attrib.SetName("arc shield");
+	attrib.SetClass("element_arc_shield");
+	attrib.SetDescriptionFormat("value_is_additive");
+	attrib.Register();
+
+	attrib.SetName("void shield");
+	attrib.SetClass("element_void_shield");
+	attrib.SetDescriptionFormat("value_is_additive");
+	attrib.Register();
+
+	attrib.SetName("stasis shield");
+	attrib.SetClass("element_stasis_shield");
 	attrib.SetDescriptionFormat("value_is_additive");
 	attrib.Register();
 	

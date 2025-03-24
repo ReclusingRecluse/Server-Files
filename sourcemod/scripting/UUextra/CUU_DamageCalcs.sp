@@ -220,7 +220,7 @@ stock ResetAccuracyScales(client, clientweapon, slot)
 	PrintToConsole(client, "Reset Accuracy Scales for weapon slot %d", slot);
 }
 
-//Fire rate to dmg, a little op, tune later
+//Fire rate to dmg, a little too good, tune later
 stock FireRateToDMG(client, clientweapon, slot)
 {
 	if (!IsValidClient(client) || !IsValidEntity(clientweapon)){return;}
