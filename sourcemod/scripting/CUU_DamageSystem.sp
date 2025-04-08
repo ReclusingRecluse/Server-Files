@@ -436,7 +436,7 @@ public Action:Timer_GiveHealth(Handle:timer)//give health every 0.1 seconds
 }
 
 
-
+//idk man
 stock ResistValueSuffix(Float:Value, client)
 {
 	if (!IsValidClient(client)){return;}
