@@ -7,10 +7,10 @@
 	"baseclass"		"scattergun"
 	"baseindex"		"45"
 	"nobots"		"0"
-	"logname"		"blundergat"
+	"logname"		"ultimatum"
 	"quality"		"14"
 	"mag"			"2"
-	"description"	"A Heavy Frame Scattergun, shoots a high amount of pellets\n \nShot Package\nShoots 2 rounds at once, decreases accuracy, increases pellets per shot\n \nConcussive Force\nHigh knockback"
+	"description"	"A Heavy Frame Arc Scattergun. Has an 80% chance to chain damage on hit./n Wallbreak/nWeapon penetrate enemies and the world./nOvertuned/nWeapon deals an additive damage of 30% of the victim's health.
 	"cw3_attributes"
 	{
 		"cw3 weapon"
@@ -22,11 +22,6 @@
 		{
 			"plugin"	"tf2attributes"
 			"value"		"1"
-		}		
-		"spread penalty"
-		{
-			"plugin"	"tf2attributes"
-			"value"		"2.00"
 		}
 		"bullets per shot bonus"
 		{
@@ -47,11 +42,6 @@
 		{
 			"plugin"	"tf2attributes"
 			"value"		"2.50"
-		}
-		"fire rate penalty HIDDEN"
-		{
-			"plugin"	"tf2attributes"
-			"value"		"5.20"
 		}
 	}
 }

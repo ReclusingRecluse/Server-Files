@@ -592,7 +592,7 @@ public Action:Ubup_OnAttribAddedWeapon(int client, iEnt, slot, String:attrib[])
 	}
 	if (!strcmp(attrib, "fire rate bonus custom"))
 	{
-		FireRateToDMG(client, iEnt, slot);
+		//FireRateToDMG(client, iEnt, slot);
 	}
 	if (ClientAttribCheck(client, "dlss"))
 	{
