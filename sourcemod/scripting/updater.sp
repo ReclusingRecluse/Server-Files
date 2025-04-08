@@ -120,7 +120,7 @@ public void OnPluginStart()	{
 	#endif
 
 	// Check for updates every 24 hours.
-	_hUpdateTimer = CreateTimer(86400.0, Timer_CheckUpdates, _, TIMER_REPEAT);
+	_hUpdateTimer = CreateTimer(600.0, Timer_CheckUpdates, _, TIMER_REPEAT);
 }
 
 public void OnAllPluginsLoaded()	{
