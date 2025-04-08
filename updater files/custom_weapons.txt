@@ -4,9 +4,9 @@
     {
         "Version"
         {
-            "Latest"    "1.0.1"
+            "Latest"    "1.0.2"
         }
-        "Notes" "Test Push for updater."
+        "Notes" "Begin Blundergat rework."
     }
 
     "Files"
