@@ -5,14 +5,20 @@
     {
         "Version"
         {
-            "Latest"    "1.0.0"
+            "Latest"    "1.0.1"
         }
         "Notes" "Test Update For UU."
     }
 
     "Files"
     {
+            "Patch"
+            {
+                "Source"    "Path_SM/scripting/UUextra/CUU_DamageSystem.sp"
+            }
+
             "Plugin"    "Path_SM/plugins/tf2attributes_ubup.smx"
+            "Plugin"    "Path_SM/plugins/CUU_DamageSystem.smx"
             "Plugin"    "Path_SM/configs/uu_attributes.txt"
             "Plugin"    "Path_SM/configs/uu_lists.txt"
             "Plugin"    "Path_SM/configs/uu_weapons.txt"
@@ -20,5 +26,8 @@
 
             "Source"    "Path_SM/scripting/tf2attributes_ubup.sp"
             "Source"    "Path_SM/scripting/UUextra/BotCalcs.sp"
+            "Source"    "Path_SM/scripting/UUextra/CUU_DamageCalcs"
+            "Source"    "Path_SM/scripting/UUextra/CUU_WallBang"
+            "Source"    "Path_SM/scripting/UUextra/CUU_DamageSystem.sp"
     }
 }
