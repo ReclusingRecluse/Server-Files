@@ -26,7 +26,7 @@
 		"bullets per shot bonus"
 		{
 			"plugin"	"tf2attributes"
-			"value"		"2.00"
+			"value"		"4.00"
 		}
 		"referenced item id low"
 		{

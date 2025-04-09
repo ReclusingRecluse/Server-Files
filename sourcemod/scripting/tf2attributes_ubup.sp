@@ -13,7 +13,7 @@
 #include <cw3>
 #include <updater>
 
-#define UPDATE_URL		"https://raw.githubusercontent.com/ReclusingRecluse/Server-Files/refs/heads/main/updater%20files/uu_update.txt"
+#define UPDATE_URL		"https://raw.githubusercontent.com/ReclusingRecluse/Server-Files/main/uu_update.txt"
 
 #define UU_VERSION "2.2.0"
 

@@ -13,7 +13,7 @@
 #include <updater>
 
 
-#define UpdateURl	"https://github.com/ReclusingRecluse/Server-Files/blob/main/updater%20files/custom_weapons.txt"
+#define UpdateURl	"https://raw.githubusercontent.com/ReclusingRecluse/Server-Files/main/custom_weapons.txt"
 
 //Weapon Specific SPs
 #include "UU_Weapons/Black Box.sp"
