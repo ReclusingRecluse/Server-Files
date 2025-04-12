@@ -10,7 +10,7 @@
 	"logname"		"ultimatum"
 	"quality"		"14"
 	"mag"			"2"
-	"description"	"A Heavy Frame Arc Scattergun. Has an 80% chance to chain damage on hit./n Wallbreak/nWeapon penetrate enemies and the world./nOvertuned/nWeapon deals an additive damage of 30% of the victim's health.
+	"description"	"A Heavy Frame Arc Scattergun. Has an 80% chance to chain damage on hit./n Wallbreak/nWeapon penetrate enemies and the world./nOvertuned/nWeapon deals an additive damage of 30 percent of the victim's health.
 	"cw3_attributes"
 	{
 		"cw3 weapon"
