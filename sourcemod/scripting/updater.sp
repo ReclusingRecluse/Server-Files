@@ -51,7 +51,7 @@ enum UpdateStatus {
 }
 
 /* Globals */
-//#define DEBUG		// This will enable verbose logging. Useful for developers testing their updates.
+#define DEBUG		// This will enable verbose logging. Useful for developers testing their updates.
 
 #define STEAMWORKS_AVAILABLE()	(GetFeatureStatus(FeatureType_Native, "SteamWorks_WriteHTTPResponseBodyToFile") == FeatureStatus_Available)
 #define EXTENSION_ERROR			"This plugin requires SteamWorks extensions to function."
