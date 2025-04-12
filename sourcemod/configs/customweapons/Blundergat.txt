@@ -21,7 +21,7 @@
 		"wall break"
 		{
 			"plugin"	"tf2attributes"
-			"value"		"1.00"
+			"value"		"1"
 		}
 		"bullets per shot bonus"
 		{
