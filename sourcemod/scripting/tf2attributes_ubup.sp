@@ -189,6 +189,7 @@ public OnPluginStart()
 
 	CreateTimer(3600.0, Timer_ResetUU);
 	CreateTimer(1800.0, Timer_ResetWarning);
+	CreateTimer(120.0, Timer_AutoBotUpgrade, _, TIMER_REPEAT);
 	
 	UbupForward = CreateGlobalForward("Ubup_OnAttribAddedClient", ET_Event, Param_Cell, Param_String);
 	
@@ -222,6 +223,7 @@ public OnPluginStart()
 	}
 	//CreateTimer(10.0, MoneyFlowTimer,_,TIMER_REPEAT);
 	CreateTimer(5.0, BotCalc, _, TIMER_REPEAT);
+	ServerCommand("sm slay @bots");
 	return;
 }
 
@@ -234,6 +236,13 @@ public Action:Timer_ResetUU(Handle:timer)
 public Action:Timer_ResetWarning(Handle:timer)
 {
 	PrintToChatAll("WARNING - Uberupgrades will be automatically reset in the next 30 minutes. This will reset money and upgrades.");
+}
+
+public Action:Timer_AutoBotUpgrade(Handle:timer)
+{
+	new Float:NewLevel = GetConVarFloat(cvar_Botlevel)+0.05;
+
+	SetConVarFloat(FindConVar("sm_uu_bot_scaling"), NewLevel, true, false);
 }
 
 public OnLibraryAdded(const String:name[])
@@ -2355,7 +2364,7 @@ public OnPluginEnd()
 			}
 		}
 	}
-	SetConVarFloat(FindConVar("sm_uu_bot_scaling"), 1.0, true, false);
+	SetConVarFloat(FindConVar("sm_uu_bot_scaling"), 0.7, true, false);
 	PrintToServer("Plugin ends.");
 	UberShopUnhooks();
 	PrintToServer("Plugin ends -- Unload complete.");
@@ -2785,7 +2794,7 @@ public DefineAttributesTab(client, itemidx, slot)
 				upgrades_ref_to_idx[client][slot][i] = a2;
 				currentupgrades_val[client][slot][a2] = TF2II_GetItemAttributeValue( itemidx, a );
 				
-				PrintToChat(client, "init-attribute-[%s]%d [%d ; %f]", upgradesNames[currentupgrades_idx[client][slot][a2]], itemidx, i, currentupgrades_val[client][slot][a]);
+				//PrintToChat(client, "init-attribute-[%s]%d [%d ; %f]", upgradesNames[currentupgrades_idx[client][slot][a2]], itemidx, i, currentupgrades_val[client][slot][a]);
 				a2++;
 			}
 		}
@@ -2820,7 +2829,7 @@ public DefineAttributesTab(client, itemidx, slot)
 					upgrades_ref_to_idx[client][slot][i] = a2;
 					currentupgrades_val[client][slot][a2] = TF2II_GetItemAttributeValue( itemidx, a );
 
-					PrintToChat(client, "init-attribute-%d [%d ; %f]", itemidx, i, currentupgrades_val[client][slot][a]);
+					//PrintToChat(client, "init-attribute-%d [%d ; %f]", itemidx, i, currentupgrades_val[client][slot][a]);
 					a2++;
 				}
 			}
