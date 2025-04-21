@@ -198,7 +198,8 @@ public Action:BotTimer(Handle:timer, any:client)
 		{
 			TF2Attrib_SetByName(BotWeapon, "cannot giftwrap", damagebuy*1.7);
 			TF2Attrib_SetByName(BotWeapon, "tool needs giftwrap", damagebuy2);
-			//TF2Attrib_SetByName(BotWeapon, "damage bonus", 1.90);
+			TF2Attrib_SetByName(BotWeapon, "accuracy scales custom", 0.11);
+			TF2Attrib_SetByName(BotWeapon, "damage bonus", 1.20);
 			//UU_ApplyWepDmgAttrib(BotWeapon, damagebuy, damagebuy2);
 		}
 		if (IsValidEntity(Primary))

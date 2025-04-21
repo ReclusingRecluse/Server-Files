@@ -190,6 +190,7 @@ public OnPluginStart()
 	CreateTimer(3600.0, Timer_ResetUU);
 	CreateTimer(1800.0, Timer_ResetWarning);
 	CreateTimer(120.0, Timer_AutoBotUpgrade, _, TIMER_REPEAT);
+	CreateTimer(4.0, Timer_SlayBots);
 	
 	UbupForward = CreateGlobalForward("Ubup_OnAttribAddedClient", ET_Event, Param_Cell, Param_String);
 	
@@ -230,6 +231,11 @@ public OnPluginStart()
 public Action:Timer_ResetUU(Handle:timer)
 {
 	ServerCommand("sm plugins reload tf2attributes_ubup");
+	ServerCommand("sm_slay @bots");
+}
+
+public Action:Timer_SlayBots(Handle:timer)
+{
 	ServerCommand("sm_slay @bots");
 }
 
