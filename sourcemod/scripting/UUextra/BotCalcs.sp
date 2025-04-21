@@ -78,8 +78,8 @@ stock BotCalcs(client)
 			regenbuy *= Pow(0.1, 0.1);
 			healthbuy *= 0.6;
 			resistbuy *= 0.2;
-			damagebuy *= 0.7
-			damagebuy2 *= 0.5
+			damagebuy *= 0.9
+			damagebuy2 *= 1.1
 		}
 	}
 	if (lvlScale == 2.0)
