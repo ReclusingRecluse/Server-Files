@@ -186,6 +186,9 @@ public OnPluginStart()
 	//cvar_TimerMoneyGiven_BlueTeam = CreateConVar("sm_uu_timermoneygive_blueteam", "25", "Sets the currency you obtain on kill. Default: 25");
 	//cvar_KillMoneyRatioForTeam = CreateConVar("sm_uu_moneyonkill", "", "Sets the currency you obtain on kill. Default: 25");
 	//ConnectDB();
+
+	CreateTimer(3600.0, Timer_ResetUU);
+	CreateTimer(1800.0, Timer_ResetWarning);
 	
 	UbupForward = CreateGlobalForward("Ubup_OnAttribAddedClient", ET_Event, Param_Cell, Param_String);
 	
@@ -220,6 +223,17 @@ public OnPluginStart()
 	//CreateTimer(10.0, MoneyFlowTimer,_,TIMER_REPEAT);
 	CreateTimer(5.0, BotCalc, _, TIMER_REPEAT);
 	return;
+}
+
+public Action:Timer_ResetUU(Handle:timer)
+{
+	ServerCommand("sm plugins reload tf2attributes_ubup");
+	ServerCommand("sm slay @bots");
+}
+
+public Action:Timer_ResetWarning(Handle:timer)
+{
+	PrintToChatAll("WARNING - Uberupgrades will be automatically reset in the next 30 minutes. This will reset money and upgrades.");
 }
 
 public OnLibraryAdded(const String:name[])
