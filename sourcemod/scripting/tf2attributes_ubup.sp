@@ -190,7 +190,7 @@ public OnPluginStart()
 	CreateTimer(3600.0, Timer_ResetUU);
 	CreateTimer(1800.0, Timer_ResetWarning);
 	CreateTimer(120.0, Timer_AutoBotUpgrade, _, TIMER_REPEAT);
-	CreateTimer(4.0, Timer_SlayBots);
+	CreateTimer(6.0, Timer_SlayBots);
 	
 	UbupForward = CreateGlobalForward("Ubup_OnAttribAddedClient", ET_Event, Param_Cell, Param_String);
 	
@@ -224,14 +224,12 @@ public OnPluginStart()
 	}
 	//CreateTimer(10.0, MoneyFlowTimer,_,TIMER_REPEAT);
 	CreateTimer(5.0, BotCalc, _, TIMER_REPEAT);
-	ServerCommand("sm_slay @bots");
 	return;
 }
 
 public Action:Timer_ResetUU(Handle:timer)
 {
 	ServerCommand("sm plugins reload tf2attributes_ubup");
-	ServerCommand("sm_slay @bots");
 }
 
 public Action:Timer_SlayBots(Handle:timer)
