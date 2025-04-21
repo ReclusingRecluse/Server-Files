@@ -43,11 +43,11 @@ new Float:Disruptorbuy = 0.0;
 stock BotCalcs(client)
 {
 	lvlScale = GetConVarFloat(cvar_Botlevel);
-	damagebuy = ((SquareRoot(RealStartMoney*1.50))/1.4)*(lvlScale);	//234 Base
+	damagebuy = ((SquareRoot(RealStartMoney*1.60))/1.4)*(lvlScale);	//234 Base
 	
 	if (damagebuy2 < 1000.0)
 	{
-	damagebuy2 = ((SquareRoot(RealStartMoney*1.50))/9.0)*(lvlScale); //7.3 Base
+	damagebuy2 = ((SquareRoot(RealStartMoney*1.90))/9.0)*(lvlScale); //7.3 Base
 	}
 	
 	healthbuy = (SquareRoot(RealStartMoney*1.30))*(lvlScale);

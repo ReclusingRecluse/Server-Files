@@ -223,14 +223,14 @@ public OnPluginStart()
 	}
 	//CreateTimer(10.0, MoneyFlowTimer,_,TIMER_REPEAT);
 	CreateTimer(5.0, BotCalc, _, TIMER_REPEAT);
-	ServerCommand("sm slay @bots");
+	ServerCommand("sm_slay @bots");
 	return;
 }
 
 public Action:Timer_ResetUU(Handle:timer)
 {
 	ServerCommand("sm plugins reload tf2attributes_ubup");
-	ServerCommand("sm slay @bots");
+	ServerCommand("sm_slay @bots");
 }
 
 public Action:Timer_ResetWarning(Handle:timer)
